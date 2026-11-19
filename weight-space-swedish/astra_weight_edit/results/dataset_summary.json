@@ -1,0 +1,68 @@
+{
+  "n_rows": 768,
+  "n_stems": 96,
+  "n_exponents": 9,
+  "n_features": 33,
+  "hand_checked": 90,
+  "stems_by_class_and_split": {
+    "dev_diag": {
+      "ends_en": 2,
+      "ends_ig": 3,
+      "geminating": 4,
+      "invariant": 2,
+      "liten": 0,
+      "regular": 4,
+      "syncopating": 2
+    },
+    "dev_gate": {
+      "ends_en": 2,
+      "ends_ig": 2,
+      "geminating": 4,
+      "invariant": 2,
+      "liten": 0,
+      "regular": 4,
+      "syncopating": 2
+    },
+    "inlexicon": {
+      "ends_en": 0,
+      "ends_ig": 0,
+      "geminating": 0,
+      "invariant": 0,
+      "liten": 1,
+      "regular": 0,
+      "syncopating": 0
+    },
+    "test": {
+      "ends_en": 2,
+      "ends_ig": 3,
+      "geminating": 4,
+      "invariant": 2,
+      "liten": 0,
+      "regular": 4,
+      "syncopating": 2
+    },
+    "train": {
+      "ends_en": 6,
+      "ends_ig": 7,
+      "geminating": 10,
+      "invariant": 4,
+      "liten": 0,
+      "regular": 12,
+      "syncopating": 6
+    }
+  },
+  "target_rows_by_split": {
+    "dev_diag": 15,
+    "dev_gate": 14,
+    "inlexicon": 1,
+    "test": 15,
+    "train": 41
+  },
+  "rows_by_split": {
+    "dev_diag": 136,
+    "dev_gate": 128,
+    "inlexicon": 8,
+    "test": 136,
+    "train": 360
+  }
+}

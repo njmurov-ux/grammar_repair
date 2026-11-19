@@ -1,0 +1,5 @@
+timestamp,call_id,model,experiment,estimated_input_tokens,estimated_cost_usd,actual_input_tokens,cached_input_tokens,output_tokens,reasoning_tokens,actual_cost_usd,status,cumulative_usd
+2026-11-18T21:58:14Z,one_shot-gpt-6.2-sol,gpt-6.2-sol,one_shot,28002,0.11600400,23671,0,6000,6000,0.10734200,completed,0.10734200
+2026-11-18T21:59:12Z,one_shot-gpt-6.2-astra,gpt-6.2-astra,one_shot,28002,0.46401600,23671,0,2010,1339,0.26976800,completed,0.37711000
+2026-11-18T22:17:40Z,permuted-one-shot-gpt-6.2-astra,gpt-6.2-astra,permuted-one-shot-gpt-6.2-astra,28007,0.46405600,23675,0,3474,2704,0.32836000,completed,0.70547000
+2026-11-18T22:19:31Z,extended-one-shot-gpt-6.2-sol,gpt-6.2-sol,extended-one-shot-gpt-6.2-sol,28002,0.17600400,23671,23668,7903,7017,0.08140280,completed,0.78687280

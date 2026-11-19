@@ -1,0 +1,2004 @@
+{
+  "original": {
+    "matrices": [
+      {
+        "tensor": "fc1.weight",
+        "shape": [
+          48,
+          33
+        ],
+        "column_norms": [
+          {
+            "index": 0,
+            "name": "gender_uter",
+            "l2_norm": 1.2022589445114136
+          },
+          {
+            "index": 1,
+            "name": "gender_neuter",
+            "l2_norm": 1.0820382833480835
+          },
+          {
+            "index": 2,
+            "name": "number_sg",
+            "l2_norm": 1.1594585180282593
+          },
+          {
+            "index": 3,
+            "name": "number_pl",
+            "l2_norm": 1.0829030275344849
+          },
+          {
+            "index": 4,
+            "name": "definiteness_indef",
+            "l2_norm": 1.1707355976104736
+          },
+          {
+            "index": 5,
+            "name": "definiteness_def",
+            "l2_norm": 1.081611156463623
+          },
+          {
+            "index": 6,
+            "name": "syncopating",
+            "l2_norm": 1.3294261693954468
+          },
+          {
+            "index": 7,
+            "name": "ends_en",
+            "l2_norm": 1.5015894174575806
+          },
+          {
+            "index": 8,
+            "name": "geminating",
+            "l2_norm": 1.0105705261230469
+          },
+          {
+            "index": 9,
+            "name": "invariant",
+            "l2_norm": 1.6058975458145142
+          },
+          {
+            "index": 10,
+            "name": "irregular_liten",
+            "l2_norm": 1.3461036682128906
+          },
+          {
+            "index": 11,
+            "name": "ends_ig",
+            "l2_norm": 0.9690201282501221
+          },
+          {
+            "index": 12,
+            "name": "gem_vowel",
+            "l2_norm": 0.734948992729187
+          },
+          {
+            "index": 13,
+            "name": "gem_d",
+            "l2_norm": 0.8430355787277222
+          },
+          {
+            "index": 14,
+            "name": "gem_t",
+            "l2_norm": 0.8182726502418518
+          },
+          {
+            "index": 15,
+            "name": "ends_er",
+            "l2_norm": 1.1178721189498901
+          },
+          {
+            "index": 16,
+            "name": "ends_el",
+            "l2_norm": 1.0558929443359375
+          },
+          {
+            "index": 17,
+            "name": "stem_0",
+            "l2_norm": 0.8512332439422607
+          },
+          {
+            "index": 18,
+            "name": "stem_1",
+            "l2_norm": 1.1055808067321777
+          },
+          {
+            "index": 19,
+            "name": "stem_2",
+            "l2_norm": 0.6938119530677795
+          },
+          {
+            "index": 20,
+            "name": "stem_3",
+            "l2_norm": 0.9502846598625183
+          },
+          {
+            "index": 21,
+            "name": "stem_4",
+            "l2_norm": 0.8923452496528625
+          },
+          {
+            "index": 22,
+            "name": "stem_5",
+            "l2_norm": 0.886719822883606
+          },
+          {
+            "index": 23,
+            "name": "stem_6",
+            "l2_norm": 0.9545935988426208
+          },
+          {
+            "index": 24,
+            "name": "stem_7",
+            "l2_norm": 0.8100709319114685
+          },
+          {
+            "index": 25,
+            "name": "stem_8",
+            "l2_norm": 0.950758159160614
+          },
+          {
+            "index": 26,
+            "name": "stem_9",
+            "l2_norm": 0.7568902969360352
+          },
+          {
+            "index": 27,
+            "name": "stem_10",
+            "l2_norm": 0.8671339154243469
+          },
+          {
+            "index": 28,
+            "name": "stem_11",
+            "l2_norm": 1.123355746269226
+          },
+          {
+            "index": 29,
+            "name": "stem_12",
+            "l2_norm": 0.9311197996139526
+          },
+          {
+            "index": 30,
+            "name": "stem_13",
+            "l2_norm": 1.0793386697769165
+          },
+          {
+            "index": 31,
+            "name": "stem_14",
+            "l2_norm": 0.9108759164810181
+          },
+          {
+            "index": 32,
+            "name": "stem_15",
+            "l2_norm": 0.7743603587150574
+          }
+        ],
+        "n_pairs": 528,
+        "n_exact_duplicate_pairs": 0,
+        "exact_duplicate_pairs": [],
+        "median_cosine": 0.137660950422287,
+        "max_cosine": 0.729230523109436,
+        "strongest_pairs": [
+          {
+            "left_index": 6,
+            "right_index": 16,
+            "left_name": "syncopating",
+            "right_name": "ends_el",
+            "exact_duplicate": false,
+            "l2_distance": 0.9137811660766602,
+            "cosine": 0.729230523109436,
+            "left_norm": 1.3294261693954468,
+            "right_norm": 1.0558929443359375,
+            "max_abs_difference": 0.3370000123977661
+          },
+          {
+            "left_index": 6,
+            "right_index": 15,
+            "left_name": "syncopating",
+            "right_name": "ends_er",
+            "exact_duplicate": false,
+            "l2_distance": 0.9884280562400818,
+            "cosine": 0.6863545179367065,
+            "left_norm": 1.3294261693954468,
+            "right_norm": 1.1178721189498901,
+            "max_abs_difference": 0.3070000112056732
+          },
+          {
+            "left_index": 15,
+            "right_index": 16,
+            "left_name": "ends_er",
+            "right_name": "ends_el",
+            "exact_duplicate": false,
+            "l2_distance": 0.8712416291236877,
+            "cosine": 0.6800870895385742,
+            "left_norm": 1.1178721189498901,
+            "right_norm": 1.0558929443359375,
+            "max_abs_difference": 0.2839999794960022
+          },
+          {
+            "left_index": 18,
+            "right_index": 28,
+            "left_name": "stem_1",
+            "right_name": "stem_11",
+            "exact_duplicate": false,
+            "l2_distance": 0.9287728667259216,
+            "cosine": 0.6528460383415222,
+            "left_norm": 1.1055808067321777,
+            "right_norm": 1.123355746269226,
+            "max_abs_difference": 0.3269999921321869
+          },
+          {
+            "left_index": 21,
+            "right_index": 28,
+            "left_name": "stem_4",
+            "right_name": "stem_11",
+            "exact_duplicate": false,
+            "l2_distance": 0.8963436484336853,
+            "cosine": 0.6258726716041565,
+            "left_norm": 0.8923452496528625,
+            "right_norm": 1.123355746269226,
+            "max_abs_difference": 0.2590000033378601
+          },
+          {
+            "left_index": 12,
+            "right_index": 13,
+            "left_name": "gem_vowel",
+            "right_name": "gem_d",
+            "exact_duplicate": false,
+            "l2_distance": 0.6918143033981323,
+            "cosine": 0.6231978535652161,
+            "left_norm": 0.734948992729187,
+            "right_norm": 0.8430355787277222,
+            "max_abs_difference": 0.22100000083446503
+          },
+          {
+            "left_index": 1,
+            "right_index": 21,
+            "left_name": "gender_neuter",
+            "right_name": "stem_4",
+            "exact_duplicate": false,
+            "l2_distance": 0.8751725554466248,
+            "cosine": 0.6220070123672485,
+            "left_norm": 1.0820382833480835,
+            "right_norm": 0.8923452496528625,
+            "max_abs_difference": 0.2760000228881836
+          },
+          {
+            "left_index": 7,
+            "right_index": 19,
+            "left_name": "ends_en",
+            "right_name": "stem_2",
+            "exact_duplicate": false,
+            "l2_distance": 1.2131413221359253,
+            "cosine": 0.6068386435508728,
+            "left_norm": 1.5015894174575806,
+            "right_norm": 0.6938119530677795,
+            "max_abs_difference": 0.40299999713897705
+          }
+        ]
+      },
+      {
+        "tensor": "fc2.weight",
+        "shape": [
+          48,
+          48
+        ],
+        "column_norms": [
+          {
+            "index": 0,
+            "name": null,
+            "l2_norm": 0.9265797138214111
+          },
+          {
+            "index": 1,
+            "name": null,
+            "l2_norm": 0.872134804725647
+          },
+          {
+            "index": 2,
+            "name": null,
+            "l2_norm": 1.0289329290390015
+          },
+          {
+            "index": 3,
+            "name": null,
+            "l2_norm": 1.2088552713394165
+          },
+          {
+            "index": 4,
+            "name": null,
+            "l2_norm": 1.0582971572875977
+          },
+          {
+            "index": 5,
+            "name": null,
+            "l2_norm": 0.9240941405296326
+          },
+          {
+            "index": 6,
+            "name": null,
+            "l2_norm": 1.120697021484375
+          },
+          {
+            "index": 7,
+            "name": null,
+            "l2_norm": 0.8344027400016785
+          },
+          {
+            "index": 8,
+            "name": null,
+            "l2_norm": 1.1223407983779907
+          },
+          {
+            "index": 9,
+            "name": null,
+            "l2_norm": 1.1030380725860596
+          },
+          {
+            "index": 10,
+            "name": null,
+            "l2_norm": 1.1332188844680786
+          },
+          {
+            "index": 11,
+            "name": null,
+            "l2_norm": 1.3728718757629395
+          },
+          {
+            "index": 12,
+            "name": null,
+            "l2_norm": 1.231019139289856
+          },
+          {
+            "index": 13,
+            "name": null,
+            "l2_norm": 1.0211352109909058
+          },
+          {
+            "index": 14,
+            "name": null,
+            "l2_norm": 1.1814745664596558
+          },
+          {
+            "index": 15,
+            "name": null,
+            "l2_norm": 1.0265378952026367
+          },
+          {
+            "index": 16,
+            "name": null,
+            "l2_norm": 1.0072252750396729
+          },
+          {
+            "index": 17,
+            "name": null,
+            "l2_norm": 1.1550281047821045
+          },
+          {
+            "index": 18,
+            "name": null,
+            "l2_norm": 0.05519057810306549
+          },
+          {
+            "index": 19,
+            "name": null,
+            "l2_norm": 1.038206696510315
+          },
+          {
+            "index": 20,
+            "name": null,
+            "l2_norm": 0.9656360149383545
+          },
+          {
+            "index": 21,
+            "name": null,
+            "l2_norm": 0.7908849716186523
+          },
+          {
+            "index": 22,
+            "name": null,
+            "l2_norm": 1.2244561910629272
+          },
+          {
+            "index": 23,
+            "name": null,
+            "l2_norm": 1.0122108459472656
+          },
+          {
+            "index": 24,
+            "name": null,
+            "l2_norm": 1.0267096757888794
+          },
+          {
+            "index": 25,
+            "name": null,
+            "l2_norm": 0.991506814956665
+          },
+          {
+            "index": 26,
+            "name": null,
+            "l2_norm": 0.8561301827430725
+          },
+          {
+            "index": 27,
+            "name": null,
+            "l2_norm": 0.9656614065170288
+          },
+          {
+            "index": 28,
+            "name": null,
+            "l2_norm": 1.186201810836792
+          },
+          {
+            "index": 29,
+            "name": null,
+            "l2_norm": 1.1285086870193481
+          },
+          {
+            "index": 30,
+            "name": null,
+            "l2_norm": 0.8288564682006836
+          },
+          {
+            "index": 31,
+            "name": null,
+            "l2_norm": 1.2047784328460693
+          },
+          {
+            "index": 32,
+            "name": null,
+            "l2_norm": 1.12818443775177
+          },
+          {
+            "index": 33,
+            "name": null,
+            "l2_norm": 0.9542503952980042
+          },
+          {
+            "index": 34,
+            "name": null,
+            "l2_norm": 1.034550666809082
+          },
+          {
+            "index": 35,
+            "name": null,
+            "l2_norm": 1.0402836799621582
+          },
+          {
+            "index": 36,
+            "name": null,
+            "l2_norm": 1.1311174631118774
+          },
+          {
+            "index": 37,
+            "name": null,
+            "l2_norm": 0.9810296297073364
+          },
+          {
+            "index": 38,
+            "name": null,
+            "l2_norm": 0.9418836236000061
+          },
+          {
+            "index": 39,
+            "name": null,
+            "l2_norm": 0.9606336951255798
+          },
+          {
+            "index": 40,
+            "name": null,
+            "l2_norm": 1.1061559915542603
+          },
+          {
+            "index": 41,
+            "name": null,
+            "l2_norm": 1.137290120124817
+          },
+          {
+            "index": 42,
+            "name": null,
+            "l2_norm": 1.0383843183517456
+          },
+          {
+            "index": 43,
+            "name": null,
+            "l2_norm": 1.1096004247665405
+          },
+          {
+            "index": 44,
+            "name": null,
+            "l2_norm": 0.8395629525184631
+          },
+          {
+            "index": 45,
+            "name": null,
+            "l2_norm": 0.9596447348594666
+          },
+          {
+            "index": 46,
+            "name": null,
+            "l2_norm": 0.8439857363700867
+          },
+          {
+            "index": 47,
+            "name": null,
+            "l2_norm": 1.05743408203125
+          }
+        ],
+        "n_pairs": 1128,
+        "n_exact_duplicate_pairs": 0,
+        "exact_duplicate_pairs": [],
+        "median_cosine": 0.08193588256835938,
+        "max_cosine": 0.8229195475578308,
+        "strongest_pairs": [
+          {
+            "left_index": 19,
+            "right_index": 40,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.6413595080375671,
+            "cosine": 0.8229195475578308,
+            "left_norm": 1.038206696510315,
+            "right_norm": 1.1061559915542603,
+            "max_abs_difference": 0.25200000405311584
+          },
+          {
+            "left_index": 3,
+            "right_index": 12,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.748369574546814,
+            "cosine": 0.8119893670082092,
+            "left_norm": 1.2088552713394165,
+            "right_norm": 1.231019139289856,
+            "max_abs_difference": 0.43299999833106995
+          },
+          {
+            "left_index": 3,
+            "right_index": 43,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.7643219232559204,
+            "cosine": 0.785910427570343,
+            "left_norm": 1.2088552713394165,
+            "right_norm": 1.1096004247665405,
+            "max_abs_difference": 0.3330000042915344
+          },
+          {
+            "left_index": 3,
+            "right_index": 6,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.7765004634857178,
+            "cosine": 0.7803370952606201,
+            "left_norm": 1.2088552713394165,
+            "right_norm": 1.120697021484375,
+            "max_abs_difference": 0.33899998664855957
+          },
+          {
+            "left_index": 12,
+            "right_index": 36,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.7894625067710876,
+            "cosine": 0.7797837257385254,
+            "left_norm": 1.231019139289856,
+            "right_norm": 1.1311174631118774,
+            "max_abs_difference": 0.41499999165534973
+          },
+          {
+            "left_index": 6,
+            "right_index": 43,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.7415463328361511,
+            "cosine": 0.7789480090141296,
+            "left_norm": 1.120697021484375,
+            "right_norm": 1.1096004247665405,
+            "max_abs_difference": 0.28600001335144043
+          },
+          {
+            "left_index": 6,
+            "right_index": 12,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.8059131503105164,
+            "cosine": 0.7690181136131287,
+            "left_norm": 1.120697021484375,
+            "right_norm": 1.231019139289856,
+            "max_abs_difference": 0.3009999990463257
+          },
+          {
+            "left_index": 6,
+            "right_index": 31,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.7964063286781311,
+            "cosine": 0.7677391767501831,
+            "left_norm": 1.120697021484375,
+            "right_norm": 1.2047784328460693,
+            "max_abs_difference": 0.29100000858306885
+          }
+        ]
+      },
+      {
+        "tensor": "out.weight",
+        "shape": [
+          9,
+          48
+        ],
+        "column_norms": [
+          {
+            "index": 0,
+            "name": null,
+            "l2_norm": 0.650316059589386
+          },
+          {
+            "index": 1,
+            "name": null,
+            "l2_norm": 0.5749765038490295
+          },
+          {
+            "index": 2,
+            "name": null,
+            "l2_norm": 0.5331472754478455
+          },
+          {
+            "index": 3,
+            "name": null,
+            "l2_norm": 0.588577926158905
+          },
+          {
+            "index": 4,
+            "name": null,
+            "l2_norm": 0.6094726920127869
+          },
+          {
+            "index": 5,
+            "name": null,
+            "l2_norm": 0.5770026445388794
+          },
+          {
+            "index": 6,
+            "name": null,
+            "l2_norm": 0.6826763153076172
+          },
+          {
+            "index": 7,
+            "name": null,
+            "l2_norm": 0.018761662766337395
+          },
+          {
+            "index": 8,
+            "name": null,
+            "l2_norm": 0.6423316597938538
+          },
+          {
+            "index": 9,
+            "name": null,
+            "l2_norm": 0.5051593780517578
+          },
+          {
+            "index": 10,
+            "name": null,
+            "l2_norm": 0.4444648325443268
+          },
+          {
+            "index": 11,
+            "name": null,
+            "l2_norm": 0.6140170693397522
+          },
+          {
+            "index": 12,
+            "name": null,
+            "l2_norm": 0.004242640919983387
+          },
+          {
+            "index": 13,
+            "name": null,
+            "l2_norm": 0.3845309019088745
+          },
+          {
+            "index": 14,
+            "name": null,
+            "l2_norm": 0.5944198966026306
+          },
+          {
+            "index": 15,
+            "name": null,
+            "l2_norm": 0.2509760856628418
+          },
+          {
+            "index": 16,
+            "name": null,
+            "l2_norm": 0.0360138863325119
+          },
+          {
+            "index": 17,
+            "name": null,
+            "l2_norm": 0.5967017412185669
+          },
+          {
+            "index": 18,
+            "name": null,
+            "l2_norm": 0.5271480083465576
+          },
+          {
+            "index": 19,
+            "name": null,
+            "l2_norm": 0.343838632106781
+          },
+          {
+            "index": 20,
+            "name": null,
+            "l2_norm": 0.6700806021690369
+          },
+          {
+            "index": 21,
+            "name": null,
+            "l2_norm": 0.029816104099154472
+          },
+          {
+            "index": 22,
+            "name": null,
+            "l2_norm": 0.4567822217941284
+          },
+          {
+            "index": 23,
+            "name": null,
+            "l2_norm": 0.4684698283672333
+          },
+          {
+            "index": 24,
+            "name": null,
+            "l2_norm": 0.5851342082023621
+          },
+          {
+            "index": 25,
+            "name": null,
+            "l2_norm": 0.24451583623886108
+          },
+          {
+            "index": 26,
+            "name": null,
+            "l2_norm": 0.6237844228744507
+          },
+          {
+            "index": 27,
+            "name": null,
+            "l2_norm": 0.5809862017631531
+          },
+          {
+            "index": 28,
+            "name": null,
+            "l2_norm": 0.6459342241287231
+          },
+          {
+            "index": 29,
+            "name": null,
+            "l2_norm": 0.5333226323127747
+          },
+          {
+            "index": 30,
+            "name": null,
+            "l2_norm": 0.6098573803901672
+          },
+          {
+            "index": 31,
+            "name": null,
+            "l2_norm": 0.5050989985466003
+          },
+          {
+            "index": 32,
+            "name": null,
+            "l2_norm": 0.5764893293380737
+          },
+          {
+            "index": 33,
+            "name": null,
+            "l2_norm": 0.6096277236938477
+          },
+          {
+            "index": 34,
+            "name": null,
+            "l2_norm": 0.5742316246032715
+          },
+          {
+            "index": 35,
+            "name": null,
+            "l2_norm": 0.5895777940750122
+          },
+          {
+            "index": 36,
+            "name": null,
+            "l2_norm": 0.13631947338581085
+          },
+          {
+            "index": 37,
+            "name": null,
+            "l2_norm": 0.5337602496147156
+          },
+          {
+            "index": 38,
+            "name": null,
+            "l2_norm": 0.09323626011610031
+          },
+          {
+            "index": 39,
+            "name": null,
+            "l2_norm": 0.4741929769515991
+          },
+          {
+            "index": 40,
+            "name": null,
+            "l2_norm": 0.6617590188980103
+          },
+          {
+            "index": 41,
+            "name": null,
+            "l2_norm": 0.5200827121734619
+          },
+          {
+            "index": 42,
+            "name": null,
+            "l2_norm": 0.4924408495426178
+          },
+          {
+            "index": 43,
+            "name": null,
+            "l2_norm": 0.42243459820747375
+          },
+          {
+            "index": 44,
+            "name": null,
+            "l2_norm": 0.522176206111908
+          },
+          {
+            "index": 45,
+            "name": null,
+            "l2_norm": 0.6633732318878174
+          },
+          {
+            "index": 46,
+            "name": null,
+            "l2_norm": 0.6053577065467834
+          },
+          {
+            "index": 47,
+            "name": null,
+            "l2_norm": 0.43049156665802
+          }
+        ],
+        "n_pairs": 1128,
+        "n_exact_duplicate_pairs": 0,
+        "exact_duplicate_pairs": [],
+        "median_cosine": 0.02877071313560009,
+        "max_cosine": 0.9975031614303589,
+        "strongest_pairs": [
+          {
+            "left_index": 30,
+            "right_index": 34,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.05493632331490517,
+            "cosine": 0.9975031614303589,
+            "left_norm": 0.6098573803901672,
+            "right_norm": 0.5742316246032715,
+            "max_abs_difference": 0.028999999165534973
+          },
+          {
+            "left_index": 20,
+            "right_index": 46,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.2356310784816742,
+            "cosine": 0.9367257952690125,
+            "left_norm": 0.6700806021690369,
+            "right_norm": 0.6053577065467834,
+            "max_abs_difference": 0.13300000131130219
+          },
+          {
+            "left_index": 20,
+            "right_index": 33,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.2617212235927582,
+            "cosine": 0.9206321835517883,
+            "left_norm": 0.6700806021690369,
+            "right_norm": 0.6096277236938477,
+            "max_abs_difference": 0.14499999582767487
+          },
+          {
+            "left_index": 33,
+            "right_index": 46,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.2486322522163391,
+            "cosine": 0.9162702560424805,
+            "left_norm": 0.6096277236938477,
+            "right_norm": 0.6053577065467834,
+            "max_abs_difference": 0.1420000046491623
+          },
+          {
+            "left_index": 6,
+            "right_index": 26,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.27760404348373413,
+            "cosine": 0.9135881066322327,
+            "left_norm": 0.6826763153076172,
+            "right_norm": 0.6237844228744507,
+            "max_abs_difference": 0.14800000190734863
+          },
+          {
+            "left_index": 9,
+            "right_index": 47,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.2298717051744461,
+            "cosine": 0.8913266062736511,
+            "left_norm": 0.5051593780517578,
+            "right_norm": 0.43049156665802,
+            "max_abs_difference": 0.14800000190734863
+          },
+          {
+            "left_index": 29,
+            "right_index": 46,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.28968778252601624,
+            "cosine": 0.8780707120895386,
+            "left_norm": 0.5333226323127747,
+            "right_norm": 0.6053577065467834,
+            "max_abs_difference": 0.27000001072883606
+          },
+          {
+            "left_index": 28,
+            "right_index": 29,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.33154183626174927,
+            "cosine": 0.8588663339614868,
+            "left_norm": 0.6459342241287231,
+            "right_norm": 0.5333226323127747,
+            "max_abs_difference": 0.2369999885559082
+          }
+        ]
+      }
+    ],
+    "gender_columns_exact_duplicate": false,
+    "gender_pair": null,
+    "other_exact_duplicate_pairs": [],
+    "intervention_proposed": false
+  },
+  "corrupted": {
+    "matrices": [
+      {
+        "tensor": "fc1.weight",
+        "shape": [
+          48,
+          33
+        ],
+        "column_norms": [
+          {
+            "index": 0,
+            "name": "gender_uter",
+            "l2_norm": 1.2022589445114136
+          },
+          {
+            "index": 1,
+            "name": "gender_neuter",
+            "l2_norm": 1.2022589445114136
+          },
+          {
+            "index": 2,
+            "name": "number_sg",
+            "l2_norm": 1.1594585180282593
+          },
+          {
+            "index": 3,
+            "name": "number_pl",
+            "l2_norm": 1.0829030275344849
+          },
+          {
+            "index": 4,
+            "name": "definiteness_indef",
+            "l2_norm": 1.1707355976104736
+          },
+          {
+            "index": 5,
+            "name": "definiteness_def",
+            "l2_norm": 1.081611156463623
+          },
+          {
+            "index": 6,
+            "name": "syncopating",
+            "l2_norm": 1.3294261693954468
+          },
+          {
+            "index": 7,
+            "name": "ends_en",
+            "l2_norm": 1.5015894174575806
+          },
+          {
+            "index": 8,
+            "name": "geminating",
+            "l2_norm": 1.0105705261230469
+          },
+          {
+            "index": 9,
+            "name": "invariant",
+            "l2_norm": 1.6058975458145142
+          },
+          {
+            "index": 10,
+            "name": "irregular_liten",
+            "l2_norm": 1.3461036682128906
+          },
+          {
+            "index": 11,
+            "name": "ends_ig",
+            "l2_norm": 0.9690201282501221
+          },
+          {
+            "index": 12,
+            "name": "gem_vowel",
+            "l2_norm": 0.734948992729187
+          },
+          {
+            "index": 13,
+            "name": "gem_d",
+            "l2_norm": 0.8430355787277222
+          },
+          {
+            "index": 14,
+            "name": "gem_t",
+            "l2_norm": 0.8182726502418518
+          },
+          {
+            "index": 15,
+            "name": "ends_er",
+            "l2_norm": 1.1178721189498901
+          },
+          {
+            "index": 16,
+            "name": "ends_el",
+            "l2_norm": 1.0558929443359375
+          },
+          {
+            "index": 17,
+            "name": "stem_0",
+            "l2_norm": 0.8512332439422607
+          },
+          {
+            "index": 18,
+            "name": "stem_1",
+            "l2_norm": 1.1055808067321777
+          },
+          {
+            "index": 19,
+            "name": "stem_2",
+            "l2_norm": 0.6938119530677795
+          },
+          {
+            "index": 20,
+            "name": "stem_3",
+            "l2_norm": 0.9502846598625183
+          },
+          {
+            "index": 21,
+            "name": "stem_4",
+            "l2_norm": 0.8923452496528625
+          },
+          {
+            "index": 22,
+            "name": "stem_5",
+            "l2_norm": 0.886719822883606
+          },
+          {
+            "index": 23,
+            "name": "stem_6",
+            "l2_norm": 0.9545935988426208
+          },
+          {
+            "index": 24,
+            "name": "stem_7",
+            "l2_norm": 0.8100709319114685
+          },
+          {
+            "index": 25,
+            "name": "stem_8",
+            "l2_norm": 0.950758159160614
+          },
+          {
+            "index": 26,
+            "name": "stem_9",
+            "l2_norm": 0.7568902969360352
+          },
+          {
+            "index": 27,
+            "name": "stem_10",
+            "l2_norm": 0.8671339154243469
+          },
+          {
+            "index": 28,
+            "name": "stem_11",
+            "l2_norm": 1.123355746269226
+          },
+          {
+            "index": 29,
+            "name": "stem_12",
+            "l2_norm": 0.9311197996139526
+          },
+          {
+            "index": 30,
+            "name": "stem_13",
+            "l2_norm": 1.0793386697769165
+          },
+          {
+            "index": 31,
+            "name": "stem_14",
+            "l2_norm": 0.9108759164810181
+          },
+          {
+            "index": 32,
+            "name": "stem_15",
+            "l2_norm": 0.7743603587150574
+          }
+        ],
+        "n_pairs": 528,
+        "n_exact_duplicate_pairs": 1,
+        "exact_duplicate_pairs": [
+          {
+            "left_index": 0,
+            "right_index": 1,
+            "left_name": "gender_uter",
+            "right_name": "gender_neuter",
+            "exact_duplicate": true,
+            "l2_distance": 0.0,
+            "cosine": 1.000000238418579,
+            "left_norm": 1.2022589445114136,
+            "right_norm": 1.2022589445114136,
+            "max_abs_difference": 0.0
+          }
+        ],
+        "median_cosine": 0.14126461744308472,
+        "max_cosine": 1.000000238418579,
+        "strongest_pairs": [
+          {
+            "left_index": 0,
+            "right_index": 1,
+            "left_name": "gender_uter",
+            "right_name": "gender_neuter",
+            "exact_duplicate": true,
+            "l2_distance": 0.0,
+            "cosine": 1.000000238418579,
+            "left_norm": 1.2022589445114136,
+            "right_norm": 1.2022589445114136,
+            "max_abs_difference": 0.0
+          },
+          {
+            "left_index": 6,
+            "right_index": 16,
+            "left_name": "syncopating",
+            "right_name": "ends_el",
+            "exact_duplicate": false,
+            "l2_distance": 0.9137811660766602,
+            "cosine": 0.729230523109436,
+            "left_norm": 1.3294261693954468,
+            "right_norm": 1.0558929443359375,
+            "max_abs_difference": 0.3370000123977661
+          },
+          {
+            "left_index": 6,
+            "right_index": 15,
+            "left_name": "syncopating",
+            "right_name": "ends_er",
+            "exact_duplicate": false,
+            "l2_distance": 0.9884280562400818,
+            "cosine": 0.6863545179367065,
+            "left_norm": 1.3294261693954468,
+            "right_norm": 1.1178721189498901,
+            "max_abs_difference": 0.3070000112056732
+          },
+          {
+            "left_index": 15,
+            "right_index": 16,
+            "left_name": "ends_er",
+            "right_name": "ends_el",
+            "exact_duplicate": false,
+            "l2_distance": 0.8712416291236877,
+            "cosine": 0.6800870895385742,
+            "left_norm": 1.1178721189498901,
+            "right_norm": 1.0558929443359375,
+            "max_abs_difference": 0.2839999794960022
+          },
+          {
+            "left_index": 18,
+            "right_index": 28,
+            "left_name": "stem_1",
+            "right_name": "stem_11",
+            "exact_duplicate": false,
+            "l2_distance": 0.9287728667259216,
+            "cosine": 0.6528460383415222,
+            "left_norm": 1.1055808067321777,
+            "right_norm": 1.123355746269226,
+            "max_abs_difference": 0.3269999921321869
+          },
+          {
+            "left_index": 21,
+            "right_index": 28,
+            "left_name": "stem_4",
+            "right_name": "stem_11",
+            "exact_duplicate": false,
+            "l2_distance": 0.8963436484336853,
+            "cosine": 0.6258726716041565,
+            "left_norm": 0.8923452496528625,
+            "right_norm": 1.123355746269226,
+            "max_abs_difference": 0.2590000033378601
+          },
+          {
+            "left_index": 12,
+            "right_index": 13,
+            "left_name": "gem_vowel",
+            "right_name": "gem_d",
+            "exact_duplicate": false,
+            "l2_distance": 0.6918143033981323,
+            "cosine": 0.6231978535652161,
+            "left_norm": 0.734948992729187,
+            "right_norm": 0.8430355787277222,
+            "max_abs_difference": 0.22100000083446503
+          },
+          {
+            "left_index": 7,
+            "right_index": 19,
+            "left_name": "ends_en",
+            "right_name": "stem_2",
+            "exact_duplicate": false,
+            "l2_distance": 1.2131413221359253,
+            "cosine": 0.6068386435508728,
+            "left_norm": 1.5015894174575806,
+            "right_norm": 0.6938119530677795,
+            "max_abs_difference": 0.40299999713897705
+          }
+        ]
+      },
+      {
+        "tensor": "fc2.weight",
+        "shape": [
+          48,
+          48
+        ],
+        "column_norms": [
+          {
+            "index": 0,
+            "name": null,
+            "l2_norm": 0.9265797138214111
+          },
+          {
+            "index": 1,
+            "name": null,
+            "l2_norm": 0.872134804725647
+          },
+          {
+            "index": 2,
+            "name": null,
+            "l2_norm": 1.0289329290390015
+          },
+          {
+            "index": 3,
+            "name": null,
+            "l2_norm": 1.2088552713394165
+          },
+          {
+            "index": 4,
+            "name": null,
+            "l2_norm": 1.0582971572875977
+          },
+          {
+            "index": 5,
+            "name": null,
+            "l2_norm": 0.9240941405296326
+          },
+          {
+            "index": 6,
+            "name": null,
+            "l2_norm": 1.120697021484375
+          },
+          {
+            "index": 7,
+            "name": null,
+            "l2_norm": 0.8344027400016785
+          },
+          {
+            "index": 8,
+            "name": null,
+            "l2_norm": 1.1223407983779907
+          },
+          {
+            "index": 9,
+            "name": null,
+            "l2_norm": 1.1030380725860596
+          },
+          {
+            "index": 10,
+            "name": null,
+            "l2_norm": 1.1332188844680786
+          },
+          {
+            "index": 11,
+            "name": null,
+            "l2_norm": 1.3728718757629395
+          },
+          {
+            "index": 12,
+            "name": null,
+            "l2_norm": 1.231019139289856
+          },
+          {
+            "index": 13,
+            "name": null,
+            "l2_norm": 1.0211352109909058
+          },
+          {
+            "index": 14,
+            "name": null,
+            "l2_norm": 1.1814745664596558
+          },
+          {
+            "index": 15,
+            "name": null,
+            "l2_norm": 1.0265378952026367
+          },
+          {
+            "index": 16,
+            "name": null,
+            "l2_norm": 1.0072252750396729
+          },
+          {
+            "index": 17,
+            "name": null,
+            "l2_norm": 1.1550281047821045
+          },
+          {
+            "index": 18,
+            "name": null,
+            "l2_norm": 0.05519057810306549
+          },
+          {
+            "index": 19,
+            "name": null,
+            "l2_norm": 1.038206696510315
+          },
+          {
+            "index": 20,
+            "name": null,
+            "l2_norm": 0.9656360149383545
+          },
+          {
+            "index": 21,
+            "name": null,
+            "l2_norm": 0.7908849716186523
+          },
+          {
+            "index": 22,
+            "name": null,
+            "l2_norm": 1.2244561910629272
+          },
+          {
+            "index": 23,
+            "name": null,
+            "l2_norm": 1.0122108459472656
+          },
+          {
+            "index": 24,
+            "name": null,
+            "l2_norm": 1.0267096757888794
+          },
+          {
+            "index": 25,
+            "name": null,
+            "l2_norm": 0.991506814956665
+          },
+          {
+            "index": 26,
+            "name": null,
+            "l2_norm": 0.8561301827430725
+          },
+          {
+            "index": 27,
+            "name": null,
+            "l2_norm": 0.9656614065170288
+          },
+          {
+            "index": 28,
+            "name": null,
+            "l2_norm": 1.186201810836792
+          },
+          {
+            "index": 29,
+            "name": null,
+            "l2_norm": 1.1285086870193481
+          },
+          {
+            "index": 30,
+            "name": null,
+            "l2_norm": 0.8288564682006836
+          },
+          {
+            "index": 31,
+            "name": null,
+            "l2_norm": 1.2047784328460693
+          },
+          {
+            "index": 32,
+            "name": null,
+            "l2_norm": 1.12818443775177
+          },
+          {
+            "index": 33,
+            "name": null,
+            "l2_norm": 0.9542503952980042
+          },
+          {
+            "index": 34,
+            "name": null,
+            "l2_norm": 1.034550666809082
+          },
+          {
+            "index": 35,
+            "name": null,
+            "l2_norm": 1.0402836799621582
+          },
+          {
+            "index": 36,
+            "name": null,
+            "l2_norm": 1.1311174631118774
+          },
+          {
+            "index": 37,
+            "name": null,
+            "l2_norm": 0.9810296297073364
+          },
+          {
+            "index": 38,
+            "name": null,
+            "l2_norm": 0.9418836236000061
+          },
+          {
+            "index": 39,
+            "name": null,
+            "l2_norm": 0.9606336951255798
+          },
+          {
+            "index": 40,
+            "name": null,
+            "l2_norm": 1.1061559915542603
+          },
+          {
+            "index": 41,
+            "name": null,
+            "l2_norm": 1.137290120124817
+          },
+          {
+            "index": 42,
+            "name": null,
+            "l2_norm": 1.0383843183517456
+          },
+          {
+            "index": 43,
+            "name": null,
+            "l2_norm": 1.1096004247665405
+          },
+          {
+            "index": 44,
+            "name": null,
+            "l2_norm": 0.8395629525184631
+          },
+          {
+            "index": 45,
+            "name": null,
+            "l2_norm": 0.9596447348594666
+          },
+          {
+            "index": 46,
+            "name": null,
+            "l2_norm": 0.8439857363700867
+          },
+          {
+            "index": 47,
+            "name": null,
+            "l2_norm": 1.05743408203125
+          }
+        ],
+        "n_pairs": 1128,
+        "n_exact_duplicate_pairs": 0,
+        "exact_duplicate_pairs": [],
+        "median_cosine": 0.08193588256835938,
+        "max_cosine": 0.8229195475578308,
+        "strongest_pairs": [
+          {
+            "left_index": 19,
+            "right_index": 40,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.6413595080375671,
+            "cosine": 0.8229195475578308,
+            "left_norm": 1.038206696510315,
+            "right_norm": 1.1061559915542603,
+            "max_abs_difference": 0.25200000405311584
+          },
+          {
+            "left_index": 3,
+            "right_index": 12,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.748369574546814,
+            "cosine": 0.8119893670082092,
+            "left_norm": 1.2088552713394165,
+            "right_norm": 1.231019139289856,
+            "max_abs_difference": 0.43299999833106995
+          },
+          {
+            "left_index": 3,
+            "right_index": 43,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.7643219232559204,
+            "cosine": 0.785910427570343,
+            "left_norm": 1.2088552713394165,
+            "right_norm": 1.1096004247665405,
+            "max_abs_difference": 0.3330000042915344
+          },
+          {
+            "left_index": 3,
+            "right_index": 6,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.7765004634857178,
+            "cosine": 0.7803370952606201,
+            "left_norm": 1.2088552713394165,
+            "right_norm": 1.120697021484375,
+            "max_abs_difference": 0.33899998664855957
+          },
+          {
+            "left_index": 12,
+            "right_index": 36,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.7894625067710876,
+            "cosine": 0.7797837257385254,
+            "left_norm": 1.231019139289856,
+            "right_norm": 1.1311174631118774,
+            "max_abs_difference": 0.41499999165534973
+          },
+          {
+            "left_index": 6,
+            "right_index": 43,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.7415463328361511,
+            "cosine": 0.7789480090141296,
+            "left_norm": 1.120697021484375,
+            "right_norm": 1.1096004247665405,
+            "max_abs_difference": 0.28600001335144043
+          },
+          {
+            "left_index": 6,
+            "right_index": 12,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.8059131503105164,
+            "cosine": 0.7690181136131287,
+            "left_norm": 1.120697021484375,
+            "right_norm": 1.231019139289856,
+            "max_abs_difference": 0.3009999990463257
+          },
+          {
+            "left_index": 6,
+            "right_index": 31,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.7964063286781311,
+            "cosine": 0.7677391767501831,
+            "left_norm": 1.120697021484375,
+            "right_norm": 1.2047784328460693,
+            "max_abs_difference": 0.29100000858306885
+          }
+        ]
+      },
+      {
+        "tensor": "out.weight",
+        "shape": [
+          9,
+          48
+        ],
+        "column_norms": [
+          {
+            "index": 0,
+            "name": null,
+            "l2_norm": 0.650316059589386
+          },
+          {
+            "index": 1,
+            "name": null,
+            "l2_norm": 0.5749765038490295
+          },
+          {
+            "index": 2,
+            "name": null,
+            "l2_norm": 0.5331472754478455
+          },
+          {
+            "index": 3,
+            "name": null,
+            "l2_norm": 0.588577926158905
+          },
+          {
+            "index": 4,
+            "name": null,
+            "l2_norm": 0.6094726920127869
+          },
+          {
+            "index": 5,
+            "name": null,
+            "l2_norm": 0.5770026445388794
+          },
+          {
+            "index": 6,
+            "name": null,
+            "l2_norm": 0.6826763153076172
+          },
+          {
+            "index": 7,
+            "name": null,
+            "l2_norm": 0.018761662766337395
+          },
+          {
+            "index": 8,
+            "name": null,
+            "l2_norm": 0.6423316597938538
+          },
+          {
+            "index": 9,
+            "name": null,
+            "l2_norm": 0.5051593780517578
+          },
+          {
+            "index": 10,
+            "name": null,
+            "l2_norm": 0.4444648325443268
+          },
+          {
+            "index": 11,
+            "name": null,
+            "l2_norm": 0.6140170693397522
+          },
+          {
+            "index": 12,
+            "name": null,
+            "l2_norm": 0.004242640919983387
+          },
+          {
+            "index": 13,
+            "name": null,
+            "l2_norm": 0.3845309019088745
+          },
+          {
+            "index": 14,
+            "name": null,
+            "l2_norm": 0.5944198966026306
+          },
+          {
+            "index": 15,
+            "name": null,
+            "l2_norm": 0.2509760856628418
+          },
+          {
+            "index": 16,
+            "name": null,
+            "l2_norm": 0.0360138863325119
+          },
+          {
+            "index": 17,
+            "name": null,
+            "l2_norm": 0.5967017412185669
+          },
+          {
+            "index": 18,
+            "name": null,
+            "l2_norm": 0.5271480083465576
+          },
+          {
+            "index": 19,
+            "name": null,
+            "l2_norm": 0.343838632106781
+          },
+          {
+            "index": 20,
+            "name": null,
+            "l2_norm": 0.6700806021690369
+          },
+          {
+            "index": 21,
+            "name": null,
+            "l2_norm": 0.029816104099154472
+          },
+          {
+            "index": 22,
+            "name": null,
+            "l2_norm": 0.4567822217941284
+          },
+          {
+            "index": 23,
+            "name": null,
+            "l2_norm": 0.4684698283672333
+          },
+          {
+            "index": 24,
+            "name": null,
+            "l2_norm": 0.5851342082023621
+          },
+          {
+            "index": 25,
+            "name": null,
+            "l2_norm": 0.24451583623886108
+          },
+          {
+            "index": 26,
+            "name": null,
+            "l2_norm": 0.6237844228744507
+          },
+          {
+            "index": 27,
+            "name": null,
+            "l2_norm": 0.5809862017631531
+          },
+          {
+            "index": 28,
+            "name": null,
+            "l2_norm": 0.6459342241287231
+          },
+          {
+            "index": 29,
+            "name": null,
+            "l2_norm": 0.5333226323127747
+          },
+          {
+            "index": 30,
+            "name": null,
+            "l2_norm": 0.6098573803901672
+          },
+          {
+            "index": 31,
+            "name": null,
+            "l2_norm": 0.5050989985466003
+          },
+          {
+            "index": 32,
+            "name": null,
+            "l2_norm": 0.5764893293380737
+          },
+          {
+            "index": 33,
+            "name": null,
+            "l2_norm": 0.6096277236938477
+          },
+          {
+            "index": 34,
+            "name": null,
+            "l2_norm": 0.5742316246032715
+          },
+          {
+            "index": 35,
+            "name": null,
+            "l2_norm": 0.5895777940750122
+          },
+          {
+            "index": 36,
+            "name": null,
+            "l2_norm": 0.13631947338581085
+          },
+          {
+            "index": 37,
+            "name": null,
+            "l2_norm": 0.5337602496147156
+          },
+          {
+            "index": 38,
+            "name": null,
+            "l2_norm": 0.09323626011610031
+          },
+          {
+            "index": 39,
+            "name": null,
+            "l2_norm": 0.4741929769515991
+          },
+          {
+            "index": 40,
+            "name": null,
+            "l2_norm": 0.6617590188980103
+          },
+          {
+            "index": 41,
+            "name": null,
+            "l2_norm": 0.5200827121734619
+          },
+          {
+            "index": 42,
+            "name": null,
+            "l2_norm": 0.4924408495426178
+          },
+          {
+            "index": 43,
+            "name": null,
+            "l2_norm": 0.42243459820747375
+          },
+          {
+            "index": 44,
+            "name": null,
+            "l2_norm": 0.522176206111908
+          },
+          {
+            "index": 45,
+            "name": null,
+            "l2_norm": 0.6633732318878174
+          },
+          {
+            "index": 46,
+            "name": null,
+            "l2_norm": 0.6053577065467834
+          },
+          {
+            "index": 47,
+            "name": null,
+            "l2_norm": 0.43049156665802
+          }
+        ],
+        "n_pairs": 1128,
+        "n_exact_duplicate_pairs": 0,
+        "exact_duplicate_pairs": [],
+        "median_cosine": 0.02877071313560009,
+        "max_cosine": 0.9975031614303589,
+        "strongest_pairs": [
+          {
+            "left_index": 30,
+            "right_index": 34,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.05493632331490517,
+            "cosine": 0.9975031614303589,
+            "left_norm": 0.6098573803901672,
+            "right_norm": 0.5742316246032715,
+            "max_abs_difference": 0.028999999165534973
+          },
+          {
+            "left_index": 20,
+            "right_index": 46,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.2356310784816742,
+            "cosine": 0.9367257952690125,
+            "left_norm": 0.6700806021690369,
+            "right_norm": 0.6053577065467834,
+            "max_abs_difference": 0.13300000131130219
+          },
+          {
+            "left_index": 20,
+            "right_index": 33,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.2617212235927582,
+            "cosine": 0.9206321835517883,
+            "left_norm": 0.6700806021690369,
+            "right_norm": 0.6096277236938477,
+            "max_abs_difference": 0.14499999582767487
+          },
+          {
+            "left_index": 33,
+            "right_index": 46,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.2486322522163391,
+            "cosine": 0.9162702560424805,
+            "left_norm": 0.6096277236938477,
+            "right_norm": 0.6053577065467834,
+            "max_abs_difference": 0.1420000046491623
+          },
+          {
+            "left_index": 6,
+            "right_index": 26,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.27760404348373413,
+            "cosine": 0.9135881066322327,
+            "left_norm": 0.6826763153076172,
+            "right_norm": 0.6237844228744507,
+            "max_abs_difference": 0.14800000190734863
+          },
+          {
+            "left_index": 9,
+            "right_index": 47,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.2298717051744461,
+            "cosine": 0.8913266062736511,
+            "left_norm": 0.5051593780517578,
+            "right_norm": 0.43049156665802,
+            "max_abs_difference": 0.14800000190734863
+          },
+          {
+            "left_index": 29,
+            "right_index": 46,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.28968778252601624,
+            "cosine": 0.8780707120895386,
+            "left_norm": 0.5333226323127747,
+            "right_norm": 0.6053577065467834,
+            "max_abs_difference": 0.27000001072883606
+          },
+          {
+            "left_index": 28,
+            "right_index": 29,
+            "left_name": null,
+            "right_name": null,
+            "exact_duplicate": false,
+            "l2_distance": 0.33154183626174927,
+            "cosine": 0.8588663339614868,
+            "left_norm": 0.6459342241287231,
+            "right_norm": 0.5333226323127747,
+            "max_abs_difference": 0.2369999885559082
+          }
+        ]
+      }
+    ],
+    "gender_columns_exact_duplicate": true,
+    "gender_pair": {
+      "left_index": 0,
+      "right_index": 1,
+      "left_name": "gender_uter",
+      "right_name": "gender_neuter",
+      "exact_duplicate": true,
+      "l2_distance": 0.0,
+      "cosine": 1.000000238418579,
+      "left_norm": 1.2022589445114136,
+      "right_norm": 1.2022589445114136,
+      "max_abs_difference": 0.0
+    },
+    "other_exact_duplicate_pairs": [],
+    "intervention_proposed": false
+  }
+}

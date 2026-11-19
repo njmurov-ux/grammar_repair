@@ -1,0 +1,496 @@
+{
+  "status": "finished",
+  "calls": 2,
+  "spent_usd": 0.7868728,
+  "remaining_usd": 4.2131272,
+  "outcomes": [
+    {
+      "valid": false,
+      "errors": [
+        "no proposal"
+      ],
+      "diagnosis": null,
+      "hypothesis": null,
+      "explanation": null,
+      "edits": null,
+      "diagnosis_flags": {
+        "mentions_gender": false,
+        "mentions_sameness": false,
+        "mentions_first_layer": false,
+        "heuristic_identifies_duplicate_columns": false
+      },
+      "n_changed": 0,
+      "l2": 0.0,
+      "max_abs": 0.0,
+      "per_tensor": {},
+      "test_before": {
+        "split": "test",
+        "n": 136,
+        "example_acc": 0.8897058823529411,
+        "macro_condition_acc": 0.8958333333333334,
+        "target_acc": 0.0,
+        "target_n": 15,
+        "nontarget_acc": 1.0,
+        "nontarget_macro_acc": 1.0,
+        "nontarget_n": 121,
+        "n_conditions": 48,
+        "by_class": {
+          "ends_en": 0.875,
+          "ends_ig": 0.875,
+          "geminating": 0.875,
+          "invariant": 1.0,
+          "regular": 0.875,
+          "syncopating": 0.875
+        },
+        "target_predictions": {
+          "BASE": 15
+        },
+        "target_cell_acc": 0.0
+      },
+      "test": {
+        "split": "test",
+        "n": 136,
+        "example_acc": 0.8897058823529411,
+        "macro_condition_acc": 0.8958333333333334,
+        "target_acc": 0.0,
+        "target_n": 15,
+        "nontarget_acc": 1.0,
+        "nontarget_macro_acc": 1.0,
+        "nontarget_n": 121,
+        "n_conditions": 48,
+        "by_class": {
+          "ends_en": 0.875,
+          "ends_ig": 0.875,
+          "geminating": 0.875,
+          "invariant": 1.0,
+          "regular": 0.875,
+          "syncopating": 0.875
+        },
+        "target_predictions": {
+          "BASE": 15
+        },
+        "target_cell_acc": 0.0
+      },
+      "diagnostic_before": {
+        "split": "diagnostic",
+        "n": 144,
+        "example_acc": 0.8888888888888888,
+        "macro_condition_acc": 0.8928571428571429,
+        "target_acc": 0.0,
+        "target_n": 16,
+        "nontarget_acc": 1.0,
+        "nontarget_macro_acc": 1.0,
+        "nontarget_n": 128,
+        "n_conditions": 56,
+        "by_class": {
+          "ends_en": 0.875,
+          "ends_ig": 0.875,
+          "geminating": 0.875,
+          "invariant": 1.0,
+          "liten": 0.875,
+          "regular": 0.875,
+          "syncopating": 0.875
+        },
+        "target_predictions": {
+          "BASE": 16
+        },
+        "target_cell_acc": 0.0
+      },
+      "diagnostic": {
+        "split": "diagnostic",
+        "n": 144,
+        "example_acc": 0.8888888888888888,
+        "macro_condition_acc": 0.8928571428571429,
+        "target_acc": 0.0,
+        "target_n": 16,
+        "nontarget_acc": 1.0,
+        "nontarget_macro_acc": 1.0,
+        "nontarget_n": 128,
+        "n_conditions": 56,
+        "by_class": {
+          "ends_en": 0.875,
+          "ends_ig": 0.875,
+          "geminating": 0.875,
+          "invariant": 1.0,
+          "liten": 0.875,
+          "regular": 0.875,
+          "syncopating": 0.875
+        },
+        "target_predictions": {
+          "BASE": 16
+        },
+        "target_cell_acc": 0.0
+      },
+      "examples": {
+        "repaired": [],
+        "damaged": [],
+        "n_repaired": 0,
+        "n_damaged": 0
+      },
+      "category": "no_useful_repair",
+      "model": "gpt-6.2-sol",
+      "experiment": "one_shot",
+      "status": "incomplete",
+      "response_id": "resp_094d235e495f8de1016afe1f1e3aa087d2b15d7b5e3c6fb488",
+      "model_revision": "gpt-6.2-sol",
+      "usage": {
+        "input_tokens": 23671,
+        "output_tokens": 6000,
+        "cached_tokens": 0,
+        "reasoning_tokens": 6000
+      },
+      "estimated_cost_usd": 0.116004,
+      "actual_cost_usd": 0.10734199999999999,
+      "prompt_sha256": "4299a9a7a88cc0e94c8067b101e12f2629a5682b26b3fc8defa169491c674e1c",
+      "diagnosis_judgement": "no proposal; output cap spent on reasoning"
+    },
+    {
+      "valid": true,
+      "errors": [],
+      "diagnosis": {
+        "suspected_component": "fc1.weight[:,1] (gender_neuter) is identical to fc1.weight[:,0] (gender_uter).",
+        "suspected_failure_mechanism": "Switching only the gender bit leaves every first-layer preactivation unchanged. The downstream classifier therefore has to give a neuter singular indefinite phrase the same BASE prediction as its uter counterpart, even when the adjective class calls for a strong neuter.",
+        "supporting_evidence": "The two columns match in all 48 rows. The development errors span all three strong exponents, while the same stems receive the correct uter BASE and class-specific weak forms. The invariant examples, for which the gender collision is harmless, are also correct."
+      },
+      "hypothesis": "The first layer has lost the gender distinction, but the downstream logits may still distinguish which strong exponent fits each lexical class.",
+      "explanation": "The edit uses the nearly disconnected first-layer unit 18 as a gate: neuter turns it on, while plural, definite or invariant individually veto it. The small negative uter weight keeps residual stem inputs from turning it on in uter phrases. Second-layer unit 7 relays the gate; its negative bias keeps small residual inputs from being amplified when the gate is off. When on, it lowers BASE and raises the three strong logits equally, leaving their relative ranking to the existing lexical classifier rather than choosing an ending from a stem bit. This relies on the class-appropriate strong logit already leading the other strong logits, which the printed top-one predictions do not establish. The gate is off for both lilla and sm\u00e5, and no weak or liten output weight is changed.",
+      "edits": [
+        {
+          "tensor": "fc1.weight",
+          "operation": "set",
+          "indices": [
+            [
+              18,
+              0
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              18,
+              3
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              18,
+              9
+            ]
+          ],
+          "values": [
+            -0.22,
+            1.75,
+            -1.92,
+            -1.92,
+            -1.92
+          ],
+          "u_indices": [],
+          "u_values": [],
+          "v_indices": [],
+          "v_values": []
+        },
+        {
+          "tensor": "fc2.weight",
+          "operation": "set",
+          "indices": [
+            [
+              7,
+              18
+            ]
+          ],
+          "values": [
+            2.7
+          ],
+          "u_indices": [],
+          "u_values": [],
+          "v_indices": [],
+          "v_values": []
+        },
+        {
+          "tensor": "fc2.bias",
+          "operation": "set",
+          "indices": [
+            [
+              7
+            ]
+          ],
+          "values": [
+            -0.25
+          ],
+          "u_indices": [],
+          "u_values": [],
+          "v_indices": [],
+          "v_values": []
+        },
+        {
+          "tensor": "out.weight",
+          "operation": "set",
+          "indices": [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "values": [
+            -1.6,
+            1.9,
+            1.9,
+            1.9
+          ],
+          "u_indices": [],
+          "u_values": [],
+          "v_indices": [],
+          "v_values": []
+        }
+      ],
+      "diagnosis_flags": {
+        "mentions_gender": true,
+        "mentions_sameness": false,
+        "mentions_first_layer": true,
+        "heuristic_identifies_duplicate_columns": false
+      },
+      "n_changed": 11,
+      "l2": 5.910086785164781,
+      "max_abs": 2.7109999656677246,
+      "per_tensor": {
+        "fc1.weight": 5,
+        "fc1.bias": 0,
+        "fc2.weight": 1,
+        "fc2.bias": 1,
+        "out.weight": 4,
+        "out.bias": 0
+      },
+      "test_before": {
+        "split": "test",
+        "n": 136,
+        "example_acc": 0.8897058823529411,
+        "macro_condition_acc": 0.8958333333333334,
+        "target_acc": 0.0,
+        "target_n": 15,
+        "nontarget_acc": 1.0,
+        "nontarget_macro_acc": 1.0,
+        "nontarget_n": 121,
+        "n_conditions": 48,
+        "by_class": {
+          "ends_en": 0.875,
+          "ends_ig": 0.875,
+          "geminating": 0.875,
+          "invariant": 1.0,
+          "regular": 0.875,
+          "syncopating": 0.875
+        },
+        "target_predictions": {
+          "BASE": 15
+        },
+        "target_cell_acc": 0.0
+      },
+      "test": {
+        "split": "test",
+        "n": 136,
+        "example_acc": 0.9705882352941176,
+        "macro_condition_acc": 0.9791666666666666,
+        "target_acc": 0.7333333333333333,
+        "target_n": 15,
+        "nontarget_acc": 1.0,
+        "nontarget_macro_acc": 1.0,
+        "nontarget_n": 121,
+        "n_conditions": 48,
+        "by_class": {
+          "ends_en": 1.0,
+          "ends_ig": 1.0,
+          "geminating": 0.875,
+          "invariant": 1.0,
+          "regular": 1.0,
+          "syncopating": 1.0
+        },
+        "target_predictions": {
+          "NEUT_ET": 2,
+          "NEUT_T": 13
+        },
+        "target_cell_acc": 0.8
+      },
+      "diagnostic_before": {
+        "split": "diagnostic",
+        "n": 144,
+        "example_acc": 0.8888888888888888,
+        "macro_condition_acc": 0.8928571428571429,
+        "target_acc": 0.0,
+        "target_n": 16,
+        "nontarget_acc": 1.0,
+        "nontarget_macro_acc": 1.0,
+        "nontarget_n": 128,
+        "n_conditions": 56,
+        "by_class": {
+          "ends_en": 0.875,
+          "ends_ig": 0.875,
+          "geminating": 0.875,
+          "invariant": 1.0,
+          "liten": 0.875,
+          "regular": 0.875,
+          "syncopating": 0.875
+        },
+        "target_predictions": {
+          "BASE": 16
+        },
+        "target_cell_acc": 0.0
+      },
+      "diagnostic": {
+        "split": "diagnostic",
+        "n": 144,
+        "example_acc": 0.9722222222222222,
+        "macro_condition_acc": 0.9821428571428571,
+        "target_acc": 0.75,
+        "target_n": 16,
+        "nontarget_acc": 1.0,
+        "nontarget_macro_acc": 1.0,
+        "nontarget_n": 128,
+        "n_conditions": 56,
+        "by_class": {
+          "ends_en": 1.0,
+          "ends_ig": 1.0,
+          "geminating": 0.875,
+          "invariant": 1.0,
+          "liten": 1.0,
+          "regular": 1.0,
+          "syncopating": 1.0
+        },
+        "target_predictions": {
+          "NEUT_ET": 3,
+          "NEUT_T": 13
+        },
+        "target_cell_acc": 0.8333333333333334
+      },
+      "examples": {
+        "repaired": [
+          {
+            "phrase": "ett l\u00e5ngt hus",
+            "true_exponent": "NEUT_T",
+            "before": "BASE",
+            "after": "NEUT_T",
+            "target": true
+          },
+          {
+            "phrase": "ett mjukt hus",
+            "true_exponent": "NEUT_T",
+            "before": "BASE",
+            "after": "NEUT_T",
+            "target": true
+          }
+        ],
+        "damaged": [],
+        "n_repaired": 11,
+        "n_damaged": 0
+      },
+      "category": "selective_partial_repair",
+      "model": "gpt-6.2-astra",
+      "experiment": "one_shot",
+      "status": "completed",
+      "response_id": "resp_085490cd450b3ac6016afe1f79266887d2b0c9df5cf0885665",
+      "model_revision": "gpt-6.2-astra",
+      "usage": {
+        "input_tokens": 23671,
+        "output_tokens": 2010,
+        "cached_tokens": 0,
+        "reasoning_tokens": 1339
+      },
+      "estimated_cost_usd": 0.464016,
+      "actual_cost_usd": 0.269768,
+      "prompt_sha256": "4299a9a7a88cc0e94c8067b101e12f2629a5682b26b3fc8defa169491c674e1c",
+      "diagnosis_judgement": "duplicated fc1 gender columns"
+    }
+  ],
+  "comparison": [
+    {
+      "method": "Corrupted baseline",
+      "diagnosis": "\u2014",
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "n_changed": 0,
+      "api_cost_usd": 0.0,
+      "color_key": "corrupted"
+    },
+    {
+      "method": "Duplicate-column diagnostic",
+      "diagnosis": "exact fc1 gender-column copy",
+      "target_acc": null,
+      "nontarget_acc": null,
+      "n_changed": 0,
+      "api_cost_usd": 0.0,
+      "color_key": "diagnostic"
+    },
+    {
+      "method": "Random edits",
+      "diagnosis": "\u2014",
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "n_changed": 40,
+      "api_cost_usd": 0.0,
+      "color_key": "random"
+    },
+    {
+      "method": "Output-bias repair",
+      "diagnosis": "\u2014",
+      "target_acc": 0.2,
+      "nontarget_acc": 0.9752066115702479,
+      "n_changed": 9,
+      "api_cost_usd": 0.0,
+      "color_key": "output_bias"
+    },
+    {
+      "method": "Last-layer repair",
+      "diagnosis": "\u2014",
+      "target_acc": 0.5333333333333333,
+      "nontarget_acc": 0.9338842975206612,
+      "n_changed": 378,
+      "api_cost_usd": 0.0,
+      "color_key": "last_layer"
+    },
+    {
+      "method": "Gradient repair",
+      "diagnosis": "\u2014",
+      "target_acc": 1.0,
+      "nontarget_acc": 1.0,
+      "n_changed": 40,
+      "api_cost_usd": 0.0,
+      "color_key": "gradient"
+    },
+    {
+      "method": "gpt-6.2-sol",
+      "diagnosis": "no proposal; output cap spent on reasoning",
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "n_changed": 0,
+      "api_cost_usd": 0.10734199999999999,
+      "color_key": "sol",
+      "category": "no_useful_repair"
+    },
+    {
+      "method": "gpt-6.2-astra",
+      "diagnosis": "duplicated fc1 gender columns",
+      "target_acc": 0.7333333333333333,
+      "nontarget_acc": 1.0,
+      "n_changed": 11,
+      "api_cost_usd": 0.269768,
+      "color_key": "astra",
+      "category": "selective_partial_repair"
+    }
+  ],
+  "feedback_enabled": false,
+  "permutation_api_enabled": false,
+  "checkpoint_unchanged": true
+}

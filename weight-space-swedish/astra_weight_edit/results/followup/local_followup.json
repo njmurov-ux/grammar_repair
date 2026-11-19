@@ -1,0 +1,152 @@
+{
+  "gradient": {
+    "note": "The held-out test was already inspected in Phase 1. This is a constraint correction, not a new blind test.",
+    "unconstrained": {
+      "scores": {
+        "test_target": "15/15",
+        "test_nontarget": "121/121",
+        "test_target_acc": 1.0,
+        "test_nontarget_acc": 1.0,
+        "diagnostic_target": "14/16",
+        "diagnostic_nontarget": "128/128"
+      },
+      "constraints": {
+        "n_changed": 40,
+        "l2": 6.08117757991313,
+        "max_abs_delta": 2.1878662109375,
+        "max_abs_value": 2.2201473712921143,
+        "within_parameter_budget": true,
+        "within_l2": false,
+        "within_abs_delta": true,
+        "within_abs_value": true,
+        "satisfies_api_constraints": false
+      }
+    },
+    "scaled": {
+      "scale": 0.9866510098009192,
+      "scores": {
+        "test_target": "15/15",
+        "test_nontarget": "121/121",
+        "test_target_acc": 1.0,
+        "test_nontarget_acc": 1.0,
+        "diagnostic_target": "14/16",
+        "diagnostic_nontarget": "128/128"
+      },
+      "constraints": {
+        "n_changed": 40,
+        "l2": 5.99999988079071,
+        "max_abs_delta": 2.158660411834717,
+        "max_abs_value": 2.1931138038635254,
+        "within_parameter_budget": true,
+        "within_l2": true,
+        "within_abs_delta": true,
+        "within_abs_value": true,
+        "satisfies_api_constraints": true
+      },
+      "full_repair": true
+    },
+    "projected": null,
+    "reported_method": "scaled"
+  },
+  "permutation": {
+    "seed": 49,
+    "checkpoint_sha256": "df17d7b849521f8f5f8d9ab0d6501325aa7b63a0319fe2f054875c72ba45ffb9",
+    "saved_max_abs_logit_diff_all_768": 2.384185791015625e-06,
+    "regenerated_max_abs_logit_diff": 2.384185791015625e-06,
+    "saved_vs_regenerated_max_abs_weight": 0.0,
+    "predictions_match_corrupted": true,
+    "corrupted_scores": {
+      "test_target": "0/15",
+      "test_nontarget": "121/121",
+      "test_target_acc": 0.0,
+      "test_nontarget_acc": 1.0,
+      "diagnostic_target": "0/16",
+      "diagnostic_nontarget": "128/128"
+    },
+    "permuted_scores": {
+      "test_target": "0/15",
+      "test_nontarget": "121/121",
+      "test_target_acc": 0.0,
+      "test_nontarget_acc": 1.0,
+      "diagnostic_target": "0/16",
+      "diagnostic_nontarget": "128/128"
+    },
+    "input_features_unchanged": [
+      "gender_uter",
+      "gender_neuter",
+      "number_sg",
+      "number_pl",
+      "definiteness_indef",
+      "definiteness_def",
+      "syncopating",
+      "ends_en",
+      "geminating",
+      "invariant",
+      "irregular_liten",
+      "ends_ig",
+      "gem_vowel",
+      "gem_d",
+      "gem_t",
+      "ends_er",
+      "ends_el",
+      "stem_0",
+      "stem_1",
+      "stem_2",
+      "stem_3",
+      "stem_4",
+      "stem_5",
+      "stem_6",
+      "stem_7",
+      "stem_8",
+      "stem_9",
+      "stem_10",
+      "stem_11",
+      "stem_12",
+      "stem_13",
+      "stem_14",
+      "stem_15"
+    ],
+    "output_classes_unchanged": [
+      "BASE",
+      "NEUT_T",
+      "NEUT_TT",
+      "NEUT_ET",
+      "WEAK_A",
+      "WEAK_DROP_E",
+      "WEAK_NA",
+      "LILLA",
+      "SMA"
+    ],
+    "gender_columns_still_exact_duplicate": true,
+    "permutation_source": "checkpoint extra"
+  },
+  "astra_transfer": {
+    "validation_errors": [],
+    "function_gap_vs_permute_then_edit": 0.0,
+    "scores": {
+      "test_target": "11/15",
+      "test_nontarget": "121/121",
+      "test_target_acc": 0.7333333333333333,
+      "test_nontarget_acc": 1.0,
+      "diagnostic_target": "12/16",
+      "diagnostic_nontarget": "128/128"
+    },
+    "constraints": {
+      "n_changed": 11,
+      "l2": 5.9100868658467025,
+      "max_abs_delta": 2.7109999656677246,
+      "max_abs_value": 2.700000047683716,
+      "within_parameter_budget": true,
+      "within_l2": true,
+      "within_abs_delta": true,
+      "within_abs_value": true,
+      "satisfies_api_constraints": true
+    },
+    "n_edit_operations": 4
+  },
+  "checkpoint_hashes_unchanged": {
+    "corrupted": true,
+    "permuted": true,
+    "gradient": true
+  }
+}

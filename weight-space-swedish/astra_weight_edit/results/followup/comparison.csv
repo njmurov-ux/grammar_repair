@@ -1,0 +1,10 @@
+method,target_accuracy,nontarget_accuracy,parameters,l2_norm,api_cost_usd
+Corrupted model,0/15,121/121,0,0.0,0.0
+Original gradient repair,15/15,121/121,40,6.081178,0.0
+Scaled gradient repair,15/15,121/121,40,6.0,0.0
+Duplicate-column optimizer,15/15,121/121,40,4.05326,0.0
+Astra original,11/15,121/121,11,5.910087,0.269768
+Astra edit transferred,11/15,121/121,11,5.910087,0.0
+Astra permuted attempt,11/15,121/121,23,5.940273,0.32836
+Sol original attempt,no proposal,121/121,0,0.0,0.107342
+Sol extended attempt,15/15,121/121,28,5.97643,0.081403

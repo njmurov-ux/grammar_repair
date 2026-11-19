@@ -1,0 +1,785 @@
+{
+  "status": "phase1_complete_api_not_called",
+  "protocol_version": 2,
+  "amendments": [
+    {
+      "version": 2,
+      "reason": "Every selective protocol-1 lesion that preserved non-target behavior was undone by refitting the full last layer on the diagnostic set. The grammatical label was still linearly decodable from the second hidden layer, so those lesions were readout problems. Protocol 2 adds a gender-column copy in fc1: the input weight for gender_neuter is replaced by the weight for gender_uter. A neuter phrase then has the same hidden state as its uter counterpart. Plural and definite exponents already ignore gender, so those cells stay correct, while singular indefinite neuter forms are predicted as the uter base. A later linear layer cannot assign two labels to one hidden state. The target set is this strong-neuter cell across lexical classes, not the geminating subclass alone."
+    }
+  ],
+  "seed": 42,
+  "seconds": 16.987668700050563,
+  "dataset": {
+    "n_rows": 768,
+    "n_stems": 96,
+    "n_exponents": 9,
+    "n_features": 33,
+    "hand_checked": 90,
+    "stems_by_class_and_split": {
+      "dev_diag": {
+        "ends_en": 2,
+        "ends_ig": 3,
+        "geminating": 4,
+        "invariant": 2,
+        "liten": 0,
+        "regular": 4,
+        "syncopating": 2
+      },
+      "dev_gate": {
+        "ends_en": 2,
+        "ends_ig": 2,
+        "geminating": 4,
+        "invariant": 2,
+        "liten": 0,
+        "regular": 4,
+        "syncopating": 2
+      },
+      "inlexicon": {
+        "ends_en": 0,
+        "ends_ig": 0,
+        "geminating": 0,
+        "invariant": 0,
+        "liten": 1,
+        "regular": 0,
+        "syncopating": 0
+      },
+      "test": {
+        "ends_en": 2,
+        "ends_ig": 3,
+        "geminating": 4,
+        "invariant": 2,
+        "liten": 0,
+        "regular": 4,
+        "syncopating": 2
+      },
+      "train": {
+        "ends_en": 6,
+        "ends_ig": 7,
+        "geminating": 10,
+        "invariant": 4,
+        "liten": 0,
+        "regular": 12,
+        "syncopating": 6
+      }
+    },
+    "target_rows_by_split": {
+      "dev_diag": 15,
+      "dev_gate": 14,
+      "inlexicon": 1,
+      "test": 15,
+      "train": 41
+    },
+    "rows_by_split": {
+      "dev_diag": 136,
+      "dev_gate": 128,
+      "inlexicon": 8,
+      "test": 136,
+      "train": 360
+    }
+  },
+  "architecture": {
+    "type": "GrammarMLP",
+    "activation": "relu",
+    "n_hidden_layers": 2,
+    "in_dim": 33,
+    "hidden": 48,
+    "out_dim": 9,
+    "n_parameters": 4425,
+    "feature_names": [
+      "gender_uter",
+      "gender_neuter",
+      "number_sg",
+      "number_pl",
+      "definiteness_indef",
+      "definiteness_def",
+      "syncopating",
+      "ends_en",
+      "geminating",
+      "invariant",
+      "irregular_liten",
+      "ends_ig",
+      "gem_vowel",
+      "gem_d",
+      "gem_t",
+      "ends_er",
+      "ends_el",
+      "stem_0",
+      "stem_1",
+      "stem_2",
+      "stem_3",
+      "stem_4",
+      "stem_5",
+      "stem_6",
+      "stem_7",
+      "stem_8",
+      "stem_9",
+      "stem_10",
+      "stem_11",
+      "stem_12",
+      "stem_13",
+      "stem_14",
+      "stem_15"
+    ],
+    "exponents": [
+      "BASE",
+      "NEUT_T",
+      "NEUT_TT",
+      "NEUT_ET",
+      "WEAK_A",
+      "WEAK_DROP_E",
+      "WEAK_NA",
+      "LILLA",
+      "SMA"
+    ],
+    "tensors": {
+      "fc1.weight": [
+        48,
+        33
+      ],
+      "fc1.bias": [
+        48
+      ],
+      "fc2.weight": [
+        48,
+        48
+      ],
+      "fc2.bias": [
+        48
+      ],
+      "out.weight": [
+        9,
+        48
+      ],
+      "out.bias": [
+        9
+      ]
+    },
+    "seed": 42
+  },
+  "hidden_search": [
+    {
+      "hidden": 32,
+      "n_parameters": 2441,
+      "epochs_ran": 100,
+      "seconds": 0.329,
+      "dev_example_acc": 0.5530303120613098,
+      "liten_acc": 0.125,
+      "class_acc": {
+        "ends_en": 0.0,
+        "ends_ig": 0.8500000238418579,
+        "geminating": 0.75,
+        "invariant": 0.375,
+        "regular": 0.75,
+        "syncopating": 0.125
+      },
+      "accepted": false
+    },
+    {
+      "hidden": 40,
+      "n_parameters": 3369,
+      "epochs_ran": 91,
+      "seconds": 0.196,
+      "dev_example_acc": 0.21969696879386902,
+      "liten_acc": 0.25,
+      "class_acc": {
+        "ends_en": 0.25,
+        "ends_ig": 0.125,
+        "geminating": 0.125,
+        "invariant": 0.5,
+        "regular": 0.125,
+        "syncopating": 0.40625
+      },
+      "accepted": false
+    },
+    {
+      "hidden": 48,
+      "n_parameters": 4425,
+      "epochs_ran": 180,
+      "seconds": 0.4,
+      "dev_example_acc": 1.0,
+      "liten_acc": 1.0,
+      "class_acc": {
+        "ends_en": 1.0,
+        "ends_ig": 1.0,
+        "geminating": 1.0,
+        "invariant": 1.0,
+        "regular": 1.0,
+        "syncopating": 1.0
+      },
+      "accepted": true
+    }
+  ],
+  "training_seconds": 0.4003712999401614,
+  "epochs": 180,
+  "quantize_decimals": 3,
+  "quantize_trials": {
+    "trials": [
+      {
+        "decimals": 3,
+        "dev_example_acc": 1.0,
+        "liten_acc": 1.0,
+        "accepted": true
+      }
+    ]
+  },
+  "serialization_roundtrip_max_abs": 0.0,
+  "original_test": {
+    "split": "test",
+    "n": 136,
+    "example_acc": 1.0,
+    "macro_condition_acc": 1.0,
+    "target_acc": 1.0,
+    "target_n": 15,
+    "nontarget_acc": 1.0,
+    "nontarget_macro_acc": 1.0,
+    "nontarget_n": 121,
+    "n_conditions": 48,
+    "by_class": {
+      "ends_en": 1.0,
+      "ends_ig": 1.0,
+      "geminating": 1.0,
+      "invariant": 1.0,
+      "regular": 1.0,
+      "syncopating": 1.0
+    },
+    "target_predictions": {
+      "NEUT_ET": 2,
+      "NEUT_T": 9,
+      "NEUT_TT": 4
+    },
+    "target_cell_acc": 1.0
+  },
+  "corruption": {
+    "n_candidates": 85,
+    "n_filter_passed": 14,
+    "n_gated": 8,
+    "selected_index": 84,
+    "family": "gender_column_copy",
+    "detail": {
+      "source_feature": "gender_uter",
+      "destination_feature": "gender_neuter",
+      "column": 1
+    },
+    "band": "atomic",
+    "dev_gate": {
+      "split": "dev_gate",
+      "n": 128,
+      "example_acc": 0.890625,
+      "macro_condition_acc": 0.8958333333333334,
+      "target_acc": 0.0,
+      "target_n": 14,
+      "nontarget_acc": 1.0,
+      "nontarget_macro_acc": 1.0,
+      "nontarget_n": 114,
+      "n_conditions": 48,
+      "by_class": {
+        "ends_en": 0.875,
+        "ends_ig": 0.875,
+        "geminating": 0.875,
+        "invariant": 1.0,
+        "regular": 0.875,
+        "syncopating": 0.875
+      },
+      "target_predictions": {
+        "BASE": 14
+      },
+      "target_cell_acc": 0.0
+    },
+    "liten_acc": 0.875,
+    "n_changed": 48,
+    "l2": 1.4570929383828628
+  },
+  "gate": [
+    {
+      "candidate_index": 40,
+      "family": "column_scale",
+      "detail": {
+        "score": "target_vs_uter",
+        "m": 8,
+        "factor": 0.5,
+        "neurons": [
+          35,
+          44,
+          4,
+          41,
+          38,
+          47,
+          13,
+          39
+        ]
+      },
+      "band": "in_window",
+      "corrupted_target": 0.35714285714285715,
+      "corrupted_nontarget": 1.0,
+      "bias_target": 0.9285714285714286,
+      "bias_nontarget": 1.0,
+      "bias_solves": true,
+      "last_target": 1.0,
+      "last_nontarget": 1.0,
+      "last_solves": true,
+      "gradient_target": 1.0,
+      "gradient_nontarget": 1.0,
+      "gradient_gain": 0.6428571428571428,
+      "gradient_ok": true,
+      "passed": false
+    },
+    {
+      "candidate_index": 30,
+      "family": "column_scale",
+      "detail": {
+        "score": "target_vs_uter",
+        "m": 1,
+        "factor": 0.0,
+        "neurons": [
+          35
+        ]
+      },
+      "band": "in_window",
+      "corrupted_target": 0.5,
+      "corrupted_nontarget": 1.0,
+      "bias_target": 1.0,
+      "bias_nontarget": 1.0,
+      "bias_solves": true,
+      "last_target": 1.0,
+      "last_nontarget": 1.0,
+      "last_solves": true,
+      "gradient_target": 0.8571428571428571,
+      "gradient_nontarget": 1.0,
+      "gradient_gain": 0.3571428571428571,
+      "gradient_ok": false,
+      "passed": false
+    },
+    {
+      "candidate_index": 33,
+      "family": "column_scale",
+      "detail": {
+        "score": "target_vs_uter",
+        "m": 2,
+        "factor": 0.0,
+        "neurons": [
+          35,
+          44
+        ]
+      },
+      "band": "in_window",
+      "corrupted_target": 0.5,
+      "corrupted_nontarget": 1.0,
+      "bias_target": 1.0,
+      "bias_nontarget": 1.0,
+      "bias_solves": true,
+      "last_target": 1.0,
+      "last_nontarget": 1.0,
+      "last_solves": true,
+      "gradient_target": 1.0,
+      "gradient_nontarget": 1.0,
+      "gradient_gain": 0.5,
+      "gradient_ok": true,
+      "passed": false
+    },
+    {
+      "candidate_index": 79,
+      "family": "stem_threshold",
+      "detail": {
+        "scale": 3.0,
+        "seed": 3,
+        "neuron": 10
+      },
+      "band": "in_window",
+      "corrupted_target": 0.42857142857142855,
+      "corrupted_nontarget": 0.956140350877193,
+      "bias_target": 0.8571428571428571,
+      "bias_nontarget": 0.9912280701754386,
+      "bias_solves": false,
+      "last_target": 1.0,
+      "last_nontarget": 1.0,
+      "last_solves": true,
+      "gradient_target": 1.0,
+      "gradient_nontarget": 1.0,
+      "gradient_gain": 0.5714285714285714,
+      "gradient_ok": true,
+      "passed": false
+    },
+    {
+      "candidate_index": 42,
+      "family": "column_noise",
+      "detail": {
+        "score": "target_vs_uter",
+        "m": 2,
+        "std": 0.5,
+        "seed": 0,
+        "neurons": [
+          35,
+          44
+        ]
+      },
+      "band": "in_window",
+      "corrupted_target": 0.2857142857142857,
+      "corrupted_nontarget": 0.9824561403508771,
+      "bias_target": 0.7857142857142857,
+      "bias_nontarget": 1.0,
+      "bias_solves": false,
+      "last_target": 1.0,
+      "last_nontarget": 1.0,
+      "last_solves": true,
+      "gradient_target": 0.8571428571428571,
+      "gradient_nontarget": 1.0,
+      "gradient_gain": 0.5714285714285714,
+      "gradient_ok": true,
+      "passed": false
+    },
+    {
+      "candidate_index": 37,
+      "family": "column_scale",
+      "detail": {
+        "score": "target_vs_uter",
+        "m": 4,
+        "factor": 0.5,
+        "neurons": [
+          35,
+          44,
+          4,
+          41
+        ]
+      },
+      "band": "in_window",
+      "corrupted_target": 0.5714285714285714,
+      "corrupted_nontarget": 1.0,
+      "bias_target": 1.0,
+      "bias_nontarget": 1.0,
+      "bias_solves": true,
+      "last_target": 1.0,
+      "last_nontarget": 1.0,
+      "last_solves": true,
+      "gradient_target": 1.0,
+      "gradient_nontarget": 1.0,
+      "gradient_gain": 0.4285714285714286,
+      "gradient_ok": false,
+      "passed": false
+    },
+    {
+      "candidate_index": 51,
+      "family": "column_noise",
+      "detail": {
+        "score": "target_vs_uter",
+        "m": 4,
+        "std": 0.5,
+        "seed": 0,
+        "neurons": [
+          35,
+          44,
+          4,
+          41
+        ]
+      },
+      "band": "in_window",
+      "corrupted_target": 0.5714285714285714,
+      "corrupted_nontarget": 0.9824561403508771,
+      "bias_target": 0.7142857142857143,
+      "bias_nontarget": 0.9824561403508771,
+      "bias_solves": false,
+      "last_target": 1.0,
+      "last_nontarget": 1.0,
+      "last_solves": true,
+      "gradient_target": 0.9285714285714286,
+      "gradient_nontarget": 1.0,
+      "gradient_gain": 0.3571428571428572,
+      "gradient_ok": false,
+      "passed": false
+    },
+    {
+      "candidate_index": 84,
+      "family": "gender_column_copy",
+      "detail": {
+        "source_feature": "gender_uter",
+        "destination_feature": "gender_neuter",
+        "column": 1
+      },
+      "band": "atomic",
+      "corrupted_target": 0.0,
+      "corrupted_nontarget": 1.0,
+      "bias_target": 0.07142857142857142,
+      "bias_nontarget": 0.9736842105263158,
+      "bias_solves": false,
+      "last_target": 0.42857142857142855,
+      "last_nontarget": 0.9473684210526315,
+      "last_solves": false,
+      "gradient_target": 0.9285714285714286,
+      "gradient_nontarget": 1.0,
+      "gradient_gain": 0.9285714285714286,
+      "gradient_ok": true,
+      "passed": true
+    }
+  ],
+  "test_methods": [
+    {
+      "method": "original",
+      "target_acc": 1.0,
+      "nontarget_acc": 1.0,
+      "nontarget_macro_acc": 1.0,
+      "example_acc": 1.0,
+      "macro_condition_acc": 1.0,
+      "n_changed": 0,
+      "l2": 0.0,
+      "api_cost_usd": 0.0,
+      "target_predictions": {
+        "NEUT_ET": 2,
+        "NEUT_T": 9,
+        "NEUT_TT": 4
+      },
+      "by_class": {
+        "ends_en": 1.0,
+        "ends_ig": 1.0,
+        "geminating": 1.0,
+        "invariant": 1.0,
+        "regular": 1.0,
+        "syncopating": 1.0
+      }
+    },
+    {
+      "method": "corrupted",
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "nontarget_macro_acc": 1.0,
+      "example_acc": 0.8897058823529411,
+      "macro_condition_acc": 0.8958333333333334,
+      "n_changed": 0,
+      "l2": 0.0,
+      "api_cost_usd": 0.0,
+      "target_predictions": {
+        "BASE": 15
+      },
+      "by_class": {
+        "ends_en": 0.875,
+        "ends_ig": 0.875,
+        "geminating": 0.875,
+        "invariant": 1.0,
+        "regular": 0.875,
+        "syncopating": 0.875
+      }
+    },
+    {
+      "method": "output_bias",
+      "target_acc": 0.2,
+      "nontarget_acc": 0.9752066115702479,
+      "nontarget_macro_acc": 0.9825581395348837,
+      "example_acc": 0.8897058823529411,
+      "macro_condition_acc": 0.8958333333333334,
+      "n_changed": 9,
+      "l2": 2.074088284687275,
+      "api_cost_usd": 0.0,
+      "target_predictions": {
+        "BASE": 12,
+        "NEUT_TT": 3
+      },
+      "by_class": {
+        "ends_en": 0.875,
+        "ends_ig": 0.875,
+        "geminating": 0.875,
+        "invariant": 1.0,
+        "regular": 0.875,
+        "syncopating": 0.875
+      }
+    },
+    {
+      "method": "last_layer",
+      "target_acc": 0.5333333333333333,
+      "nontarget_acc": 0.9338842975206612,
+      "nontarget_macro_acc": 0.9496124031007751,
+      "example_acc": 0.8897058823529411,
+      "macro_condition_acc": 0.8958333333333334,
+      "n_changed": 378,
+      "l2": 12.502923965601768,
+      "api_cost_usd": 0.0,
+      "target_predictions": {
+        "BASE": 7,
+        "NEUT_T": 4,
+        "NEUT_TT": 4
+      },
+      "by_class": {
+        "ends_en": 0.875,
+        "ends_ig": 0.875,
+        "geminating": 0.875,
+        "invariant": 1.0,
+        "regular": 0.875,
+        "syncopating": 0.875
+      }
+    },
+    {
+      "method": "gradient",
+      "target_acc": 1.0,
+      "nontarget_acc": 1.0,
+      "nontarget_macro_acc": 1.0,
+      "example_acc": 1.0,
+      "macro_condition_acc": 1.0,
+      "n_changed": 40,
+      "l2": 6.08117757991313,
+      "api_cost_usd": 0.0,
+      "target_predictions": {
+        "NEUT_ET": 2,
+        "NEUT_T": 9,
+        "NEUT_TT": 4
+      },
+      "by_class": {
+        "ends_en": 1.0,
+        "ends_ig": 1.0,
+        "geminating": 1.0,
+        "invariant": 1.0,
+        "regular": 1.0,
+        "syncopating": 1.0
+      }
+    },
+    {
+      "method": "random_mean",
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "nontarget_macro_acc": null,
+      "example_acc": 0.8897058823529411,
+      "macro_condition_acc": null,
+      "n_changed": 40.0,
+      "l2": 1.5898498097027376,
+      "api_cost_usd": 0.0,
+      "target_predictions": {},
+      "by_class": {}
+    }
+  ],
+  "random_edits": [
+    {
+      "seed": 1042,
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "example_acc": 0.8897058823529411,
+      "n_changed": 40,
+      "l2": 1.7831481056040088
+    },
+    {
+      "seed": 1043,
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "example_acc": 0.8897058823529411,
+      "n_changed": 40,
+      "l2": 1.4656681436724
+    },
+    {
+      "seed": 1044,
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "example_acc": 0.8897058823529411,
+      "n_changed": 40,
+      "l2": 1.7295657141730094
+    },
+    {
+      "seed": 1045,
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "example_acc": 0.8897058823529411,
+      "n_changed": 40,
+      "l2": 1.2423481387508357
+    },
+    {
+      "seed": 1046,
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "example_acc": 0.8897058823529411,
+      "n_changed": 40,
+      "l2": 1.5858290686911676
+    },
+    {
+      "seed": 1047,
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "example_acc": 0.8897058823529411,
+      "n_changed": 40,
+      "l2": 1.5673950575115534
+    },
+    {
+      "seed": 1048,
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "example_acc": 0.8897058823529411,
+      "n_changed": 40,
+      "l2": 1.7661325181035215
+    },
+    {
+      "seed": 1049,
+      "target_acc": 0.0,
+      "nontarget_acc": 1.0,
+      "example_acc": 0.8897058823529411,
+      "n_changed": 40,
+      "l2": 1.578711731115404
+    }
+  ],
+  "permutation_max_abs_logit_diff": 2.384185791015625e-06,
+  "diagnostic_rows": 144,
+  "one_shot_input_tokens": 23236,
+  "feedback_input_tokens_with_buffer": 25505,
+  "planned_calls": [
+    {
+      "call": "sol_one_shot",
+      "model": "gpt-6.2-sol",
+      "raw_input_tokens": 23236,
+      "reserved_input_tokens": 27884,
+      "max_output_tokens": 6000,
+      "worst_case_usd": 0.115768
+    },
+    {
+      "call": "astra_one_shot",
+      "model": "gpt-6.2-astra",
+      "raw_input_tokens": 23236,
+      "reserved_input_tokens": 27884,
+      "max_output_tokens": 6000,
+      "worst_case_usd": 0.463072
+    },
+    {
+      "call": "sol_feedback",
+      "model": "gpt-6.2-sol",
+      "raw_input_tokens": 25505,
+      "reserved_input_tokens": 30606,
+      "max_output_tokens": 6000,
+      "worst_case_usd": 0.121212
+    },
+    {
+      "call": "astra_feedback",
+      "model": "gpt-6.2-astra",
+      "raw_input_tokens": 25505,
+      "reserved_input_tokens": 30606,
+      "max_output_tokens": 6000,
+      "worst_case_usd": 0.484848
+    },
+    {
+      "call": "sol_permuted",
+      "model": "gpt-6.2-sol",
+      "raw_input_tokens": 23236,
+      "reserved_input_tokens": 27884,
+      "max_output_tokens": 6000,
+      "worst_case_usd": 0.115768
+    },
+    {
+      "call": "astra_permuted",
+      "model": "gpt-6.2-astra",
+      "raw_input_tokens": 23236,
+      "reserved_input_tokens": 27884,
+      "max_output_tokens": 6000,
+      "worst_case_usd": 0.463072
+    }
+  ],
+  "worst_case_primary_pair_usd": 0.57884,
+  "worst_case_all_six_usd": 1.7637399999999999,
+  "budget_usd": 5.0,
+  "budget_sufficient_for_six": true,
+  "budget_self_test": [
+    "over-budget call rejected",
+    "uncertain call halts later calls",
+    "corrupt cumulative total is rejected",
+    "api_enabled false blocks the client",
+    "env loader reads a local key without printing it",
+    "edit validator accepts a sparse add and rejects an unknown tensor",
+    "weight serialization roundtrips"
+  ],
+  "api_enabled": false,
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.15.0+cpu",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "n_parameters": 4425
+  }
+}

@@ -1,0 +1,221 @@
+[
+  {
+    "candidate_index": 40,
+    "family": "column_scale",
+    "detail": {
+      "score": "target_vs_uter",
+      "m": 8,
+      "factor": 0.5,
+      "neurons": [
+        35,
+        44,
+        4,
+        41,
+        38,
+        47,
+        13,
+        39
+      ]
+    },
+    "band": "in_window",
+    "corrupted_target": 0.35714285714285715,
+    "corrupted_nontarget": 1.0,
+    "bias_target": 0.9285714285714286,
+    "bias_nontarget": 1.0,
+    "bias_solves": true,
+    "last_target": 1.0,
+    "last_nontarget": 1.0,
+    "last_solves": true,
+    "gradient_target": 1.0,
+    "gradient_nontarget": 1.0,
+    "gradient_gain": 0.6428571428571428,
+    "gradient_ok": true,
+    "passed": false
+  },
+  {
+    "candidate_index": 30,
+    "family": "column_scale",
+    "detail": {
+      "score": "target_vs_uter",
+      "m": 1,
+      "factor": 0.0,
+      "neurons": [
+        35
+      ]
+    },
+    "band": "in_window",
+    "corrupted_target": 0.5,
+    "corrupted_nontarget": 1.0,
+    "bias_target": 1.0,
+    "bias_nontarget": 1.0,
+    "bias_solves": true,
+    "last_target": 1.0,
+    "last_nontarget": 1.0,
+    "last_solves": true,
+    "gradient_target": 0.8571428571428571,
+    "gradient_nontarget": 1.0,
+    "gradient_gain": 0.3571428571428571,
+    "gradient_ok": false,
+    "passed": false
+  },
+  {
+    "candidate_index": 33,
+    "family": "column_scale",
+    "detail": {
+      "score": "target_vs_uter",
+      "m": 2,
+      "factor": 0.0,
+      "neurons": [
+        35,
+        44
+      ]
+    },
+    "band": "in_window",
+    "corrupted_target": 0.5,
+    "corrupted_nontarget": 1.0,
+    "bias_target": 1.0,
+    "bias_nontarget": 1.0,
+    "bias_solves": true,
+    "last_target": 1.0,
+    "last_nontarget": 1.0,
+    "last_solves": true,
+    "gradient_target": 1.0,
+    "gradient_nontarget": 1.0,
+    "gradient_gain": 0.5,
+    "gradient_ok": true,
+    "passed": false
+  },
+  {
+    "candidate_index": 79,
+    "family": "stem_threshold",
+    "detail": {
+      "scale": 3.0,
+      "seed": 3,
+      "neuron": 10
+    },
+    "band": "in_window",
+    "corrupted_target": 0.42857142857142855,
+    "corrupted_nontarget": 0.956140350877193,
+    "bias_target": 0.8571428571428571,
+    "bias_nontarget": 0.9912280701754386,
+    "bias_solves": false,
+    "last_target": 1.0,
+    "last_nontarget": 1.0,
+    "last_solves": true,
+    "gradient_target": 1.0,
+    "gradient_nontarget": 1.0,
+    "gradient_gain": 0.5714285714285714,
+    "gradient_ok": true,
+    "passed": false
+  },
+  {
+    "candidate_index": 42,
+    "family": "column_noise",
+    "detail": {
+      "score": "target_vs_uter",
+      "m": 2,
+      "std": 0.5,
+      "seed": 0,
+      "neurons": [
+        35,
+        44
+      ]
+    },
+    "band": "in_window",
+    "corrupted_target": 0.2857142857142857,
+    "corrupted_nontarget": 0.9824561403508771,
+    "bias_target": 0.7857142857142857,
+    "bias_nontarget": 1.0,
+    "bias_solves": false,
+    "last_target": 1.0,
+    "last_nontarget": 1.0,
+    "last_solves": true,
+    "gradient_target": 0.8571428571428571,
+    "gradient_nontarget": 1.0,
+    "gradient_gain": 0.5714285714285714,
+    "gradient_ok": true,
+    "passed": false
+  },
+  {
+    "candidate_index": 37,
+    "family": "column_scale",
+    "detail": {
+      "score": "target_vs_uter",
+      "m": 4,
+      "factor": 0.5,
+      "neurons": [
+        35,
+        44,
+        4,
+        41
+      ]
+    },
+    "band": "in_window",
+    "corrupted_target": 0.5714285714285714,
+    "corrupted_nontarget": 1.0,
+    "bias_target": 1.0,
+    "bias_nontarget": 1.0,
+    "bias_solves": true,
+    "last_target": 1.0,
+    "last_nontarget": 1.0,
+    "last_solves": true,
+    "gradient_target": 1.0,
+    "gradient_nontarget": 1.0,
+    "gradient_gain": 0.4285714285714286,
+    "gradient_ok": false,
+    "passed": false
+  },
+  {
+    "candidate_index": 51,
+    "family": "column_noise",
+    "detail": {
+      "score": "target_vs_uter",
+      "m": 4,
+      "std": 0.5,
+      "seed": 0,
+      "neurons": [
+        35,
+        44,
+        4,
+        41
+      ]
+    },
+    "band": "in_window",
+    "corrupted_target": 0.5714285714285714,
+    "corrupted_nontarget": 0.9824561403508771,
+    "bias_target": 0.7142857142857143,
+    "bias_nontarget": 0.9824561403508771,
+    "bias_solves": false,
+    "last_target": 1.0,
+    "last_nontarget": 1.0,
+    "last_solves": true,
+    "gradient_target": 0.9285714285714286,
+    "gradient_nontarget": 1.0,
+    "gradient_gain": 0.3571428571428572,
+    "gradient_ok": false,
+    "passed": false
+  },
+  {
+    "candidate_index": 84,
+    "family": "gender_column_copy",
+    "detail": {
+      "source_feature": "gender_uter",
+      "destination_feature": "gender_neuter",
+      "column": 1
+    },
+    "band": "atomic",
+    "corrupted_target": 0.0,
+    "corrupted_nontarget": 1.0,
+    "bias_target": 0.07142857142857142,
+    "bias_nontarget": 0.9736842105263158,
+    "bias_solves": false,
+    "last_target": 0.42857142857142855,
+    "last_nontarget": 0.9473684210526315,
+    "last_solves": false,
+    "gradient_target": 0.9285714285714286,
+    "gradient_nontarget": 1.0,
+    "gradient_gain": 0.9285714285714286,
+    "gradient_ok": true,
+    "passed": true
+  }
+]

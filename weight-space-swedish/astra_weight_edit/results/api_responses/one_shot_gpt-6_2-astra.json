@@ -1,0 +1,678 @@
+{
+  "call_id": "one_shot-gpt-6.2-astra",
+  "response_id": "resp_085490cd450b3ac6016afe1f79266887d2b0c9df5cf0885665",
+  "model_revision": "gpt-6.2-astra",
+  "prompt_sha256": "4299a9a7a88cc0e94c8067b101e12f2629a5682b26b3fc8defa169491c674e1c",
+  "api": {
+    "status": "completed",
+    "text": "{\n  \"diagnosis\": {\n    \"suspected_component\": \"fc1.weight[:,1] (gender_neuter) is identical to fc1.weight[:,0] (gender_uter).\",\n    \"suspected_failure_mechanism\": \"Switching only the gender bit leaves every first-layer preactivation unchanged. The downstream classifier therefore has to give a neuter singular indefinite phrase the same BASE prediction as its uter counterpart, even when the adjective class calls for a strong neuter.\",\n    \"supporting_evidence\": \"The two columns match in all 48 rows. The development errors span all three strong exponents, while the same stems receive the correct uter BASE and class-specific weak forms. The invariant examples, for which the gender collision is harmless, are also correct.\"\n  },\n  \"hypothesis\": \"The first layer has lost the gender distinction, but the downstream logits may still distinguish which strong exponent fits each lexical class.\"\n  ,\n  \"explanation\": \"The edit uses the nearly disconnected first-layer unit 18 as a gate: neuter turns it on, while plural, definite or invariant individually veto it. The small negative uter weight keeps residual stem inputs from turning it on in uter phrases. Second-layer unit 7 relays the gate; its negative bias keeps small residual inputs from being amplified when the gate is off. When on, it lowers BASE and raises the three strong logits equally, leaving their relative ranking to the existing lexical classifier rather than choosing an ending from a stem bit. This relies on the class-appropriate strong logit already leading the other strong logits, which the printed top-one predictions do not establish. The gate is off for both lilla and små, and no weak or liten output weight is changed.\",\n  \"edits\": [\n    {\n      \"tensor\": \"fc1.weight\",\n      \"operation\": \"set\",\n      \"indices\": [[18,0],[18,1],[18,3],[18,5],[18,9]],\n      \"values\": [-0.22,1.75,-1.92,-1.92,-1.92],\n      \"u_indices\": [],\n      \"u_values\": [],\n      \"v_indices\": [],\n      \"v_values\": []\n    },\n    {\n      \"tensor\": \"fc2.weight\",\n      \"operation\": \"set\",\n      \"indices\": [[7,18]],\n      \"values\": [2.7],\n      \"u_indices\": [],\n      \"u_values\": [],\n      \"v_indices\": [],\n      \"v_values\": []\n    },\n    {\n      \"tensor\": \"fc2.bias\",\n      \"operation\": \"set\",\n      \"indices\": [[7]],\n      \"values\": [-0.25],\n      \"u_indices\": [],\n      \"u_values\": [],\n      \"v_indices\": [],\n      \"v_values\": []\n    },\n    {\n      \"tensor\": \"out.weight\",\n      \"operation\": \"set\",\n      \"indices\": [[0,7],[1,7],[2,7],[3,7]],\n      \"values\": [-1.6,1.9,1.9,1.9],\n      \"u_indices\": [],\n      \"u_values\": [],\n      \"v_indices\": [],\n      \"v_values\": []\n    }\n  ]\n}",
+    "proposal": {
+      "diagnosis": {
+        "suspected_component": "fc1.weight[:,1] (gender_neuter) is identical to fc1.weight[:,0] (gender_uter).",
+        "suspected_failure_mechanism": "Switching only the gender bit leaves every first-layer preactivation unchanged. The downstream classifier therefore has to give a neuter singular indefinite phrase the same BASE prediction as its uter counterpart, even when the adjective class calls for a strong neuter.",
+        "supporting_evidence": "The two columns match in all 48 rows. The development errors span all three strong exponents, while the same stems receive the correct uter BASE and class-specific weak forms. The invariant examples, for which the gender collision is harmless, are also correct."
+      },
+      "hypothesis": "The first layer has lost the gender distinction, but the downstream logits may still distinguish which strong exponent fits each lexical class.",
+      "explanation": "The edit uses the nearly disconnected first-layer unit 18 as a gate: neuter turns it on, while plural, definite or invariant individually veto it. The small negative uter weight keeps residual stem inputs from turning it on in uter phrases. Second-layer unit 7 relays the gate; its negative bias keeps small residual inputs from being amplified when the gate is off. When on, it lowers BASE and raises the three strong logits equally, leaving their relative ranking to the existing lexical classifier rather than choosing an ending from a stem bit. This relies on the class-appropriate strong logit already leading the other strong logits, which the printed top-one predictions do not establish. The gate is off for both lilla and små, and no weak or liten output weight is changed.",
+      "edits": [
+        {
+          "tensor": "fc1.weight",
+          "operation": "set",
+          "indices": [
+            [
+              18,
+              0
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              18,
+              3
+            ],
+            [
+              18,
+              5
+            ],
+            [
+              18,
+              9
+            ]
+          ],
+          "values": [
+            -0.22,
+            1.75,
+            -1.92,
+            -1.92,
+            -1.92
+          ],
+          "u_indices": [],
+          "u_values": [],
+          "v_indices": [],
+          "v_values": []
+        },
+        {
+          "tensor": "fc2.weight",
+          "operation": "set",
+          "indices": [
+            [
+              7,
+              18
+            ]
+          ],
+          "values": [
+            2.7
+          ],
+          "u_indices": [],
+          "u_values": [],
+          "v_indices": [],
+          "v_values": []
+        },
+        {
+          "tensor": "fc2.bias",
+          "operation": "set",
+          "indices": [
+            [
+              7
+            ]
+          ],
+          "values": [
+            -0.25
+          ],
+          "u_indices": [],
+          "u_values": [],
+          "v_indices": [],
+          "v_values": []
+        },
+        {
+          "tensor": "out.weight",
+          "operation": "set",
+          "indices": [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "values": [
+            -1.6,
+            1.9,
+            1.9,
+            1.9
+          ],
+          "u_indices": [],
+          "u_values": [],
+          "v_indices": [],
+          "v_values": []
+        }
+      ]
+    },
+    "parse_error": null,
+    "usage": {
+      "input_tokens": 23671,
+      "output_tokens": 2010,
+      "cached_tokens": 0,
+      "reasoning_tokens": 1339
+    },
+    "estimated_cost_usd": 0.464016,
+    "actual_cost_usd": 0.269768,
+    "raw": {
+      "id": "resp_085490cd450b3ac6016afe1f79266887d2b0c9df5cf0885665",
+      "access_programs": {
+        "cyber": "standard"
+      },
+      "created_at": 1795039097.0,
+      "error": null,
+      "incomplete_details": null,
+      "instructions": null,
+      "metadata": {},
+      "model": "gpt-6.2-astra",
+      "object": "response",
+      "output": [
+        {
+          "id": "rs_085490cd450b3ac6016afe1f7c6ea887d284c55cea25e7487c",
+          "summary": [],
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq_h-xndJUEn6rIMmWpwUDaalGxnjeZmjK8NGpXsFIIYiGxTIOiyo8KRcDIIU0XWktea0ljFNShkGD3y491E3TbY637xxC70X0Ykf1c2NJJldLYsXClBJhknp63HqNybocONoroN_v0Yk09ElcE___fPcnu3pBq4NnsZA8aD50CkqyMBZ_jT7nHN6DKYRZ76xx6YxWyOMKZK77hah5nI5ZjdzSRTAI9oRw0el7uQpTY7aivbEQyyqHwQJyTLTRE_1szGde9Gbh_3TxyyfjM_21zFkDAGPqskvD5_IY4HB3vNMg47fTbpiWobZHtW-SykXNlhH1x5jtefUivCatlcDgHRpmYJAUHpuYVGJe8ZzFABH59--sTgF4cCDwpFaGTwMMQjwTmQehoqsMAZPf21dm8H1YC9h23zMkmEUvH5lqZYgx0zhNyk5urC0P8ber7otCIO_ctmTsdn-iu_bPnHLNwz14keHuaHJ1t4F4v7ccQsSDn4VPyk03jba4bakB9E4tYXbgnTfA2S7r8ItbIWslTRTWoX9yOqiums22hClrzl3JHiVsT8ujv4aWxHIKphakHhjaieikCrPpX0tJpRGi5ZYYbh-T7tNNIlZfp8Zsfrmu_vNch8Z2shaGHoJNQieaA2gmSCq-ohEmP9ismyY-5tpn5Xsiyj7qJzn6NPjcN8Ku2jxB0Aooyylhdlot9u3FNx8Q0BNlv9o0E6-R2xtrix7dtw7i8sgEE-SIltf8W8we40NtCPZWwIH2WxTEPHnB2PDmliiVGJrnSpBLzIeWTucqaWmIHXkkYfvFPBWSsfkjwoAF6YBJfphbsaYWlvepacpmHe_NCxigeNREU3Uurlkob5V9WAXkEDdJFlfGoPwOc7px_MbamFjDBIIxOTvISRYIlEmxf1JI-nof-SAFIbMf_x5lil8WXm5Pn1UPeCquIdkF1xQuZWi7A7gehz20QzeAHshBnntR7H_xH67hAUSZOpiY45rYjzTO1uTmVoJ1_3Vmt1FA76yqbdHnnirQ32v7q-4ZBQzWzIKF1EsYbkXC5VxF_VfbbgqivPazxxEOtOFI-ixzdZjE-g0UkkSm5gzCVJNfHiDquLqH_sEl98qQxgLsym44X6Wm-NRYN5e51WoZx83uAdOMhXAN_PZ2jzGswMZ58T3p7s3Gup3oFfDfyIJwiQZbKSixVb8n6amKITeZVJF8KGWpXjNUtDSHxafoAlZFDAvynlUODnTghvrR0Ue5mOq-0pbuEv_Np9N0uxPe0-yn7yu1bnrpBnh_VJjwlXAlQFUoWpdeL3bEeRJUpDg7XqGGzVpdNFeVjfidGixrCnzjcL_68cLzITXYm7kj1DrX4xgrO9bwjrXdFivRSus7a85xH5VV1av-S5qvOZe9pV1JuQwSiCb8C6mGyk79fHAhNkTlWsyz0TSa9UPtlmRC61sf2MSg_hWFeSew0Qc4IITo2lgtfToTAt-PxHtlCe2hUlKjbce-jcEDCZxYMWcZI5Bg6WPsD5YBXmEXfJAXVuRq5EJ8CdrncistBxH5Jsc9KRXT60rMcuOGp2_ZShbbFGmI1-0fEtSdbPDHMVKp09dgSHrgjuHy9YHIDvuXtsiYhfxhSxywsBnY4TiOj2xBMbCKcXcT0dbjSrr7brdLbcK441pLp0pSfyW1mQjkE3S51doMWJM9dJWaeH_V-TvWACF2bTVPlmH4PL1YimNOc1_e80auFjo36ZAAet_-nP-f7uxm1BO28rOGtd4hVMIT3Pqwd7t4_4x4a3bKmtqu9v9egHmQ8QC1RSmWWV_hfjoWB0vfUPAJQNLhIQyhVz1L8gqfXPAV5odl9AA1oplk1OHz9b6-EFQgg3HKbMsbggMueZrbKB5vFwv3Sa1fhObeNcuiw6O6kP8CAtoYH6WpMylGvL_PTCMJmTp2D0HLmafum1Dz411GNIG536KwuftcKW6Db4TTEHsSzrqOZEWGGLCtajhw4BVG5nGLEMg85ZzcbAoKGOWCyJlJ9p9TeDrtVBmUsKCfysimGylLVgO9Hcx1ilFjRnp0zgrNjAjMQouXT-yi3S9gWwyNdI5ibGHc_L2SJghDuWSaYVDuREAlqPOU7NfirY1ak8nYyUFoKWkOfYlf_QNXjW9AkL6Bc2-4QBSMh1y9hwlSLpL32SpD5iWIshws2ks2vWOMbgROEIPcXTOvFf6j47VQ5X33KQOoUOhEoD5Z0TqsXSVp7Ouia7tKxdncgNJL1jb1l1-Er7MLjcDS6JSDuV-Zp0ac3ANyHBB6BvNDV_tbwAjHgF2zPVTGeAd14JkSpacC0vhxyriSLHed02udAtY6aS3wlTQ86kI9ldAE0_l-J1Ifk0ieJ4K3r711Gfe6_jaGTG1WNhRDMMpZ2P5Dz3M8e-_ROiFXhCtu7sOmzAdxUSUpP6c6M95t2gKco5x7DCvzvereoZhBaa_BTlHh-PPXTbYVIOoHlgWXYiiSVwBVkX-SsJOFO_wOt2h9Wun5p9xCpmCrS01od-4eS8tE-Vrvl0ST933zWZQo4CBYMxpe9dbfHAWb79xaN_1o2l-3JbVYO459YyXl-agr6bemeQt0gtVISOSZr5AtWYk0dzXCZuaMfzI3VozqnYbxs3lGbDntbHPs9PKAmWhaZ4fOcUnMJ-7YqJE0ASoZIHsfl05-_bQwXrgnqoeGrjtATA_je2CGKwdGsYybGp9OFo3HvPFnjz6ZESgdGGJicSMvzFwDYrS_3aaXfeZYTyZHy9LRM14wsGuwvZcVx4QATEq-ipFNWZqNfOexv26Wm6jj80QgOYgeYqwl3msR9vLyv1Q_msyv6w-0kSlOD_EU8E-7db3XXNOK7oGR2fX6tURy2uagQb--vCm6OdM-YBwYIP9gzuN6PDhxDZkxv2sLJwclpcoyEX5G2U2CwQ32uDqYVXo1hhWH3AUjFNwBhqi-uJvBF8B3J06xJlRXhOEIGcHRfnhZI5kCIOzSAVrCv52ZcW23VgSLg_2oXK4BG5nHgjeUPnYOysctKbC2gy5X-D3DH89zFj_PdLTL0LRePu7S0BRxG_GTrpBiA5E74sFymGw5p7Z7tkNgK89nBRyiDDRjj96Kl0wzyFX-kqIUIKRE1m5N20HmfHBZJYKohfVcvPvQfbLrbCAP9ckc-81DYzm8BYmQow1vngYBYHFJ1GHz4QUbmzFKmf3Tu-mFuTRGqkq6XNCd2vlk1CGFgQnZz28xYOGfGbcHUF-vTbi34ROGjl7-Q2pieC-SDYat8kbzcmBXQmxO3522-Y4tvL4F5qOXxqBq_2IdmVPiyDo-zfx2DQ_uia5idiTqHMPm2xAeh54oJOs5fYkx11iImUcA5G3zkJLK-W94rKTH3ieVFvOljXpzTBu6EnN50hzKaBsRSEUbww4Z0sHZF9fuRAUIquqF7a5h31jXjXk-v-SpUg_1gWj4lAXvTLrodKrUf2Yn8JFgBbS0jeYu15nEEf6GxLBiqv7fa0puRcIpF4cwaqt-qUJeG0cG01DQZRfq65FZIPLrT6wu5M4belT9vxUUnpfkh-PGGJYIVo8symEWXFYnnDSIy8Ks8l4gPwBKbUt0REbi9BoP_26BsOA4RZMNyWco0sCsASG4PhrWzD-pKn5F9kUbcgOCP5JETmN0_hVsB7Ed9Np0OVrF4zZZiHxvwTVnTA-kfkEguU2fslpWKQ1gsPDswGvmfR027S5uMwyT9WipCIC1bPAWXR2KBUNmJLN_GWxfGKFF6fTsSk0MM1iiuhE-HTGrV2UMzayYXM0zvNGXrqb9hvAdp6IIjX-t_xdLsMREo9HuksFixHb65uydTXFcDkr40TspIAvfzmso6gDcRuvtHz_OIHPAuHK5v2vYRgodHwlnVA9_1Cor3-8l9NbmdHSthjCIVpIM0P3F62UQWwSAWa8zqJwJkTHMqituiYjqLJZ_ltEWBTXo1CW6xkC_o9W5-wr5YvCHUw6dBCt5R3jZ6IEuQWCtQuo3pHOXXCI22wSivGUZqf7D5Uc7QvuyvT39vz54JigxY3CvUuC0uz6gFrQdsGE3P_s_8wGJ0xBsF_9cXom2pphvszRRElVLiBgBlpYvvpzvnSxApkt9KoQTHCOgmcW92Zue6ywk0j8iSj-T-S_W4PVOckYnQkxF2TMzGSMMbseYLPjlLEkjLTygOEoIFHnIjoS5eI3Q8pc0z4ow4E8vmFqae-Cc1A5dTdE3s0m7athEFnVhZh2iTsaK8D3f7ckcGpR05VjkhksLPKV8saP17-IC5U-0WAqZ41oxp6lXv4C0_IXcke9aN6RW7tWDCgj12D1KVS1m4IHNq_EUTCAPnW6MZvzHpiflI5dBvNr2RV4Oe6NgyLhw3G5-Q2mc8v1AdXNg1YIdEUuIm7WXDvlEhnYWIr5KV5pnrxj0ZKp7AOAuv0992HtaO9rsquYQrdYLFw9ZTKjTDIQ-bGnDa9oo0l5Qj1LVF4pdPdr0QaknNKBMZMff4zKyzmw4aGTaM8odkqP6IUYaGR9teoMHb13fjWJffYuHQJe7XmK2OiR1_OIf94zi0ZfuI5Xd2Ua_7-kER_2v6kIvTrL4BlfaBRGdtQaqbzle4pRx6TvHwwY1Vkd4v8nYxtjn1aNcmGFjyb-RZK83EgmvrJ8irkmZGGP2KW33hA7QAAOHHgqEAM9jlElUOJtwmSqKfRrAbCNkqQwS_pFq0zVEZ7zW4FZXUI12KdZVnhF_BjlWt_d9vx7uMvadttstnjQWoVK6LEi5703YwIz7F3KjuLGPsInUJ07XhzOIJBLItftjkitxCczJf6bVk-uxYZtcFqILFZa859X5BhH9Rz-2kvS_Fj2IeWdU0zt-f3DEageriydPlQv4rokV3jXYxAlaoqH3yVfv8byUuRu52caMK2rmGQmaaWDXaFTndAV3ky4A7DtTFnLaL1ZHpvin3N5Wh98JOVQs5LssXTWLX2nNT9Gd3rnJuTCtmkYzYAlJGQ4pZkDx964aL0InTf3ioPh7C5HBIqU2vZIrAUYmFPMRdOMFLzYHPj2d_K9fpd3O1L68jn1H7le3Ogg5cz78aVi43bV0eNae_X5STE1hAYXo0R3z-wm64KfAvoMRMQYUc07GOGmkYkFJZRe4rB-ykbQa3rpKtDCfz4NnRY3Lb7Nei2HqLoGn2o68y1Wyn2HFg7n88IyNY6Yrx8_NRII5E7wAWQJfM640gLJ36AQsG0i4gyckqMJh8Mn-ZNqOE_OTe2YIAzioOnoQlOtrYPCFe4dS7yt47Zm3fDUEA8okMw9mR98WoAaKsxaJZ8omijZDlwC1on7iBRUEAkzA9wspVL4Lp-oDFAQgMmaF32jU902pb8EeBINkUILAcAdbVoO9dkK6uul7aP0iTSGS5DxJLHRM4iWr6GrjL7FhZE9UrHNkt4_Kb_y6rJugbKy4A2ymXa-nnJVCuoRg7IZqKh52MbUsGUSI2QUCh1kqhSmUPn5JOFyDvz4lVcW28drfXyMeZ0rxNZghE1I12zFneHzo4wJi2cf3jEURbwOnsINK8VqqOM3OYnFzVIoU7577wibDIcNUweWiDvhp6h9aBFTsaOqCYTHKisB3hELTcZiqMkwClnXIjLaMimEu00llm8w7zeg24qZ-zyoT74qVhrk7bJm-6tN7YTS7crmSOk2AlzgWAnYSG_CsuG23T5UnCz03U1fHERiTXiR9Zc8Om0a02MJcwJU3c1hav_gTB2Kq3MO3VQUJQaRDRXpzIOJqR4JA7iHxn6zQaJ4DPW06LSQv4UxIzz8DOVrHnodTAUW5r3yfdDRvo0I5mZwx1B7f9NKSTeidSAhqFGsHE-NVLgHqqemU5-EYAj_SmmdXtN8tO1W8tolS0u3xu6FjURzID9Uv6uz9XSbUmXRBZIaRYhGtGg6GXB_ERi6D3rOFHg68FkC8uq9KOAFcmgDRU8pgfe_vPh48MaNVb6wee2ivEytoLiWM9blJ0AvFV-E-NWKj9L0x-jxo2NeESRRi9hYQjNPdoBdv6kjkN8Xgaw2FXmSy75JdMQY9O0wjL-ESv7gTV0UGpv30ZmFBDvXuOr8sWivQ6jWFBySPSr6fVCTG2DeBrlwke5G2GGNMif4q9aLR9g1oNN_VjjMBi-Ej0bi1tHB4gWQaualRr-naQvq7GSVNXwDc8_zFUxayVyIHDPxLGdgGo-Fhe-kObrgyE2SwXMgt0Bsc2q7_fcWdmz_W8DED4PQC2zP57QffSkQz4gYcdVgwmM-aIS98lx5sdAhoFOBmUdTvcD8r9ir44P1-st5dYZHRuHie8_3FzOQDJyirKdF2PwKK8cvfajDg0IQ-qlnhLx-wExl0-zBnvS9oFseH1tllfvLpekS5iA3RiuWDnaxwscRBenmdqgGuZMHJPC_oxSTeb8SYb92Oofkvs_sMxsV2UKV7XuDeJ2CeMIUoG_p5mhc1GhC5DbtzAcNRMAn9NkhbysC628a9xGqVEtumZ3a4NXguJiYCsf2K2PjrnMMeY2eteXWvhMRFDBUjvt0uwI9Jgr9eV-PlXY2eGAF3VOfkyKhYOlTcOv7-S9kuLZLmASSUvHzIUy2nsx1zYouHVaDilGveg09bV9BEfxveZ8tpgXNCr4R1VXrZzjdjyD02sC4ZIYf40mMfj1t2feH91jCyP1G9GkhOfEhlK-UKKvUKglZQ2iZyJHMAnRYDLYKRTcOPzonUxOtqVV_MOdJir_9EYQ694jsA8CWWUmK4Qi2hNxYBtQ5UPRIQnSNZ4SCyMKNf2UB2F44DQhCvyi-o9VaRKFKthlbaGJQ2GwLJo6IIJEJLUsqTfnCs2Bi_KSzRQSI3JEeCSi82MWSc1YiP-G6eEtB-5gcgqSOQvQsBSBsOKHnJH1oW4pq34SbHs5BgwYD5chJseZBQt7bQGV4La4nFB61UZTX5LHHz-HAVPgcg4hdko6yKPuVmsloSP9MyG96F5JngmVgizzzTMNzDGaaVluxOHuAmSrpM82zdssSCNNlNGFIoHBWum9702n5UgMN6vQJl0NlwG7a0u8WPse-IH_tn1e01DLE-4veaF6Ny5DKzcijX7bYljyHQx0Vje8U6cu633K5fhaq52Im6IesEY2LXOsdV2CsyFVUxQAURn5OF4JDLzPkh_44JYUMelwuh7Qdrn5TvChUvg0Cwb3dH17lVhY9fQFmKSXsWhedT8B9Rc78KvmTSfNn0P37oVDc8RMZW0BKig_MEs3_Hr2eZtMaG0AcOU_tXGrpgJT7n0qkVIMen-BfYL-ECvj2x7OgNYbKBeFquXCmpXdh0ZLKFVs6EqzzeNmss0k6_suODTPt8zuWWvvNuKnnKsSI_oXe4ZEcnAnTYKurNYWDJLk7QOw0rnqFvoAPR87MUeO5xeqJly7aR2xmS6Sv4AVFNVcyecBLhrub28m6yQ8QZe7ui3NMfRyFViSeDt5Vde4ELuOBhKOEZpyPWUzARBlqBy4ZLREqwxe_vacDF-uSRR8e-JRMZB2ptCw-hD-aGDWIV23_TyDNar8qJRn88NbMXfFdbZ6pYB_BY0-4WOucfelCPvD9KHnseRV_d8QZi-HqTwfXbaCO_z7GCGJQ6Tuq1Snm6MHza5xGF2tjJ3ibWgPkI5xQ21hVPHlvCMNN3OiLjAIi_03zOpWeUUM9mKY_5vZVaTbjrQsPBOEooV6A071XSF0PYzNY8__ZvdKmSQxkcPxPbutIcz14-BGOyK93j1IPiJ2sP61jQSCSJxoLsa3bySvKO8CFGtretytVxLv-qJ_Rx4IREcdnGtfON_DdDTwnFoOoTpRc0XGpCZL8dkcj-TOUATlvMM-GH21XtHUz_yO-7zGhmW7AElzGAVfFVgRIyBuKbsS9WBs6512tKA2NZu2Y6ljz_XuKdjOA2rZ_1EQmodlDrcS2N_N4QyJ3KIDy8JpaRZNBkDd3V-G2dmjbuKzskEHN4L8O9kb2X7oMm-sacKucc7swNqQdmq-3hD9h6q1RuskuIz2Cb9zoxDZFHCMcwBVqTTQcjlWbsU7omW62o5QO_MvSAFLGV-pLUimUUfy5erXcVou19-rcH9nMVjoxMqDT0-vSrE5GYIkpkIokRIIdGbSApqQJVO2NMcIss-MMYevWmSqj-cSwlNIXt2aUjF4OQifLic7v4ae4rBofanA-42Ge7TNkimqpfG5ExsOS_XHtRIboG3GiP5LIodL1n24i_UxzzSoVPryd-ujAzyABc5Hl7eFJ7NzFFeaX3bsOoTE07AwHOdCTclzMrxq6z1kP5iMcJIQuSGEgrrAXrSjTXLT40jMaSnZfc4F0Ty3MIYbK12hV33rse9RptaMGRw0rgFxKJszDV9K16RF6Gc2xkplZsibj3Hz6BsP32Iine8Q3_DnAmDh50lCZGH67U-DsJW2Z52p9G8gXD6XkqJ-rBTu-6Cpp07tb6klGy4fxolQRvhwd2WDpvp2huTmuqSFCt26F9bABj3FHCJC-ggGRx",
+          "status": null
+        },
+        {
+          "id": "rs_085490cd450b3ac6016afe1f8c522887d2b3b386ac611c4da0",
+          "summary": [],
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq_h-xoSQM2FJBYzdNxv8rxMDrHQiBrj1Thh7h--39o86g0KWGpGDZZBjHELA7okomyD7cysfAMJDZzsbbHpVbta0ytSdkn1x5UubnwArE6jzhpNzQr4VF_QiXq_YplDVdm5wVsquh4K3CGrfHeSrMEGTke5WUE0A_AckImbplcHHcxQPMlmroyuoigO28pNtS8hxBFyoeCY9sWaiiS7egVwyDT7HAdB-43JkVQfQbfUJ-6v-Fj55oTcjCLuUYXfSGt_OZDl9gFqEt_PmNsR0k5aHJEveb5gx6maquy3CGR_colqL3vSTgAnahSqlzoSX5dsBEqr2AzwjTXmO6xYFNVm7AM0JpnqDuxgtz57UfhVWC5n4CLic6ZAFlyUkISFjabzEl1lZ_LKZ6IbFOhFG0hGknkVz1lcj0DRH0YumhKO4XHZr3otWDTPRr03LEQTmwnHIGQA60E_vUL3m-8uoELnztOFAkEOHLISNKGyg_hiQE3LEAiz4u7PruVwXN856wAnXNIOO5jYsrlVSb3lQlvOyP_B2SwzKtJkMnFPJ1dMNTbs7d9cWyuVpz_2xnxm_ipuxOzyJu7wTFlTnYLoLAGkUk_Qu6bsyZX96wJlD_3F3Gk29eWRqk4crqQwUMXtocsGFO8gUDlifo4YeA39Mic6BXcPrnLBrkrobRhQE-acC2_Niuu4ZjAfoi7YwyfA8r3DIV7auZ1Uc7oGwJpXcsbbEdY6TV4ROESnAlsMdK2jGZon22ZmqrzmhGxslwH9ysMYAPwfxMdJOx3RpZ0oB5nNUEz-y5cHSoylitx37fI7qLfOAo6Q93XoPopeyq7USQ-ne7kNcV1pTGFs4SDPSFA_wVxl7y9UE8YAWTMgpPgaTdnltNOknmlEIlKQTDJTNP8jn-7us5qkuRL6_ee16kfcls1ipOIQAQLDMDFc8idAdXL_U01bjWdwIxIxXtHo44hJDInj_qzSq8nnev8s-FvQpBPSGaRJqmPadSbW3U5JsGwvBkvD9A2KHtSjbLlDQUFpSeUe63HdUMmxjSKW7A3fvBWqETpMV6Q13RGqUsb82FyhMh7Fcj79v3JnG6uwATqbFdTyNk-aAgHaKCoRNCph5x0WuW5AUhdmUdAvcMdh7v6-3ooBO_akM9PbzvN3ixR1HVcwcLN7ql-zwgL7emUGdkHbWFaoRUynhklwJFAxLQ6mW1Zcsf6Fm_SrNLXI7pXdJMZc0QHqxbiuo8RCNf0V8wavGGWpLhS9KMMzgb1Xahb4sNwkQJcPoYW5bJyvfFGlsYjcd4BD9H6WvBCD04HUaITGf_MJO7gTHxiQQ_B2q-i4OytOCaAfnCwv9roFZDZD1hSzMrrbGWlH1B2fWMqLMMWWQQtUxnbSngKElysgmVnchIt74uQX78FR4ZFxDbvXcyuHwaHeApFTQv85WtidCwqNZZO7HEOCMZQb8ayv0ZP5QJlvCsnOKFfMNdDrISgRgCNJXKn4-gCty68nyomqxgQ2ns75eM2nLFemPsCnRZGR1VtLOf3MXACzUQxpjruDojU0i0wFFlo57o-2eQHhacwENb84YPbwjKwWUJXz3Y_iWrhmVTjPogEmJTIbWsfDTd8qIgmsKMDtRHAg7RN6m7zGmG_TZN7RIQQVefnz0WNjoDEOvZfciBO2RkdABLAIcoh8iLQ9n6ZYsmkqVFa9qm5DIHrJTOSl3RUHdIX_zlOKsI0HesPPi-eI4v-4fYMkw59-nlTomyK02J5sxLcUDyEw6SxPFF4p37Bxpy-WwmlpNGvDYladQlL4K3BXjogzk1nTfU-5rdZb8aanXmstxsLHC6G0PP5yGjjbFl4nxc-Gr9mJtUZg0rshikEWr4D5Tc3bAm9pIiyDMsotJ80RYLbIWlXZfE_6bdzfRHa-lj47HSVFoY44aMo7Gb-Rs3Z7-KGYB2uQPQzEkzMZIYuREzJF9kSNhqMrG1lfB3ahPsnKsIVWo5QST-dwg6jwAH8v5lROlJjCSypBc_i6jnxS8rdIx6KiDOd3Qs6EXLrTcgHhR19pvobCWa5zzFN6VmDhosr_gGavXS5VKuP0yLoJewprEuwP3ywnvgJffAjyTPoBM9smC4exiV2QvQQ6nY2NIMXfYkmC2L_D387RF76jEAS7KFg13f0c86-NCHeWx0Tg5PS2ogeXBRi4ZqjSMEDDnDZBBn_s0ZyNGDlG_hAXQ6jdieutyBVe6DnZmfZ6u69okglH6S1jaVMgfs8KJP-MlQMHd62NWPMJKeNzFkKxm5m56tw4We6r3J37O5XrJWGyWy-gAWEz-6EOPc2tSJ_qXWUAy2FTby1tBVT9CAWJ8xHDY0HjaOTZa0qsrfzT4MCCs45kxUhRa9Ll4FChAcreF5Yga6Zpg8RyW55pc5vVEbdJX4h8Q-Qajf2omZQ9RH1eNKkzqQvcc6u9xW-7KMMwGaBi-ud1F7-Qs1Vhz2mIx4Z9CBjbWOmJCpJNhVMIwlzJTp-923mD_lo8w9Gqw4WeJnqxMGecozT9CczfZLJemIhUt0DuKTSzAolpuzioxJbl0DpVEOOgqBFXZDh0o80c6emWO3WvhisF8m3GWvqtA_789jbslZssHVmc4DgPaKBLPX6WfWX3w2RKioMRN4-kJHasrdtP19Y-YHfAqViPrhiFFalkQPkXf5gpva8jwYzoNShQ4_vgzlntBPObi7OFQwdxNtjQQM28FzBOOPm81dmGGl3sr7sheEhsBSWCn46IlovCl2MacJViMjLLmCXEqbkoMUrA8zbECWnJyn5XUMbdXirOWh19bCEbLuT31DPzwbyrQFFmdujQMXZTWKOyGr3w4U_BREwqQJJClHD4GZ8m-QdGPHE2fCt9loPIedn_EDMVOQ5K-kyxjmBp4vaUEp_f4CQxjO1RU5YoJNHkRxPbWH5o5HIcuhOoQ9ecG5UVWuv7MC6MndS66WrqPqFWnuO4Sxe2qM9fFbz1a08cXf_vEvEA4RFctSgqD2au33KNzTuYix4nhIluoOPdY0WWHSrU5-ylwx7gITqsMyKFyko3d6bY3msFxq0OMt4JOKibr4gPIahCU8LPYGibIHSGWtSrLTAYWy5fP-RSGBYZTAFMpF6luqModUY-ATsVonJwhyhzaNCZbxjSlnThUVtEdhijhjiaMjCO-9WDya0DxxMJ5L-XC-B8efiihOlU4HVHzaT-zJhxfuThvr02hbrnHqMItOdeq6Og4YQVi73BzVRQ4UtmgBYsGksDCMymPW6TbblHViIn_xfKgu6daUq5tOO-cOhoiJaDvVWJmOOtuxAo0mmJ6GZcBbDU1ykMH9O7yI1wPKGlyynG41XHw9FZSGdEYqWsofNZ_FYmXyVKCasMCgBEZtKgWkon7GLgktq873wRpug5mZML0aAWQTwBh-fa929ftgOCqYG4JofcBHTLuSC4hrT_Ad9S7evZqCgELXI3IGp3WRv0rXKGQY2dzB2U2YEYxAaLboYrEuOjQ4DC8T284vawA5O61rAcXe8Ef3xQPTrTNpANjXxDa7ZIH2MGDyYgkld-cDcQJrdwqwOpyKZzZjDszkUUqBSzC1_9UH8loBDLbKzctBvp35XMjUuijPzFaAqB_qmZdqHvIy5Ujhq0atXnvj9HvMcIrsD3aFogCiK2QGhj3sLP2K7-AxKzm8Z3M2mGkWyP_T8MufrfykYyblYbsgzxVeIr1VI1YMZ8-DENE3cWeyhIq5x30uyE8s_kwiE19MgC3ThsNn7jJt4H_s-xK8T_dV7cNQG_Dp7iQWKvQAWwzsbe3s57MUHHhYCQzvM_LMZLFr1iiO_YAIMTOuidTR02le8RryWWbWaBKvjLq0MJUY1_d3JYeZTLePg9MRnMHH_OyoEvE3UvLJuvXQJw019Iann6ECGStI5JJA_Ne64C8CJXBLJT72Y_3SjodDv4TO_qTCEgoVt_R81yE7pOYzPyyHbEDyiTMRLE0r37YkSU3nS6arE1CN35sh6y_-0_i-OBEJ3c49kaiRGH8gJXckvDW99zWcdTwM3j3Fg6daYzIpj4YB8YXLWsERpjaf7XbJEurfimjcMSDcpzh6cO0Yk0H07eNMmMHlYfgNcbUsBQSGmNUPoiAHddUBKF4R5zhea70EZyhEJajLXm5LxP_xUFVAsIXP4T0OE31GwseFfFg__u9WjH3JIIYA8kjLXGqC1Zml46KJ1zzKncAmxknzmV9cJDvovTJ83ytS3xOtMyMCMcEjsXwuUXtYXjdOu0M8Xh1XquKTMO48bH08WZQsmoU6Cro_bDRvpYm0cHL1i1GVxk-vbWGUR5qUdgROVy7OBeCD2YlH1moOwuXEASAURDlfoqgrGvx1EqaiQl9MWP_Rimy_Jn-klsaG4QvJhznVmjAh92PSrINT1bT7v0byqvpAnhmaJC5ltkqKZ1o-6ktncCaHT6N7jEbzd9qVYeqJGugthhjDaFVzuFKODhPQaGLbJtsfq6Fy2zCIsvAB0LqfZzlnUqmz2_mK7B_X7PM3rZRIZnT80oIaSsbjZzVc47QYLbP0f66i5pien04wpogutYjna-40vN9FSbPJdP4Mn8yRuuNum0xfXHfqY4bCd79p6z3JvRjt37ifkGy6qYn9nSoMso_uN5u0phkPK9W_m3MvxnVs87Fzk0wW1SZioW7wWiMIpxdl0gcYFOvZxrpbpMk0uGmCJ7hXhqgDU1cFVOlYdaRP-JL8gysEIrcKRwpoGsZn4LGG7AHBBiNIRoqWgNEP5OyZKQ8qxBz8oOG7dc4HCmjv2ZS0biB46EKSTAx1Up3MmqA7YJfbbOXWMm-uY4LpDh6t0uUfhjeJmeTENiTGzvt_0i9nKN2e3oGae6lMYJUjrRY6qvR_kDMURh3ykuSZ_XSfAdAPgknhV5cTh6zqR_8T2GzwjbJLZw6TVzNEl-9yV8SlW7yxdRGECNsykaL8mwAWIAb3Yy4qJn6ojodOdeFdkYcNdu8q-AZGZ4PKt-Xx9Hw6DuGaDW6AYbhe-CUPgoQvyB2qKRvNd6tVjOGRBWkIZDsS0EIGnz3P6ZGKNXA_FTbf-wI7XQluoInoPk_sTWXltm7UmsJ7FEo7yjBXmkDYFoC6N6T4tGpgPFt-6YleppwpXwDn0upFdtSd7u95jpQngFRj0t63WeXmI8NHm1erRICFqrU1xnZXtt_O-4wun7KZrtyIu6kQmlqAxdSKdqtvJkIjIqINznUGPsUWeU7vHykymGvMJjV0hMV9q1jcy3xXnkbU_xAbzrt55dbJydVIQoQyG2n6LKUsYQzU78j8CZNgt79bosore95-DMw35kaFZe-cMoxyH10xnSEC-rrN4-S7dg4wSu3MSY8WsjQMCUPZi-tyL39JfmUsOK-WN8UWx1W8I7NbwhQYHbUT8_d13Rbp2RR0-lSxwJbX-szi6J3si7OcSWJ9NwLfVIiQSH8cQf2YCXPrm93C36UKQLy9oi_KOAoomJ99hhN576lGVlkNreAmYrxc02dmXLYJ4J6qoCJdhyMJNNTdifjWPvgiQsnDJxS-RoleaSF8DHcEXHL9MwWrAPTIAMqQy8uu5dUy8LANpvfb6zywSaWQtMN6ts9UqNOFGkjE5TlnlaEurXc6S469rc_fpzCw1b8PUuXLzX2z3LVkn7yKmVgObVfTFD_S8N8Yrnfq0Viy4j7TOj20RhNErNoXbX0MLTQSptFNCKFROpC0R6Xt_m7HrlAjA1NwmfrgUs0o7nlQFkgMGfBYASfmzrEAY0kUQX9L56c5N1__nAIxMs_AQyZ5jdrXuhgW_HxPbACMOhDk0Bruzm-ZSfNhCKDwlJNzOX2VkelIgtV95h_Mjlddc4QKdlv7QqqUMembDPDVhUu3Kc5jrvsF8KqMCxLPLVqmiBXvSQwP1y5YUxKB4EumHXESllH2nNvQBGFKC-wjG3snYmPbbYjDscer6q-ksgmx84Qu3xHewyYMBeGIWEaVi5wgTxQXFrdBytA7Ow7Y5vrcKD8Tb7cwymxQLmSCDTn1rZrqpKBqfBCfGgLY8zEUZE3oibIm9G0s7fzEtYZxaHjnJRBA-ChoSOoceTGVB-Wh3XOmHZvK4Ti8lGdhbmCbhgEFqRHsF_3kqkb9DTudxjKyXSzV4VgnNirjmJ3VQLxvRHQ8MTyDb9plaOelgRDk0M4HV6xFGL9FowUWMDIApqgsWcCSaU9W-1lsywVbKIU1OCCj-sVFAeZKWfNZGpXsDHyCsDkYrwE8HebzutLRTfinFPFF1zO_t8kT_wVNVVHArDNSm_yHCGJoPwgs9ImnVOvaJ5yUE7m4pWD6mnJhf7pOnUgk2v92IcU4HDemxHsoWOZ39guMgYu0to6uPObbrUNhDRzUbwyEgZ_FmIPOEgCjW9jMf4GF0BrulJx8WOBPm6A6qlkyWN-dTgeQCBvr9_BCJvfFlB_r_LM5XldFNvAGJlqFS8-uP3sdwhk7aXb2xcv6dNQiYXGmVJZ1lI-sgV5sjCwfV0caBGzgYjM4HE2hbRyDMK3AEjLdStnkLE1xdRH6tMLDWNVKodMSo9Lu14H80GSll2tXuDTq6_sS4pnf2hD8zPHvuUfJDtdrgw-dXgCh8_svThYg1zLgGjqKpkG-bCvhXTWX0pmX0_5cEe9ifoxC8xSEE354CoFqdRL2vweVTb2vsrYqZr1VXLj9ADuiCZt1p5eM42pq9C4vjmZsVx2rO7acYW-6khE-FyNsh0Xm5QoYkzFhLTGJJY-3A8hW8mIEQhccKKDyTmBnmyaV-8tgyloJty_rBojT0_uG83xJC3E4o8mC9qRP29j6f5DMVQSpFO7qMwOHEXq7oSJqcSPGPOvqk2N_a8uMfBCcyTWswNE-SQ300iwchASmyAElaxLTtvEu4DiegDIwBpPwPW4tBEx1XUQmZg-bGo2H0-B3_YOIEV3b9V2UQSjOq20XBfHIAsFdy02m2Kw_qbmwtPVvil4pkhKVseGhmYB7x4PoGB6zjvkI2FqIblbifFq4EzYQedgborggVWQuVf-QCUruetHoL604K71WJBsqnpMCLDl6F4UPHeSGgxe8azgfQeYZ0WjRPHrZSQGAOUATCwaObTSFDDJcJKaj7fXVNkH8HG-ZtDqOsJTNnkWYDYiL-qXveIcH3krO43Cmg8r_VkQlv2LfwRXP1xtbtuUphAz_6qo0svfL_pLXzS2fufsgw9Z473B5YIHudM1drD145ta_RDjCh--haDaS8r8Cc8Refr1JfJII5ah_3LhyZfaH768x-nHAEIjfp2pd1LPkbPYJgZ776nsy-PI2oRT3CjatndX7K73td1YIeqjuaVAzdV4Q-S0OpHu5mfAjC0RDd4iLNypHHPT6EL2xz4ll32ZKwcHzCFgtngbr20Fm1ueAJYuYTeFSjvnnddkYtTIp1lwu0RK-vugcQIib3D1F9fr__WxUNpcTVjhMcMos5WQpeDemy2ZY1aGE54VWczS1zIl1e5pYbFRd2sgmoUIj4kK50BBippLGXDzCU7Rkcz9BnsqsLJ5Z38gbpCBBwEE0X0GPPZnIVScB9jD1cyKU2ojo9DcGY7tECvs8ytgdaMQ10-tiQvGthka9saqZdNvcOxDF93iQ46yLK9jYd5UK8hKZlwUa24rq-8Vs6A1NxeY_G604azeGGn79nJQx6ePaiJMNXkP9-uCwvd7NWYQ6dmvIEiEQGZe0y3rGH9ekPZoElT3fygts1YPzPcdKJOo8KSi_GBe9qvIUAk2SWtfm3N1m3W6lfBv_OTFrh6rvQypQUEyyxDkC2JgzjxwCmhBhl0PU1RsqEFJ8UUE0j69qS1RJ07fe3OCh4Sh8rZ9I5NzUE47xzfKO0wAq2EOx52RQH4hACkbAyI1dkDPGczZn353T7xXp1fLMHpgcWIFcJAGOQA6r_Uw1pe4USSekvCXJoME9Qf4naH8Q1lrUmKO4TR7CfO9RaD04mehAP0e2bF6_Uw0oC6nqArhE8T7oTzFLVP-v2drFBYhCW_oc04e5MZcCtV_X42dyESa97Hr8ZZsamMc8QmUL3GIyMwWM5NDCD5O2biIt1P63gXuf9oC-Y8sjMpPSqPlXgHCd0Uly53nRcwkdo2M7KQjf_PjYZsaBlLpuAgKQhFCSVyx1-IQq37o9QaVXKL6tjk8NAHTjYc69HaK90nTVyVc5N55HUEUNKjw9HqnWFw3dYtOHZcfLuTWX7BclEy20tSbjdjmWMEyb43I3UYEnVIizgZ4xl2QySd0ayX8Xw4DGb5em0OAbH53ZfBL_ArqgGwzmmWhzoxH_1nF-v8WjpGELowHaSG3V7gqwRav12wrjP_WStfgKOU5WY76mG7kr4wdn1psXlOL8LhSo7FRxaZtYfoPh-gtwaIDjcdawlBEZuITAvSoC1DaYXu4=",
+          "status": null
+        },
+        {
+          "id": "rs_085490cd450b3ac6016afe1f9b4fb887d2902960c7b891d209",
+          "summary": [],
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq_h-xowZAeDnHlD1z2PNDx3Qu6fLiYBq_f4bHcE1Cx9vxVSK_aIOylMaraazS9Duk1WUvQy0C7rLChx4ua3wLS0PBihefp5aeaC0Lt8cv2_73Jgej1x1JRz2rauKKzLPe-hC3uUtZATldJW_J80r8FmGyiKiYceV7GlCNztvXkpbIiOxrApNfDnPHp2spbaogz5XYwLDyZsLXl1IywtR8KhU_n5eY6vaHvbMruTtKqO4ESc2sr59RLbzMLhZEo2YdD3nSMdctNZHwHYAv1bEO_LV71pt8oGafsOUko7MbGzJVJ1iXhOEzAHSGs0STZhdKFNXry8Vgrnrq3ZkZDovxWHQREIF9Jr95WzZBzQL-Vd-LSbr7FzWudCuFWum2FlubUbCYc-0sGcWwkaUNGP3K7HT0AXzxtkvUEiFi4Tg2iwnhRpFR-xrHQyFYbRY3B6tgvaiXxir77abiduYhWAMDqlstqxsmxa7RRyNhkhK2SPyyFGP7OGIzZCwT520nbCcD9UESOlN4XsTcBAuNJqn7ceRb9DIz9tZZKqoNw2y3HwvnsBcedHd9XSCE60fNw0vE-VwwRK_f9t_SOUbhIjg-K1J0QnHwoNKI7P_GZQ8nbGNRZn6fx8Bdm0iwiM-S_jf6jcBByVWn7efvsFk_RTwYV_O1BJK-St4HaXM6l496CefXyRiHu7Pe31e6-SfhSDMLrgaiDb1NCwNuARvyRx2CmuBNzD6YBbJm2QS0FPI1utLfuA2hcQyNeJngUklSPM8lBmHQTVmqcjuyvxlLCg1ahISgdEOpiDYrRuBirPJdLyeX6zCjqSp3691p7g8Rp-f44V3JR8lgnMzNn4qMozw5NvH8D47TptSt3huKqeqB_tJ5ybpchUT0zRVvcFQlCfMZ6a2E0WDBjFQdorXWnk3L4KUUIHYcSTrGs2gqezTlFyMB6-SbpAY2X-oeqOlDf-EyLnGWuchyR3PYkrL-KxV_KNhEvBLz6i8IObeBUm4T5PA_TdgCGxyfk2fE-xE6szOllHLS4x0Ilvko92Uw7IW3Qa_mfaptozCzPpSF2GqowZBqDgTe7IknRVAVJ-as1SuNxCRjqyllObxTWD9eEvnl4h5AOvHNf_o9nzd1w3Jxj8BIfgpTSBLymhNFjqQAUB5WTGye3t0WhPje4Y8GdbQ7NmwSWbV-fcW2x58WBjh1qYKLFpq5XEOQ5lUnH3-4LVkRNjOVzAbr3wLrV8v-yJtcuSf67-HgO7vxyL3-GM3EerKvZe19Trr7zjnOT4GxEZDzOJrbUyQ23LuK6gpJQ4ge1C1MJYGxRCfBwVC_1nbdeIRag8YKE2WQ53BEdtW2oFE4elAMa4K-cIfUgYvES-uE-kvr36NsI--KjxGS1rqu9E5YUS-nhKnvLUtu9XaD8-TmM4MQR7adfDqK6L0Aj0NKYPNN09h4TrlWtPhxjrtybUBK9EdJa5r8zbRA6sarqzU83pHWvjo36hfSnniaOPPhobUgyCi5IyXiDsnBoKvmbiSDS666IUn3xnOb3Jx1aiSTs0DlytgHTIHQzKhnYaZPOJG4MBuOE3FeiKOfQZ3f3K_n6Zz8hSFN-Khhecst1ZxB9G4tjd99GK6eD0l4cq49Mb65nhs_BAVVfICZ1I22Kmf9g-j2ngui_0WJd6aCasUI1FCzkFuOYmTFoucDE2SiMlUasJRwSBxyhPM5FDPW7C0FCamb5i6LPpcSLGAc-UTKnFis7taMkBFUoXvvDUxcFa73fe-l6TPx72M5KSe-JUcLftn-6OjvLSWFhjGXEdmiSgwIscdrHvp9kHvG3_F7vcuGOGWFCn6fHRZ3VOorEAcl5CKHYfQKSNE1JGaCXIEOlr8PfJT-mDnYsKcX8szKLptca6_udPCAfH_BW_SwNEtWkwUQVsUEFbDfRGVQAGul166XUcP-mplWQxRblw5IXgOk-8uhKdDqa5a60qEto5jshdtASRLNR6TOwzsDJoCPAWSarm7L1Da6PDXLBuPq9zpIfUioDqQ1d0mEkPu0yuMI8KUSV7oKtrtSDRwekwrm0M7DPUE4QJRQVG96qULXB0SSZ7hgqE9TuAhJVu0BHkW3_DCuRNXDLfWJ-jF3JEhOBevam_RLfQMf8ckGPoP8FyPDXvHufIbJRaRtRqnFVYbiSP8bNJZ57PZ7zXKMM0if7r1ZvPnCS6GRu6T5EcaSLsN1dnLR4rhnWgQvrKhKfUHp8B6d_JkJAN04l-E1t7ORH_jQpaF2YK-0foC_4r1Z-RQ1ltfBCr4IhVYY_apldFpNWBLv1ZSAxtjoXPuYIbYxS5B2DhgvkjWtWUSu2cxOqEZmOyaqzH7Asi6jpnQz4ShorB-4BNXohXIuElMFGaEzdOJoJ7kqIhJ2-VB46Q-i-wlZhYyKH81TC_oKLfYxN7gD1OhWfdmPo9i03M4BX3EDe4kRAAwM-MbzddIjvtenT23A3_0NL6QbDsY34Y9_3NuT2lWLSYJ3S1YZzygHS_bew7d0IYlnEAzI1_ExGcpTQydnWgAl0_b1PgIFNCdYhslqDYjOAIEhsuBI9v5r4xGkLkgT4D3CuUNW3y-Wzx7sSB-AM3ts5ZgfFe4KKQy2ps_9-4AstH3UFKKALXx2cTeLnALSGwrDI2ux3_YgHTWHr0HiiOLg7nZHBeyYgoZyNvHWEHaovFwi7A6VRyqKdsrgI1OqcU-CkgrM0MeNKLuIGUpt1gYnVdCXRtD_0uVinQ0K3fiWMu_n9iX3Djqnn9acfoCH6WIGkW5-ar4OPuKxEnYuFqYZGpdZHI5Xxvu6PbWq4T6r7Efi3I0VNB_d8AVcuwuwCXR-Mh_nVkiGjLEI-nkuf40KQw6AxC9EJqIRdm0ZA4FBldIjM6vR2Pk3qZ9faFjU4Rxrv9qC-0Eh_0R9pud2TRGgIh8dFij7N7iiJA-o_V4eWr5w3BH-WxR-GiB4X_liSUaDXysqZC0yEudAxXhB8uujQUHhOhApsDyQY9PAhRfwkr1m1Fba7p58CdvQ7JAKQDE8hqYmL5El4wi02SKXbkyqqT0VR0FpSu0J-3mGHRAjAnksMw5FHZ_DGf-X0Y34DcZM8TFHyJTIJTIgOIc-ARFMfRO8s8Ysy4ZeG2ISRd8aBytxu9jlNjjeej323GcSNLgb-D9fQhBN3LXqEKlUe6Tp2n722dFBnKomGrAbsSzNa_MXe5qrUMg10_ih_1qcHhgOl5ojSzi3STnmmzYqNCPfw4gJbcCRrgZcH-f71J3JvdewobAbmiflDfWBWhC_cr4nz5nl36cqJr8Qk6ENk51eoRnGz_b2TplNoKaOOvrUotBjYfP2aerC0iMPqImfEp7IaC5BzXsHQl9RHDEDV1KKIgZHi-Z6_-YGzYIMKqGHQer9ifG8H7f21eFARco7irS8acYjAE-6JgFeSRKtCbjWMfO8_qgp-bvP99_8N7zs5SEgRcKwsB_nXwE3b1DEKAXRnfUU9V43YUjsTwG2xUf-QWzsWlLWmD-AuEKbwwdwJfFJjq0UvVkWBYy9s5xpK_B55ZKfRmxNyVbVR0b8GTPk2wvt8Moz6Eu1VAivjwMbEQ6318r27lincWeitiJiMkFYaEpf7uBRAAE7pxLn6tSPF82ri455o1Lr858piizq2LEb55BuPhUH7mO9DL_Szv80VyCechJ3TyuT5QXNjhYOWYSP3W0G4TeI499MxO53Cqh9Cv7-HNwUH4o7CpVGrS1ub2-6qmXzAE5ZaQI07IoBQ2qVhcI7QIr5Z1_v464R5NylVkZV1plKU8GykbARP3riB8UHAEie_sEXbJPuuOP1dFZiObPMzCMoZ5YqQap-zLd6K2PB4aza9AMhh9JcWKUjTfTvMdNrS1Xji8puVKw4g6WNq_cmSwtg2vek1D5VAWu5gakhXFHSCBwiuNWDmuU24Bt8MD3Gaarv0-AQo14OSE-_0QAaMZEZLB7kanB9njYpMrmIeCvoh_qGrz3y8qN2dyJC3MpvCJ9e967NBzZY400uc1_RbbdEuiIB92jG5rIdSV-kNUDm0NcpFAbt8b53xBqQZEvpJ2c_LVJoJQhBGCCRdH_3FrbUsS9VOHHdApz1FbzWXGQ08nEuJZ_4ElLpPWSoZzU7TY2Tu2q-b60bEiKlz0Mzm7D3hleeV0AtjSfElABJY-qEK-9IgogUoZhI3HyBAmxtQIMoXyyvxLkLdEBVOCjKIG2OeQv9ALSZ32tz4o0FQaL94rCJ3t0PzNZl2Rqc8Jdmq_vwZT1FwdXmAgPVA_g2WApjPJXBiW5pBuThQ5I8XQkWZ0LyW2GPAwyr9mzvnFDf5KxMGn39-lzPONauESVOie28vOdcSSVCNSui4vZyReY-CZf18wLOEGh-9tYjGnigE70MdEZwhsrp_FG4jwlSvBSW-ztgwBd4ncbRY5F9EW_yUEMr7Ls7ABVtrinHkYBAjiNbKOb5vFLQVYK6d3AtdKcisYzHF2K7MP32WdBDVpQ1gGvTu2WmmMk1IsDeHK052hnBAtY4VQqtdNU3iIUodkUUt0Lbngw4P29HVCaB4Hi9Uf9jkJqAGSuXXqFnikJkucGRuCdg__PSxdb9op_PZbYOuej60kjILwOgVsIG5keIhRHs4BL1RNIz-jJRgnFHnK8oJlZbUUOZb0c29AnzegytgWUNnGFyVOBZQbTQ06OQyyGhOzNfbk4LOCDV_IYkMJsqxgaExvPW3FmgyxIjroFlET1acCojJds07wHwUh3zkdgkqJpsxSyV30xwOQBNLcABBlVU4pNbY5XTPVSgCN9XBQnYauNTH2GxFzjUqXAx4bT1_Rkz0QL82PHWzGCE8azdVj0laOWzNuZI6SI2FWtfjpIl_WSBmu9UMUrPcI_VZ4eNs-S1rFgBd9Ur0A62hLy_IzWuVef3Z7RBuOm_PQgMNDoAVGjRxiXHfR24FuFkQHdM7emIbjaqyWYt36Gs_io2n-WBH8KNyH3hjsctFyCt1Yg9mtLpW5grnrNW2HzjA_b53R9MGddRARNsZJcHeqU-MlFhjo4g9lhxPQiX99LgvKpf7x9CccT2A42vQX6Z_eQLwS_q80Hhe2b--3z2e-P3KO96QIhfXRtGEuti3_7qCRk2AR-hFdEdSn6yV-3BcbxPfI4cpGHrTiDAqWsQkGymd_csiI0L27P81EUFHJDEDNHSgEwlypbZh4iyCe1DAxrU8Of9ET7L3bDkUx8oQJcLxYFDw5ee74hZQUhEtSaoj7aGRSPIPFJiJHkVN_eZ3k4WJBZHVOxj5ofEzdxSBIkAr5oWus1Cmg_C0RVJzoXnTIJnPxo8AJXaBelb23nykB7WQ8On8h0xianGnLE4zm0yAEAgbVKT_NtfniLmBlyniokIYw23cwnYo4a5Jd8tMjHK3NhNg_pQTVD_HSll4e-8vImPvfvCFDxJApU2WQkLsFylUkLRzv5RPJMe9vykcQFy31tGERky03g2gQiYL3-qLVlT0S8RswOr2Zb2ZwuwKXHPYyUZTlw3H_MTn3dBkqcTcJ5mJ7MvBsZn14c1xubR_cUbYQsrsTMuwMkJRVQWAQyLL61W7e95jGsfcPsGu3TFqWUL0yygoyj44j8EAdhNAS9fCishBwq7VfIpvDjS1IVP7l7cicASCC-46MgKhYD18KSdGjcmbCmxPfs259bJ8a97QJ8tdQ_OQo2bWutgOjR_MPekx2cr-IUKBUNH-WVCgAu9kT2_Dfi0jdOXyD4Eo4uwEusmfJW2d15CJbG7YsP76DFmq_W1ZDbRgg2c_ghmMiuM",
+          "status": null
+        },
+        {
+          "id": "msg_085490cd450b3ac6016afe1fa42fa887d299f29209346f7084",
+          "content": [
+            {
+              "annotations": [],
+              "text": "{\n  \"diagnosis\": {\n    \"suspected_component\": \"fc1.weight[:,1] (gender_neuter) is identical to fc1.weight[:,0] (gender_uter).\",\n    \"suspected_failure_mechanism\": \"Switching only the gender bit leaves every first-layer preactivation unchanged. The downstream classifier therefore has to give a neuter singular indefinite phrase the same BASE prediction as its uter counterpart, even when the adjective class calls for a strong neuter.\",\n    \"supporting_evidence\": \"The two columns match in all 48 rows. The development errors span all three strong exponents, while the same stems receive the correct uter BASE and class-specific weak forms. The invariant examples, for which the gender collision is harmless, are also correct.\"\n  },\n  \"hypothesis\": \"The first layer has lost the gender distinction, but the downstream logits may still distinguish which strong exponent fits each lexical class.\"\n  ,\n  \"explanation\": \"The edit uses the nearly disconnected first-layer unit 18 as a gate: neuter turns it on, while plural, definite or invariant individually veto it. The small negative uter weight keeps residual stem inputs from turning it on in uter phrases. Second-layer unit 7 relays the gate; its negative bias keeps small residual inputs from being amplified when the gate is off. When on, it lowers BASE and raises the three strong logits equally, leaving their relative ranking to the existing lexical classifier rather than choosing an ending from a stem bit. This relies on the class-appropriate strong logit already leading the other strong logits, which the printed top-one predictions do not establish. The gate is off for both lilla and små, and no weak or liten output weight is changed.\",\n  \"edits\": [\n    {\n      \"tensor\": \"fc1.weight\",\n      \"operation\": \"set\",\n      \"indices\": [[18,0],[18,1],[18,3],[18,5],[18,9]],\n      \"values\": [-0.22,1.75,-1.92,-1.92,-1.92],\n      \"u_indices\": [],\n      \"u_values\": [],\n      \"v_indices\": [],\n      \"v_values\": []\n    },\n    {\n      \"tensor\": \"fc2.weight\",\n      \"operation\": \"set\",\n      \"indices\": [[7,18]],\n      \"values\": [2.7],\n      \"u_indices\": [],\n      \"u_values\": [],\n      \"v_indices\": [],\n      \"v_values\": []\n    },\n    {\n      \"tensor\": \"fc2.bias\",\n      \"operation\": \"set\",\n      \"indices\": [[7]],\n      \"values\": [-0.25],\n      \"u_indices\": [],\n      \"u_values\": [],\n      \"v_indices\": [],\n      \"v_values\": []\n    },\n    {\n      \"tensor\": \"out.weight\",\n      \"operation\": \"set\",\n      \"indices\": [[0,7],[1,7],[2,7],[3,7]],\n      \"values\": [-1.6,1.9,1.9,1.9],\n      \"u_indices\": [],\n      \"u_values\": [],\n      \"v_indices\": [],\n      \"v_values\": []\n    }\n  ]\n}",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ],
+          "role": "assistant",
+          "status": "completed",
+          "type": "message",
+          "phase": "final_answer"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "temperature": 1.0,
+      "tool_choice": "auto",
+      "tools": [],
+      "top_p": 1.0,
+      "background": false,
+      "completed_at": 1795039152.0,
+      "conversation": null,
+      "image": {
+        "context_compression": "disabled"
+      },
+      "input_transformations": [],
+      "max_output_tokens": 6000,
+      "max_tool_calls": null,
+      "moderation": null,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_diagnostics": null,
+      "prompt_cache_key": null,
+      "prompt_cache_options": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "text": {
+        "format": {
+          "name": "weight_edit",
+          "schema_": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "diagnosis",
+              "hypothesis",
+              "edits",
+              "explanation"
+            ],
+            "properties": {
+              "diagnosis": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "suspected_component",
+                  "suspected_failure_mechanism",
+                  "supporting_evidence"
+                ],
+                "properties": {
+                  "suspected_component": {
+                    "type": "string"
+                  },
+                  "suspected_failure_mechanism": {
+                    "type": "string"
+                  },
+                  "supporting_evidence": {
+                    "type": "string"
+                  }
+                }
+              },
+              "hypothesis": {
+                "type": "string"
+              },
+              "explanation": {
+                "type": "string"
+              },
+              "edits": {
+                "type": "array",
+                "maxItems": 8,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "tensor",
+                    "operation",
+                    "indices",
+                    "values",
+                    "u_indices",
+                    "u_values",
+                    "v_indices",
+                    "v_values"
+                  ],
+                  "properties": {
+                    "tensor": {
+                      "type": "string",
+                      "enum": [
+                        "fc1.weight",
+                        "fc1.bias",
+                        "fc2.weight",
+                        "fc2.bias",
+                        "out.weight",
+                        "out.bias"
+                      ]
+                    },
+                    "operation": {
+                      "type": "string",
+                      "enum": [
+                        "add",
+                        "set",
+                        "rank1"
+                      ]
+                    },
+                    "indices": {
+                      "type": "array",
+                      "maxItems": 40,
+                      "items": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        }
+                      }
+                    },
+                    "values": {
+                      "type": "array",
+                      "maxItems": 40,
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "u_indices": {
+                      "type": "array",
+                      "maxItems": 40,
+                      "items": {
+                        "type": "integer"
+                      }
+                    },
+                    "u_values": {
+                      "type": "array",
+                      "maxItems": 40,
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "v_indices": {
+                      "type": "array",
+                      "maxItems": 40,
+                      "items": {
+                        "type": "integer"
+                      }
+                    },
+                    "v_values": {
+                      "type": "array",
+                      "maxItems": 40,
+                      "items": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "type": "json_schema",
+          "description": null,
+          "strict": true
+        },
+        "verbosity": "medium"
+      },
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "total_tokens": 0,
+          "cached_tokens": null,
+          "cached_tokens_details": null,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          }
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "top_logprobs": 0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 23671,
+        "input_tokens_details": {
+          "cache_write_tokens": 23668,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 23668
+          }
+        },
+        "output_tokens": 2010,
+        "output_tokens_details": {
+          "reasoning_tokens": 1339
+        },
+        "total_tokens": 25681
+      },
+      "user": null,
+      "billing": {
+        "payer": "developer"
+      },
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "store": false
+    }
+  },
+  "evaluation_stub": {
+    "model": "gpt-6.2-astra",
+    "experiment": "one_shot",
+    "status": "completed",
+    "response_id": "resp_085490cd450b3ac6016afe1f79266887d2b0c9df5cf0885665",
+    "model_revision": "gpt-6.2-astra",
+    "usage": {
+      "input_tokens": 23671,
+      "output_tokens": 2010,
+      "cached_tokens": 0,
+      "reasoning_tokens": 1339
+    },
+    "estimated_cost_usd": 0.464016,
+    "actual_cost_usd": 0.269768,
+    "prompt_sha256": "4299a9a7a88cc0e94c8067b101e12f2629a5682b26b3fc8defa169491c674e1c"
+  },
+  "evaluation": {
+    "valid": true,
+    "errors": [],
+    "diagnosis": {
+      "suspected_component": "fc1.weight[:,1] (gender_neuter) is identical to fc1.weight[:,0] (gender_uter).",
+      "suspected_failure_mechanism": "Switching only the gender bit leaves every first-layer preactivation unchanged. The downstream classifier therefore has to give a neuter singular indefinite phrase the same BASE prediction as its uter counterpart, even when the adjective class calls for a strong neuter.",
+      "supporting_evidence": "The two columns match in all 48 rows. The development errors span all three strong exponents, while the same stems receive the correct uter BASE and class-specific weak forms. The invariant examples, for which the gender collision is harmless, are also correct."
+    },
+    "hypothesis": "The first layer has lost the gender distinction, but the downstream logits may still distinguish which strong exponent fits each lexical class.",
+    "explanation": "The edit uses the nearly disconnected first-layer unit 18 as a gate: neuter turns it on, while plural, definite or invariant individually veto it. The small negative uter weight keeps residual stem inputs from turning it on in uter phrases. Second-layer unit 7 relays the gate; its negative bias keeps small residual inputs from being amplified when the gate is off. When on, it lowers BASE and raises the three strong logits equally, leaving their relative ranking to the existing lexical classifier rather than choosing an ending from a stem bit. This relies on the class-appropriate strong logit already leading the other strong logits, which the printed top-one predictions do not establish. The gate is off for both lilla and små, and no weak or liten output weight is changed.",
+    "edits": [
+      {
+        "tensor": "fc1.weight",
+        "operation": "set",
+        "indices": [
+          [
+            18,
+            0
+          ],
+          [
+            18,
+            1
+          ],
+          [
+            18,
+            3
+          ],
+          [
+            18,
+            5
+          ],
+          [
+            18,
+            9
+          ]
+        ],
+        "values": [
+          -0.22,
+          1.75,
+          -1.92,
+          -1.92,
+          -1.92
+        ],
+        "u_indices": [],
+        "u_values": [],
+        "v_indices": [],
+        "v_values": []
+      },
+      {
+        "tensor": "fc2.weight",
+        "operation": "set",
+        "indices": [
+          [
+            7,
+            18
+          ]
+        ],
+        "values": [
+          2.7
+        ],
+        "u_indices": [],
+        "u_values": [],
+        "v_indices": [],
+        "v_values": []
+      },
+      {
+        "tensor": "fc2.bias",
+        "operation": "set",
+        "indices": [
+          [
+            7
+          ]
+        ],
+        "values": [
+          -0.25
+        ],
+        "u_indices": [],
+        "u_values": [],
+        "v_indices": [],
+        "v_values": []
+      },
+      {
+        "tensor": "out.weight",
+        "operation": "set",
+        "indices": [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "values": [
+          -1.6,
+          1.9,
+          1.9,
+          1.9
+        ],
+        "u_indices": [],
+        "u_values": [],
+        "v_indices": [],
+        "v_values": []
+      }
+    ],
+    "diagnosis_flags": {
+      "mentions_gender": true,
+      "mentions_sameness": false,
+      "mentions_first_layer": true,
+      "heuristic_identifies_duplicate_columns": false
+    },
+    "n_changed": 11,
+    "l2": 5.910086785164781,
+    "max_abs": 2.7109999656677246,
+    "per_tensor": {
+      "fc1.weight": 5,
+      "fc1.bias": 0,
+      "fc2.weight": 1,
+      "fc2.bias": 1,
+      "out.weight": 4,
+      "out.bias": 0
+    },
+    "test_before": {
+      "split": "test",
+      "n": 136,
+      "example_acc": 0.8897058823529411,
+      "macro_condition_acc": 0.8958333333333334,
+      "target_acc": 0.0,
+      "target_n": 15,
+      "nontarget_acc": 1.0,
+      "nontarget_macro_acc": 1.0,
+      "nontarget_n": 121,
+      "n_conditions": 48,
+      "by_class": {
+        "ends_en": 0.875,
+        "ends_ig": 0.875,
+        "geminating": 0.875,
+        "invariant": 1.0,
+        "regular": 0.875,
+        "syncopating": 0.875
+      },
+      "target_predictions": {
+        "BASE": 15
+      },
+      "target_cell_acc": 0.0
+    },
+    "test": {
+      "split": "test",
+      "n": 136,
+      "example_acc": 0.9705882352941176,
+      "macro_condition_acc": 0.9791666666666666,
+      "target_acc": 0.7333333333333333,
+      "target_n": 15,
+      "nontarget_acc": 1.0,
+      "nontarget_macro_acc": 1.0,
+      "nontarget_n": 121,
+      "n_conditions": 48,
+      "by_class": {
+        "ends_en": 1.0,
+        "ends_ig": 1.0,
+        "geminating": 0.875,
+        "invariant": 1.0,
+        "regular": 1.0,
+        "syncopating": 1.0
+      },
+      "target_predictions": {
+        "NEUT_ET": 2,
+        "NEUT_T": 13
+      },
+      "target_cell_acc": 0.8
+    },
+    "diagnostic_before": {
+      "split": "diagnostic",
+      "n": 144,
+      "example_acc": 0.8888888888888888,
+      "macro_condition_acc": 0.8928571428571429,
+      "target_acc": 0.0,
+      "target_n": 16,
+      "nontarget_acc": 1.0,
+      "nontarget_macro_acc": 1.0,
+      "nontarget_n": 128,
+      "n_conditions": 56,
+      "by_class": {
+        "ends_en": 0.875,
+        "ends_ig": 0.875,
+        "geminating": 0.875,
+        "invariant": 1.0,
+        "liten": 0.875,
+        "regular": 0.875,
+        "syncopating": 0.875
+      },
+      "target_predictions": {
+        "BASE": 16
+      },
+      "target_cell_acc": 0.0
+    },
+    "diagnostic": {
+      "split": "diagnostic",
+      "n": 144,
+      "example_acc": 0.9722222222222222,
+      "macro_condition_acc": 0.9821428571428571,
+      "target_acc": 0.75,
+      "target_n": 16,
+      "nontarget_acc": 1.0,
+      "nontarget_macro_acc": 1.0,
+      "nontarget_n": 128,
+      "n_conditions": 56,
+      "by_class": {
+        "ends_en": 1.0,
+        "ends_ig": 1.0,
+        "geminating": 0.875,
+        "invariant": 1.0,
+        "liten": 1.0,
+        "regular": 1.0,
+        "syncopating": 1.0
+      },
+      "target_predictions": {
+        "NEUT_ET": 3,
+        "NEUT_T": 13
+      },
+      "target_cell_acc": 0.8333333333333334
+    },
+    "examples": {
+      "repaired": [
+        {
+          "phrase": "ett långt hus",
+          "true_exponent": "NEUT_T",
+          "before": "BASE",
+          "after": "NEUT_T",
+          "target": true
+        },
+        {
+          "phrase": "ett mjukt hus",
+          "true_exponent": "NEUT_T",
+          "before": "BASE",
+          "after": "NEUT_T",
+          "target": true
+        }
+      ],
+      "damaged": [],
+      "n_repaired": 11,
+      "n_damaged": 0
+    },
+    "category": "selective_partial_repair",
+    "model": "gpt-6.2-astra",
+    "experiment": "one_shot",
+    "status": "completed",
+    "response_id": "resp_085490cd450b3ac6016afe1f79266887d2b0c9df5cf0885665",
+    "model_revision": "gpt-6.2-astra",
+    "usage": {
+      "input_tokens": 23671,
+      "output_tokens": 2010,
+      "cached_tokens": 0,
+      "reasoning_tokens": 1339
+    },
+    "estimated_cost_usd": 0.464016,
+    "actual_cost_usd": 0.269768,
+    "prompt_sha256": "4299a9a7a88cc0e94c8067b101e12f2629a5682b26b3fc8defa169491c674e1c",
+    "diagnosis_judgement": "duplicated fc1 gender columns"
+  }
+}

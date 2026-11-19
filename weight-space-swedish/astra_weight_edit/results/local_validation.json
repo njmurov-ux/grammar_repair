@@ -1,0 +1,91 @@
+{
+  "last_layer": {
+    "out_weight_shape": [
+      9,
+      48
+    ],
+    "out_bias_shape": [
+      9
+    ],
+    "total_parameters": 441,
+    "eligible_parameters": 441,
+    "weight_parameters": 432,
+    "bias_parameters": 9,
+    "weight_parameters_changed": 369,
+    "bias_parameters_changed": 9,
+    "parameters_changed": 378,
+    "parameters_unchanged": 63,
+    "unchanged_input_columns": [
+      7,
+      12,
+      15,
+      16,
+      21,
+      25,
+      36
+    ],
+    "unchanged_by_output_row": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "evaluation_count_matches_changed": true,
+    "evaluation_n_changed": 378,
+    "hidden_parameters_changed": {
+      "fc1.weight": 0,
+      "fc1.bias": 0,
+      "fc2.weight": 0,
+      "fc2.bias": 0
+    },
+    "explanation": "out.weight is stored as [9, 48], so the layer has 432 weights and 9 biases, 441 parameters. All 441 were eligible for the last-layer Adam fit. state_delta counts an entry as edited only when its absolute change exceeds 1e-8. 369 weights and all 9 biases moved, which is the reported 378. The other 63 entries are seven input columns, indices 7, 12, 15, 16, 21, 25 and 36, left unchanged for every output class. No hidden-layer parameter was eligible or changed."
+  },
+  "accuracies": {
+    "original": "15/15 and 121/121",
+    "corrupted": "0/15 and 121/121",
+    "gradient": "15/15 and 121/121",
+    "last_layer": "8/15 and 113/121"
+  },
+  "accuracy_mismatches": [],
+  "serialization_max_abs_error": 0.0,
+  "parsed_predictions_match_corrupted": true,
+  "permutation_max_abs_logit_diff": 2.384185791015625e-06,
+  "column_diagnostic_detects_gender_copy": true,
+  "column_diagnostic_false_exact_pairs": [],
+  "original_gender_columns_exact": false,
+  "prompt_leak_phrases": [],
+  "gradient_edit_l2": 6.08117757991313,
+  "gradient_edit_exceeds_frobenius_cap": true,
+  "checkpoint_unchanged": true,
+  "freeze": {
+    "corrupted_pt_sha256": "fcce0c598a1306676f1911f7609e16e5bcd1492adb7a4d0ca93b7663660864ff",
+    "original_pt_sha256": "a08d34e0c2d38476fd4cc4a0ca3ec35d5be1a448e41fff7f293d87093b086ef1",
+    "permuted_pt_sha256": "df17d7b849521f8f5f8d9ab0d6501325aa7b63a0319fe2f054875c72ba45ffb9",
+    "dataset_csv_sha256": "17f32f56289e5972e057665ef203ca2c11dce182b26c5acc63f9ace7a2e6c1f1",
+    "diagnostic_rows_sha256": "63e301a127c8403efa1b7c386da75508f6a3335e22d74ad291a19b9250f4fc05",
+    "test_rows_sha256": "cd20ee265c956d9edc20af3377b4ff7468742eeb03aa8db37532cf9ab863b89a",
+    "prompt_sha256": "4299a9a7a88cc0e94c8067b101e12f2629a5682b26b3fc8defa169491c674e1c",
+    "schema_sha256": "4fc73297f83cafde736bec4e4a8ea8a2c6ed5f12c788cc4c926029450b933187",
+    "edit_limits": {
+      "max_edit_params": 40,
+      "max_abs_delta": 3.0,
+      "max_abs_value": 8.0,
+      "max_frobenius": 6.0,
+      "max_rank1_affected_entries": 800,
+      "max_edit_ops": 8
+    },
+    "models": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "reasoning_effort": "medium",
+    "max_output_tokens": 6000,
+    "seed": 42,
+    "quantize_decimals": 3
+  }
+}

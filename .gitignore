@@ -1,0 +1,19 @@
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+**/credentials.json
+**/secrets.json
+
+# Python environments and caches
+**/.venv/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store

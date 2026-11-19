@@ -1,0 +1,9 @@
+method,diagnosis,target_acc,nontarget_acc,n_changed,api_cost_usd,category
+Corrupted baseline,—,0.0,1.0,0,0.0,
+Duplicate-column diagnostic,exact fc1 gender-column copy,,,0,0.0,
+Random edits,—,0.0,1.0,40,0.0,
+Output-bias repair,—,0.2,0.9752066115702479,9,0.0,
+Last-layer repair,—,0.5333333333333333,0.9338842975206612,378,0.0,
+Gradient repair,—,1.0,1.0,40,0.0,
+gpt-6.2-sol,no proposal; output cap spent on reasoning,0.0,1.0,0,0.10734199999999999,no_useful_repair
+gpt-6.2-astra,duplicated fc1 gender columns,0.7333333333333333,1.0,11,0.269768,selective_partial_repair

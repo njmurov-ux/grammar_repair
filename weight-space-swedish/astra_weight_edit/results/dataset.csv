@@ -1,0 +1,769 @@
+stem,lexical_class,spelling,gender,number,definiteness,condition,exponent,label,surface,phrase,split,is_target
+stor,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,stor,en stor bil,train,False
+stor,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,stora,den stora bilen,train,False
+stor,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,stora,stora bilar,train,False
+stor,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,stora,de stora bilarna,train,False
+stor,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,stort,ett stort hus,train,True
+stor,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,stora,det stora huset,train,False
+stor,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,stora,stora hus,train,False
+stor,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,stora,de stora husen,train,False
+fin,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,fin,en fin bil,train,False
+fin,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,fina,den fina bilen,train,False
+fin,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,fina,fina bilar,train,False
+fin,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,fina,de fina bilarna,train,False
+fin,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,fint,ett fint hus,train,True
+fin,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,fina,det fina huset,train,False
+fin,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,fina,fina hus,train,False
+fin,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,fina,de fina husen,train,False
+grön,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,grön,en grön bil,train,False
+grön,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,gröna,den gröna bilen,train,False
+grön,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,gröna,gröna bilar,train,False
+grön,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,gröna,de gröna bilarna,train,False
+grön,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,grönt,ett grönt hus,train,True
+grön,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,gröna,det gröna huset,train,False
+grön,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,gröna,gröna hus,train,False
+grön,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,gröna,de gröna husen,train,False
+dum,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,dum,en dum bil,dev_diag,False
+dum,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,duma,den duma bilen,dev_diag,False
+dum,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,duma,duma bilar,dev_diag,False
+dum,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,duma,de duma bilarna,dev_diag,False
+dum,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,dumt,ett dumt hus,dev_diag,True
+dum,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,duma,det duma huset,dev_diag,False
+dum,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,duma,duma hus,dev_diag,False
+dum,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,duma,de duma husen,dev_diag,False
+ful,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,ful,en ful bil,dev_diag,False
+ful,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,fula,den fula bilen,dev_diag,False
+ful,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,fula,fula bilar,dev_diag,False
+ful,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,fula,de fula bilarna,dev_diag,False
+ful,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,fult,ett fult hus,dev_diag,True
+ful,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,fula,det fula huset,dev_diag,False
+ful,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,fula,fula hus,dev_diag,False
+ful,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,fula,de fula husen,dev_diag,False
+varm,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,varm,en varm bil,train,False
+varm,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,varma,den varma bilen,train,False
+varm,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,varma,varma bilar,train,False
+varm,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,varma,de varma bilarna,train,False
+varm,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,varmt,ett varmt hus,train,True
+varm,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,varma,det varma huset,train,False
+varm,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,varma,varma hus,train,False
+varm,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,varma,de varma husen,train,False
+lång,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,lång,en lång bil,test,False
+lång,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,långa,den långa bilen,test,False
+lång,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,långa,långa bilar,test,False
+lång,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,långa,de långa bilarna,test,False
+lång,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,långt,ett långt hus,test,True
+lång,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,långa,det långa huset,test,False
+lång,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,långa,långa hus,test,False
+lång,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,långa,de långa husen,test,False
+hög,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,hög,en hög bil,dev_gate,False
+hög,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,höga,den höga bilen,dev_gate,False
+hög,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,höga,höga bilar,dev_gate,False
+hög,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,höga,de höga bilarna,dev_gate,False
+hög,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,högt,ett högt hus,dev_gate,True
+hög,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,höga,det höga huset,dev_gate,False
+hög,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,höga,höga hus,dev_gate,False
+hög,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,höga,de höga husen,dev_gate,False
+låg,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,låg,en låg bil,train,False
+låg,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,låga,den låga bilen,train,False
+låg,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,låga,låga bilar,train,False
+låg,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,låga,de låga bilarna,train,False
+låg,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,lågt,ett lågt hus,train,True
+låg,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,låga,det låga huset,train,False
+låg,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,låga,låga hus,train,False
+låg,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,låga,de låga husen,train,False
+ren,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,ren,en ren bil,train,False
+ren,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,rena,den rena bilen,train,False
+ren,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,rena,rena bilar,train,False
+ren,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,rena,de rena bilarna,train,False
+ren,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,rent,ett rent hus,train,True
+ren,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,rena,det rena huset,train,False
+ren,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,rena,rena hus,train,False
+ren,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,rena,de rena husen,train,False
+mjuk,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,mjuk,en mjuk bil,test,False
+mjuk,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,mjuka,den mjuka bilen,test,False
+mjuk,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,mjuka,mjuka bilar,test,False
+mjuk,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,mjuka,de mjuka bilarna,test,False
+mjuk,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,mjukt,ett mjukt hus,test,True
+mjuk,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,mjuka,det mjuka huset,test,False
+mjuk,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,mjuka,mjuka hus,test,False
+mjuk,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,mjuka,de mjuka husen,test,False
+snabb,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,snabb,en snabb bil,train,False
+snabb,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,snabba,den snabba bilen,train,False
+snabb,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,snabba,snabba bilar,train,False
+snabb,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,snabba,de snabba bilarna,train,False
+snabb,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,snabbt,ett snabbt hus,train,True
+snabb,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,snabba,det snabba huset,train,False
+snabb,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,snabba,snabba hus,train,False
+snabb,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,snabba,de snabba husen,train,False
+stark,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,stark,en stark bil,train,False
+stark,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,starka,den starka bilen,train,False
+stark,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,starka,starka bilar,train,False
+stark,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,starka,de starka bilarna,train,False
+stark,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,starkt,ett starkt hus,train,True
+stark,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,starka,det starka huset,train,False
+stark,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,starka,starka hus,train,False
+stark,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,starka,de starka husen,train,False
+svag,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,svag,en svag bil,train,False
+svag,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,svaga,den svaga bilen,train,False
+svag,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,svaga,svaga bilar,train,False
+svag,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,svaga,de svaga bilarna,train,False
+svag,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,svagt,ett svagt hus,train,True
+svag,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,svaga,det svaga huset,train,False
+svag,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,svaga,svaga hus,train,False
+svag,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,svaga,de svaga husen,train,False
+ung,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,ung,en ung bil,test,False
+ung,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,unga,den unga bilen,test,False
+ung,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,unga,unga bilar,test,False
+ung,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,unga,de unga bilarna,test,False
+ung,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,ungt,ett ungt hus,test,True
+ung,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,unga,det unga huset,test,False
+ung,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,unga,unga hus,test,False
+ung,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,unga,de unga husen,test,False
+kall,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,kall,en kall bil,dev_diag,False
+kall,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,kalla,den kalla bilen,dev_diag,False
+kall,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,kalla,kalla bilar,dev_diag,False
+kall,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,kalla,de kalla bilarna,dev_diag,False
+kall,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,kallt,ett kallt hus,dev_diag,True
+kall,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,kalla,det kalla huset,dev_diag,False
+kall,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,kalla,kalla hus,dev_diag,False
+kall,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,kalla,de kalla husen,dev_diag,False
+tjock,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,tjock,en tjock bil,train,False
+tjock,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,tjocka,den tjocka bilen,train,False
+tjock,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,tjocka,tjocka bilar,train,False
+tjock,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,tjocka,de tjocka bilarna,train,False
+tjock,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,tjockt,ett tjockt hus,train,True
+tjock,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,tjocka,det tjocka huset,train,False
+tjock,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,tjocka,tjocka hus,train,False
+tjock,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,tjocka,de tjocka husen,train,False
+smal,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,smal,en smal bil,dev_gate,False
+smal,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,smala,den smala bilen,dev_gate,False
+smal,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,smala,smala bilar,dev_gate,False
+smal,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,smala,de smala bilarna,dev_gate,False
+smal,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,smalt,ett smalt hus,dev_gate,True
+smal,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,smala,det smala huset,dev_gate,False
+smal,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,smala,smala hus,dev_gate,False
+smal,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,smala,de smala husen,dev_gate,False
+grov,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,grov,en grov bil,train,False
+grov,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,grova,den grova bilen,train,False
+grov,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,grova,grova bilar,train,False
+grov,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,grova,de grova bilarna,train,False
+grov,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,grovt,ett grovt hus,train,True
+grov,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,grova,det grova huset,train,False
+grov,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,grova,grova hus,train,False
+grov,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,grova,de grova husen,train,False
+stum,regular,add_t,uter,sg,indef,uter|sg|indef,BASE,0,stum,en stum bil,test,False
+stum,regular,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,stuma,den stuma bilen,test,False
+stum,regular,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,stuma,stuma bilar,test,False
+stum,regular,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,stuma,de stuma bilarna,test,False
+stum,regular,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,stumt,ett stumt hus,test,True
+stum,regular,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,stuma,det stuma huset,test,False
+stum,regular,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,stuma,stuma hus,test,False
+stum,regular,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,stuma,de stuma husen,test,False
+hård,regular,d_to_t,uter,sg,indef,uter|sg|indef,BASE,0,hård,en hård bil,dev_gate,False
+hård,regular,d_to_t,uter,sg,def,uter|sg|def,WEAK_A,4,hårda,den hårda bilen,dev_gate,False
+hård,regular,d_to_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,hårda,hårda bilar,dev_gate,False
+hård,regular,d_to_t,uter,pl,def,uter|pl|def,WEAK_A,4,hårda,de hårda bilarna,dev_gate,False
+hård,regular,d_to_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,hårt,ett hårt hus,dev_gate,True
+hård,regular,d_to_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,hårda,det hårda huset,dev_gate,False
+hård,regular,d_to_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,hårda,hårda hus,dev_gate,False
+hård,regular,d_to_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,hårda,de hårda husen,dev_gate,False
+rund,regular,d_to_t,uter,sg,indef,uter|sg|indef,BASE,0,rund,en rund bil,train,False
+rund,regular,d_to_t,uter,sg,def,uter|sg|def,WEAK_A,4,runda,den runda bilen,train,False
+rund,regular,d_to_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,runda,runda bilar,train,False
+rund,regular,d_to_t,uter,pl,def,uter|pl|def,WEAK_A,4,runda,de runda bilarna,train,False
+rund,regular,d_to_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,runt,ett runt hus,train,True
+rund,regular,d_to_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,runda,det runda huset,train,False
+rund,regular,d_to_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,runda,runda hus,train,False
+rund,regular,d_to_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,runda,de runda husen,train,False
+vild,regular,d_to_t,uter,sg,indef,uter|sg|indef,BASE,0,vild,en vild bil,dev_diag,False
+vild,regular,d_to_t,uter,sg,def,uter|sg|def,WEAK_A,4,vilda,den vilda bilen,dev_diag,False
+vild,regular,d_to_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,vilda,vilda bilar,dev_diag,False
+vild,regular,d_to_t,uter,pl,def,uter|pl|def,WEAK_A,4,vilda,de vilda bilarna,dev_diag,False
+vild,regular,d_to_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,vilt,ett vilt hus,dev_diag,True
+vild,regular,d_to_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,vilda,det vilda huset,dev_diag,False
+vild,regular,d_to_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,vilda,vilda hus,dev_diag,False
+vild,regular,d_to_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,vilda,de vilda husen,dev_diag,False
+ond,regular,d_to_t,uter,sg,indef,uter|sg|indef,BASE,0,ond,en ond bil,dev_gate,False
+ond,regular,d_to_t,uter,sg,def,uter|sg|def,WEAK_A,4,onda,den onda bilen,dev_gate,False
+ond,regular,d_to_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,onda,onda bilar,dev_gate,False
+ond,regular,d_to_t,uter,pl,def,uter|pl|def,WEAK_A,4,onda,de onda bilarna,dev_gate,False
+ond,regular,d_to_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,ont,ett ont hus,dev_gate,True
+ond,regular,d_to_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,onda,det onda huset,dev_gate,False
+ond,regular,d_to_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,onda,onda hus,dev_gate,False
+ond,regular,d_to_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,onda,de onda husen,dev_gate,False
+rolig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,rolig,en rolig bil,dev_diag,False
+rolig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,roliga,den roliga bilen,dev_diag,False
+rolig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,roliga,roliga bilar,dev_diag,False
+rolig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,roliga,de roliga bilarna,dev_diag,False
+rolig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,roligt,ett roligt hus,dev_diag,True
+rolig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,roliga,det roliga huset,dev_diag,False
+rolig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,roliga,roliga hus,dev_diag,False
+rolig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,roliga,de roliga husen,dev_diag,False
+tråkig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,tråkig,en tråkig bil,train,False
+tråkig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,tråkiga,den tråkiga bilen,train,False
+tråkig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,tråkiga,tråkiga bilar,train,False
+tråkig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,tråkiga,de tråkiga bilarna,train,False
+tråkig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,tråkigt,ett tråkigt hus,train,True
+tråkig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,tråkiga,det tråkiga huset,train,False
+tråkig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,tråkiga,tråkiga hus,train,False
+tråkig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,tråkiga,de tråkiga husen,train,False
+dålig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,dålig,en dålig bil,dev_diag,False
+dålig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,dåliga,den dåliga bilen,dev_diag,False
+dålig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,dåliga,dåliga bilar,dev_diag,False
+dålig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,dåliga,de dåliga bilarna,dev_diag,False
+dålig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,dåligt,ett dåligt hus,dev_diag,True
+dålig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,dåliga,det dåliga huset,dev_diag,False
+dålig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,dåliga,dåliga hus,dev_diag,False
+dålig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,dåliga,de dåliga husen,dev_diag,False
+trevlig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,trevlig,en trevlig bil,dev_diag,False
+trevlig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,trevliga,den trevliga bilen,dev_diag,False
+trevlig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,trevliga,trevliga bilar,dev_diag,False
+trevlig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,trevliga,de trevliga bilarna,dev_diag,False
+trevlig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,trevligt,ett trevligt hus,dev_diag,True
+trevlig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,trevliga,det trevliga huset,dev_diag,False
+trevlig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,trevliga,trevliga hus,dev_diag,False
+trevlig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,trevliga,de trevliga husen,dev_diag,False
+konstig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,konstig,en konstig bil,train,False
+konstig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,konstiga,den konstiga bilen,train,False
+konstig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,konstiga,konstiga bilar,train,False
+konstig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,konstiga,de konstiga bilarna,train,False
+konstig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,konstigt,ett konstigt hus,train,True
+konstig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,konstiga,det konstiga huset,train,False
+konstig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,konstiga,konstiga hus,train,False
+konstig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,konstiga,de konstiga husen,train,False
+viktig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,viktig,en viktig bil,test,False
+viktig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,viktiga,den viktiga bilen,test,False
+viktig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,viktiga,viktiga bilar,test,False
+viktig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,viktiga,de viktiga bilarna,test,False
+viktig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,viktigt,ett viktigt hus,test,True
+viktig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,viktiga,det viktiga huset,test,False
+viktig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,viktiga,viktiga hus,test,False
+viktig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,viktiga,de viktiga husen,test,False
+duktig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,duktig,en duktig bil,train,False
+duktig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,duktiga,den duktiga bilen,train,False
+duktig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,duktiga,duktiga bilar,train,False
+duktig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,duktiga,de duktiga bilarna,train,False
+duktig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,duktigt,ett duktigt hus,train,True
+duktig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,duktiga,det duktiga huset,train,False
+duktig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,duktiga,duktiga hus,train,False
+duktig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,duktiga,de duktiga husen,train,False
+nyttig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,nyttig,en nyttig bil,train,False
+nyttig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,nyttiga,den nyttiga bilen,train,False
+nyttig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,nyttiga,nyttiga bilar,train,False
+nyttig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,nyttiga,de nyttiga bilarna,train,False
+nyttig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,nyttigt,ett nyttigt hus,train,True
+nyttig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,nyttiga,det nyttiga huset,train,False
+nyttig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,nyttiga,nyttiga hus,train,False
+nyttig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,nyttiga,de nyttiga husen,train,False
+ledig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,ledig,en ledig bil,dev_gate,False
+ledig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,lediga,den lediga bilen,dev_gate,False
+ledig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,lediga,lediga bilar,dev_gate,False
+ledig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,lediga,de lediga bilarna,dev_gate,False
+ledig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,ledigt,ett ledigt hus,dev_gate,True
+ledig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,lediga,det lediga huset,dev_gate,False
+ledig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,lediga,lediga hus,dev_gate,False
+ledig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,lediga,de lediga husen,dev_gate,False
+billig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,billig,en billig bil,test,False
+billig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,billiga,den billiga bilen,test,False
+billig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,billiga,billiga bilar,test,False
+billig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,billiga,de billiga bilarna,test,False
+billig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,billigt,ett billigt hus,test,True
+billig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,billiga,det billiga huset,test,False
+billig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,billiga,billiga hus,test,False
+billig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,billiga,de billiga husen,test,False
+härlig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,härlig,en härlig bil,train,False
+härlig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,härliga,den härliga bilen,train,False
+härlig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,härliga,härliga bilar,train,False
+härlig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,härliga,de härliga bilarna,train,False
+härlig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,härligt,ett härligt hus,train,True
+härlig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,härliga,det härliga huset,train,False
+härlig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,härliga,härliga hus,train,False
+härlig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,härliga,de härliga husen,train,False
+farlig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,farlig,en farlig bil,test,False
+farlig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,farliga,den farliga bilen,test,False
+farlig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,farliga,farliga bilar,test,False
+farlig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,farliga,de farliga bilarna,test,False
+farlig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,farligt,ett farligt hus,test,True
+farlig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,farliga,det farliga huset,test,False
+farlig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,farliga,farliga hus,test,False
+farlig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,farliga,de farliga husen,test,False
+tydlig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,tydlig,en tydlig bil,train,False
+tydlig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,tydliga,den tydliga bilen,train,False
+tydlig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,tydliga,tydliga bilar,train,False
+tydlig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,tydliga,de tydliga bilarna,train,False
+tydlig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,tydligt,ett tydligt hus,train,True
+tydlig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,tydliga,det tydliga huset,train,False
+tydlig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,tydliga,tydliga hus,train,False
+tydlig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,tydliga,de tydliga husen,train,False
+möjlig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,möjlig,en möjlig bil,train,False
+möjlig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,möjliga,den möjliga bilen,train,False
+möjlig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,möjliga,möjliga bilar,train,False
+möjlig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,möjliga,de möjliga bilarna,train,False
+möjlig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,möjligt,ett möjligt hus,train,True
+möjlig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,möjliga,det möjliga huset,train,False
+möjlig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,möjliga,möjliga hus,train,False
+möjlig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,möjliga,de möjliga husen,train,False
+vanlig,ends_ig,add_t,uter,sg,indef,uter|sg|indef,BASE,0,vanlig,en vanlig bil,dev_gate,False
+vanlig,ends_ig,add_t,uter,sg,def,uter|sg|def,WEAK_A,4,vanliga,den vanliga bilen,dev_gate,False
+vanlig,ends_ig,add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,vanliga,vanliga bilar,dev_gate,False
+vanlig,ends_ig,add_t,uter,pl,def,uter|pl|def,WEAK_A,4,vanliga,de vanliga bilarna,dev_gate,False
+vanlig,ends_ig,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,vanligt,ett vanligt hus,dev_gate,True
+vanlig,ends_ig,add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,vanliga,det vanliga huset,dev_gate,False
+vanlig,ends_ig,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,vanliga,vanliga hus,dev_gate,False
+vanlig,ends_ig,add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,vanliga,de vanliga husen,dev_gate,False
+ny,geminating,add_tt,uter,sg,indef,uter|sg|indef,BASE,0,ny,en ny bil,train,False
+ny,geminating,add_tt,uter,sg,def,uter|sg|def,WEAK_A,4,nya,den nya bilen,train,False
+ny,geminating,add_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,nya,nya bilar,train,False
+ny,geminating,add_tt,uter,pl,def,uter|pl|def,WEAK_A,4,nya,de nya bilarna,train,False
+ny,geminating,add_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,nytt,ett nytt hus,train,True
+ny,geminating,add_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,nya,det nya huset,train,False
+ny,geminating,add_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,nya,nya hus,train,False
+ny,geminating,add_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,nya,de nya husen,train,False
+blå,geminating,add_tt,uter,sg,indef,uter|sg|indef,BASE,0,blå,en blå bil,dev_diag,False
+blå,geminating,add_tt,uter,sg,def,uter|sg|def,WEAK_A,4,blåa,den blåa bilen,dev_diag,False
+blå,geminating,add_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,blåa,blåa bilar,dev_diag,False
+blå,geminating,add_tt,uter,pl,def,uter|pl|def,WEAK_A,4,blåa,de blåa bilarna,dev_diag,False
+blå,geminating,add_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,blått,ett blått hus,dev_diag,True
+blå,geminating,add_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,blåa,det blåa huset,dev_diag,False
+blå,geminating,add_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,blåa,blåa hus,dev_diag,False
+blå,geminating,add_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,blåa,de blåa husen,dev_diag,False
+grå,geminating,add_tt,uter,sg,indef,uter|sg|indef,BASE,0,grå,en grå bil,train,False
+grå,geminating,add_tt,uter,sg,def,uter|sg|def,WEAK_A,4,gråa,den gråa bilen,train,False
+grå,geminating,add_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,gråa,gråa bilar,train,False
+grå,geminating,add_tt,uter,pl,def,uter|pl|def,WEAK_A,4,gråa,de gråa bilarna,train,False
+grå,geminating,add_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,grått,ett grått hus,train,True
+grå,geminating,add_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,gråa,det gråa huset,train,False
+grå,geminating,add_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,gråa,gråa hus,train,False
+grå,geminating,add_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,gråa,de gråa husen,train,False
+fri,geminating,add_tt,uter,sg,indef,uter|sg|indef,BASE,0,fri,en fri bil,dev_gate,False
+fri,geminating,add_tt,uter,sg,def,uter|sg|def,WEAK_A,4,fria,den fria bilen,dev_gate,False
+fri,geminating,add_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,fria,fria bilar,dev_gate,False
+fri,geminating,add_tt,uter,pl,def,uter|pl|def,WEAK_A,4,fria,de fria bilarna,dev_gate,False
+fri,geminating,add_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,fritt,ett fritt hus,dev_gate,True
+fri,geminating,add_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,fria,det fria huset,dev_gate,False
+fri,geminating,add_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,fria,fria hus,dev_gate,False
+fri,geminating,add_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,fria,de fria husen,dev_gate,False
+rå,geminating,add_tt,uter,sg,indef,uter|sg|indef,BASE,0,rå,en rå bil,train,False
+rå,geminating,add_tt,uter,sg,def,uter|sg|def,WEAK_A,4,råa,den råa bilen,train,False
+rå,geminating,add_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,råa,råa bilar,train,False
+rå,geminating,add_tt,uter,pl,def,uter|pl|def,WEAK_A,4,råa,de råa bilarna,train,False
+rå,geminating,add_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,rått,ett rått hus,train,True
+rå,geminating,add_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,råa,det råa huset,train,False
+rå,geminating,add_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,råa,råa hus,train,False
+rå,geminating,add_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,råa,de råa husen,train,False
+slö,geminating,add_tt,uter,sg,indef,uter|sg|indef,BASE,0,slö,en slö bil,train,False
+slö,geminating,add_tt,uter,sg,def,uter|sg|def,WEAK_A,4,slöa,den slöa bilen,train,False
+slö,geminating,add_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,slöa,slöa bilar,train,False
+slö,geminating,add_tt,uter,pl,def,uter|pl|def,WEAK_A,4,slöa,de slöa bilarna,train,False
+slö,geminating,add_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,slött,ett slött hus,train,True
+slö,geminating,add_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,slöa,det slöa huset,train,False
+slö,geminating,add_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,slöa,slöa hus,train,False
+slö,geminating,add_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,slöa,de slöa husen,train,False
+röd,geminating,d_to_tt,uter,sg,indef,uter|sg|indef,BASE,0,röd,en röd bil,test,False
+röd,geminating,d_to_tt,uter,sg,def,uter|sg|def,WEAK_A,4,röda,den röda bilen,test,False
+röd,geminating,d_to_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,röda,röda bilar,test,False
+röd,geminating,d_to_tt,uter,pl,def,uter|pl|def,WEAK_A,4,röda,de röda bilarna,test,False
+röd,geminating,d_to_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,rött,ett rött hus,test,True
+röd,geminating,d_to_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,röda,det röda huset,test,False
+röd,geminating,d_to_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,röda,röda hus,test,False
+röd,geminating,d_to_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,röda,de röda husen,test,False
+god,geminating,d_to_tt,uter,sg,indef,uter|sg|indef,BASE,0,god,en god bil,train,False
+god,geminating,d_to_tt,uter,sg,def,uter|sg|def,WEAK_A,4,goda,den goda bilen,train,False
+god,geminating,d_to_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,goda,goda bilar,train,False
+god,geminating,d_to_tt,uter,pl,def,uter|pl|def,WEAK_A,4,goda,de goda bilarna,train,False
+god,geminating,d_to_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,gott,ett gott hus,train,True
+god,geminating,d_to_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,goda,det goda huset,train,False
+god,geminating,d_to_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,goda,goda hus,train,False
+god,geminating,d_to_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,goda,de goda husen,train,False
+glad,geminating,d_to_tt,uter,sg,indef,uter|sg|indef,BASE,0,glad,en glad bil,test,False
+glad,geminating,d_to_tt,uter,sg,def,uter|sg|def,WEAK_A,4,glada,den glada bilen,test,False
+glad,geminating,d_to_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,glada,glada bilar,test,False
+glad,geminating,d_to_tt,uter,pl,def,uter|pl|def,WEAK_A,4,glada,de glada bilarna,test,False
+glad,geminating,d_to_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,glatt,ett glatt hus,test,True
+glad,geminating,d_to_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,glada,det glada huset,test,False
+glad,geminating,d_to_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,glada,glada hus,test,False
+glad,geminating,d_to_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,glada,de glada husen,test,False
+bred,geminating,d_to_tt,uter,sg,indef,uter|sg|indef,BASE,0,bred,en bred bil,dev_diag,False
+bred,geminating,d_to_tt,uter,sg,def,uter|sg|def,WEAK_A,4,breda,den breda bilen,dev_diag,False
+bred,geminating,d_to_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,breda,breda bilar,dev_diag,False
+bred,geminating,d_to_tt,uter,pl,def,uter|pl|def,WEAK_A,4,breda,de breda bilarna,dev_diag,False
+bred,geminating,d_to_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,brett,ett brett hus,dev_diag,True
+bred,geminating,d_to_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,breda,det breda huset,dev_diag,False
+bred,geminating,d_to_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,breda,breda hus,dev_diag,False
+bred,geminating,d_to_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,breda,de breda husen,dev_diag,False
+vred,geminating,d_to_tt,uter,sg,indef,uter|sg|indef,BASE,0,vred,en vred bil,train,False
+vred,geminating,d_to_tt,uter,sg,def,uter|sg|def,WEAK_A,4,vreda,den vreda bilen,train,False
+vred,geminating,d_to_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,vreda,vreda bilar,train,False
+vred,geminating,d_to_tt,uter,pl,def,uter|pl|def,WEAK_A,4,vreda,de vreda bilarna,train,False
+vred,geminating,d_to_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,vrett,ett vrett hus,train,True
+vred,geminating,d_to_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,vreda,det vreda huset,train,False
+vred,geminating,d_to_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,vreda,vreda hus,train,False
+vred,geminating,d_to_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,vreda,de vreda husen,train,False
+död,geminating,d_to_tt,uter,sg,indef,uter|sg|indef,BASE,0,död,en död bil,dev_gate,False
+död,geminating,d_to_tt,uter,sg,def,uter|sg|def,WEAK_A,4,döda,den döda bilen,dev_gate,False
+död,geminating,d_to_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,döda,döda bilar,dev_gate,False
+död,geminating,d_to_tt,uter,pl,def,uter|pl|def,WEAK_A,4,döda,de döda bilarna,dev_gate,False
+död,geminating,d_to_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,dött,ett dött hus,dev_gate,True
+död,geminating,d_to_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,döda,det döda huset,dev_gate,False
+död,geminating,d_to_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,döda,döda hus,dev_gate,False
+död,geminating,d_to_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,döda,de döda husen,dev_gate,False
+vid,geminating,d_to_tt,uter,sg,indef,uter|sg|indef,BASE,0,vid,en vid bil,train,False
+vid,geminating,d_to_tt,uter,sg,def,uter|sg|def,WEAK_A,4,vida,den vida bilen,train,False
+vid,geminating,d_to_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,vida,vida bilar,train,False
+vid,geminating,d_to_tt,uter,pl,def,uter|pl|def,WEAK_A,4,vida,de vida bilarna,train,False
+vid,geminating,d_to_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,vitt,ett vitt hus,train,True
+vid,geminating,d_to_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,vida,det vida huset,train,False
+vid,geminating,d_to_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,vida,vida hus,train,False
+vid,geminating,d_to_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,vida,de vida husen,train,False
+pryd,geminating,d_to_tt,uter,sg,indef,uter|sg|indef,BASE,0,pryd,en pryd bil,dev_diag,False
+pryd,geminating,d_to_tt,uter,sg,def,uter|sg|def,WEAK_A,4,pryda,den pryda bilen,dev_diag,False
+pryd,geminating,d_to_tt,uter,pl,indef,uter|pl|indef,WEAK_A,4,pryda,pryda bilar,dev_diag,False
+pryd,geminating,d_to_tt,uter,pl,def,uter|pl|def,WEAK_A,4,pryda,de pryda bilarna,dev_diag,False
+pryd,geminating,d_to_tt,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,prytt,ett prytt hus,dev_diag,True
+pryd,geminating,d_to_tt,neuter,sg,def,neuter|sg|def,WEAK_A,4,pryda,det pryda huset,dev_diag,False
+pryd,geminating,d_to_tt,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,pryda,pryda hus,dev_diag,False
+pryd,geminating,d_to_tt,neuter,pl,def,neuter|pl|def,WEAK_A,4,pryda,de pryda husen,dev_diag,False
+vit,geminating,t_add_t,uter,sg,indef,uter|sg|indef,BASE,0,vit,en vit bil,train,False
+vit,geminating,t_add_t,uter,sg,def,uter|sg|def,WEAK_A,4,vita,den vita bilen,train,False
+vit,geminating,t_add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,vita,vita bilar,train,False
+vit,geminating,t_add_t,uter,pl,def,uter|pl|def,WEAK_A,4,vita,de vita bilarna,train,False
+vit,geminating,t_add_t,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,vitt,ett vitt hus,train,True
+vit,geminating,t_add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,vita,det vita huset,train,False
+vit,geminating,t_add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,vita,vita hus,train,False
+vit,geminating,t_add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,vita,de vita husen,train,False
+fet,geminating,t_add_t,uter,sg,indef,uter|sg|indef,BASE,0,fet,en fet bil,dev_diag,False
+fet,geminating,t_add_t,uter,sg,def,uter|sg|def,WEAK_A,4,feta,den feta bilen,dev_diag,False
+fet,geminating,t_add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,feta,feta bilar,dev_diag,False
+fet,geminating,t_add_t,uter,pl,def,uter|pl|def,WEAK_A,4,feta,de feta bilarna,dev_diag,False
+fet,geminating,t_add_t,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,fett,ett fett hus,dev_diag,True
+fet,geminating,t_add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,feta,det feta huset,dev_diag,False
+fet,geminating,t_add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,feta,feta hus,dev_diag,False
+fet,geminating,t_add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,feta,de feta husen,dev_diag,False
+söt,geminating,t_add_t,uter,sg,indef,uter|sg|indef,BASE,0,söt,en söt bil,train,False
+söt,geminating,t_add_t,uter,sg,def,uter|sg|def,WEAK_A,4,söta,den söta bilen,train,False
+söt,geminating,t_add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,söta,söta bilar,train,False
+söt,geminating,t_add_t,uter,pl,def,uter|pl|def,WEAK_A,4,söta,de söta bilarna,train,False
+söt,geminating,t_add_t,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,sött,ett sött hus,train,True
+söt,geminating,t_add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,söta,det söta huset,train,False
+söt,geminating,t_add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,söta,söta hus,train,False
+söt,geminating,t_add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,söta,de söta husen,train,False
+lat,geminating,t_add_t,uter,sg,indef,uter|sg|indef,BASE,0,lat,en lat bil,dev_gate,False
+lat,geminating,t_add_t,uter,sg,def,uter|sg|def,WEAK_A,4,lata,den lata bilen,dev_gate,False
+lat,geminating,t_add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,lata,lata bilar,dev_gate,False
+lat,geminating,t_add_t,uter,pl,def,uter|pl|def,WEAK_A,4,lata,de lata bilarna,dev_gate,False
+lat,geminating,t_add_t,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,latt,ett latt hus,dev_gate,True
+lat,geminating,t_add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,lata,det lata huset,dev_gate,False
+lat,geminating,t_add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,lata,lata hus,dev_gate,False
+lat,geminating,t_add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,lata,de lata husen,dev_gate,False
+het,geminating,t_add_t,uter,sg,indef,uter|sg|indef,BASE,0,het,en het bil,train,False
+het,geminating,t_add_t,uter,sg,def,uter|sg|def,WEAK_A,4,heta,den heta bilen,train,False
+het,geminating,t_add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,heta,heta bilar,train,False
+het,geminating,t_add_t,uter,pl,def,uter|pl|def,WEAK_A,4,heta,de heta bilarna,train,False
+het,geminating,t_add_t,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,hett,ett hett hus,train,True
+het,geminating,t_add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,heta,det heta huset,train,False
+het,geminating,t_add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,heta,heta hus,train,False
+het,geminating,t_add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,heta,de heta husen,train,False
+våt,geminating,t_add_t,uter,sg,indef,uter|sg|indef,BASE,0,våt,en våt bil,dev_gate,False
+våt,geminating,t_add_t,uter,sg,def,uter|sg|def,WEAK_A,4,våta,den våta bilen,dev_gate,False
+våt,geminating,t_add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,våta,våta bilar,dev_gate,False
+våt,geminating,t_add_t,uter,pl,def,uter|pl|def,WEAK_A,4,våta,de våta bilarna,dev_gate,False
+våt,geminating,t_add_t,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,vått,ett vått hus,dev_gate,True
+våt,geminating,t_add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,våta,det våta huset,dev_gate,False
+våt,geminating,t_add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,våta,våta hus,dev_gate,False
+våt,geminating,t_add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,våta,de våta husen,dev_gate,False
+slät,geminating,t_add_t,uter,sg,indef,uter|sg|indef,BASE,0,slät,en slät bil,test,False
+slät,geminating,t_add_t,uter,sg,def,uter|sg|def,WEAK_A,4,släta,den släta bilen,test,False
+slät,geminating,t_add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,släta,släta bilar,test,False
+slät,geminating,t_add_t,uter,pl,def,uter|pl|def,WEAK_A,4,släta,de släta bilarna,test,False
+slät,geminating,t_add_t,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,slätt,ett slätt hus,test,True
+slät,geminating,t_add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,släta,det släta huset,test,False
+slät,geminating,t_add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,släta,släta hus,test,False
+slät,geminating,t_add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,släta,de släta husen,test,False
+flat,geminating,t_add_t,uter,sg,indef,uter|sg|indef,BASE,0,flat,en flat bil,test,False
+flat,geminating,t_add_t,uter,sg,def,uter|sg|def,WEAK_A,4,flata,den flata bilen,test,False
+flat,geminating,t_add_t,uter,pl,indef,uter|pl|indef,WEAK_A,4,flata,flata bilar,test,False
+flat,geminating,t_add_t,uter,pl,def,uter|pl|def,WEAK_A,4,flata,de flata bilarna,test,False
+flat,geminating,t_add_t,neuter,sg,indef,neuter|sg|indef,NEUT_TT,2,flatt,ett flatt hus,test,True
+flat,geminating,t_add_t,neuter,sg,def,neuter|sg|def,WEAK_A,4,flata,det flata huset,test,False
+flat,geminating,t_add_t,neuter,pl,indef,neuter|pl|indef,WEAK_A,4,flata,flata hus,test,False
+flat,geminating,t_add_t,neuter,pl,def,neuter|pl|def,WEAK_A,4,flata,de flata husen,test,False
+vacker,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,vacker,en vacker bil,test,False
+vacker,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,vackra,den vackra bilen,test,False
+vacker,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,vackra,vackra bilar,test,False
+vacker,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,vackra,de vackra bilarna,test,False
+vacker,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,vackert,ett vackert hus,test,True
+vacker,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,vackra,det vackra huset,test,False
+vacker,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,vackra,vackra hus,test,False
+vacker,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,vackra,de vackra husen,test,False
+säker,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,säker,en säker bil,dev_gate,False
+säker,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,säkra,den säkra bilen,dev_gate,False
+säker,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,säkra,säkra bilar,dev_gate,False
+säker,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,säkra,de säkra bilarna,dev_gate,False
+säker,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,säkert,ett säkert hus,dev_gate,True
+säker,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,säkra,det säkra huset,dev_gate,False
+säker,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,säkra,säkra hus,dev_gate,False
+säker,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,säkra,de säkra husen,dev_gate,False
+tapper,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,tapper,en tapper bil,test,False
+tapper,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,tappra,den tappra bilen,test,False
+tapper,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,tappra,tappra bilar,test,False
+tapper,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,tappra,de tappra bilarna,test,False
+tapper,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,tappert,ett tappert hus,test,True
+tapper,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,tappra,det tappra huset,test,False
+tapper,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,tappra,tappra hus,test,False
+tapper,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,tappra,de tappra husen,test,False
+bitter,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,bitter,en bitter bil,dev_gate,False
+bitter,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,bittra,den bittra bilen,dev_gate,False
+bitter,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,bittra,bittra bilar,dev_gate,False
+bitter,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,bittra,de bittra bilarna,dev_gate,False
+bitter,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,bittert,ett bittert hus,dev_gate,True
+bitter,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,bittra,det bittra huset,dev_gate,False
+bitter,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,bittra,bittra hus,dev_gate,False
+bitter,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,bittra,de bittra husen,dev_gate,False
+läcker,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,läcker,en läcker bil,train,False
+läcker,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,läckra,den läckra bilen,train,False
+läcker,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,läckra,läckra bilar,train,False
+läcker,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,läckra,de läckra bilarna,train,False
+läcker,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,läckert,ett läckert hus,train,True
+läcker,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,läckra,det läckra huset,train,False
+läcker,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,läckra,läckra hus,train,False
+läcker,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,läckra,de läckra husen,train,False
+mager,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,mager,en mager bil,train,False
+mager,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,magra,den magra bilen,train,False
+mager,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,magra,magra bilar,train,False
+mager,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,magra,de magra bilarna,train,False
+mager,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,magert,ett magert hus,train,True
+mager,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,magra,det magra huset,train,False
+mager,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,magra,magra hus,train,False
+mager,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,magra,de magra husen,train,False
+fager,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,fager,en fager bil,train,False
+fager,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,fagra,den fagra bilen,train,False
+fager,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,fagra,fagra bilar,train,False
+fager,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,fagra,de fagra bilarna,train,False
+fager,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,fagert,ett fagert hus,train,True
+fager,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,fagra,det fagra huset,train,False
+fager,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,fagra,fagra hus,train,False
+fager,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,fagra,de fagra husen,train,False
+dyster,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,dyster,en dyster bil,dev_diag,False
+dyster,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,dystra,den dystra bilen,dev_diag,False
+dyster,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,dystra,dystra bilar,dev_diag,False
+dyster,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,dystra,de dystra bilarna,dev_diag,False
+dyster,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,dystert,ett dystert hus,dev_diag,True
+dyster,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,dystra,det dystra huset,dev_diag,False
+dyster,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,dystra,dystra hus,dev_diag,False
+dyster,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,dystra,de dystra husen,dev_diag,False
+gammal,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,gammal,en gammal bil,train,False
+gammal,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,gamla,den gamla bilen,train,False
+gammal,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,gamla,gamla bilar,train,False
+gammal,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,gamla,de gamla bilarna,train,False
+gammal,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,gammalt,ett gammalt hus,train,True
+gammal,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,gamla,det gamla huset,train,False
+gammal,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,gamla,gamla hus,train,False
+gammal,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,gamla,de gamla husen,train,False
+enkel,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,enkel,en enkel bil,dev_diag,False
+enkel,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,enkla,den enkla bilen,dev_diag,False
+enkel,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,enkla,enkla bilar,dev_diag,False
+enkel,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,enkla,de enkla bilarna,dev_diag,False
+enkel,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,enkelt,ett enkelt hus,dev_diag,True
+enkel,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,enkla,det enkla huset,dev_diag,False
+enkel,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,enkla,enkla hus,dev_diag,False
+enkel,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,enkla,de enkla husen,dev_diag,False
+ädel,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,ädel,en ädel bil,train,False
+ädel,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,ädla,den ädla bilen,train,False
+ädel,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,ädla,ädla bilar,train,False
+ädel,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,ädla,de ädla bilarna,train,False
+ädel,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,ädelt,ett ädelt hus,train,True
+ädel,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,ädla,det ädla huset,train,False
+ädel,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,ädla,ädla hus,train,False
+ädel,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,ädla,de ädla husen,train,False
+usel,syncopating,add_t,uter,sg,indef,uter|sg|indef,BASE,0,usel,en usel bil,train,False
+usel,syncopating,add_t,uter,sg,def,uter|sg|def,WEAK_DROP_E,5,usla,den usla bilen,train,False
+usel,syncopating,add_t,uter,pl,indef,uter|pl|indef,WEAK_DROP_E,5,usla,usla bilar,train,False
+usel,syncopating,add_t,uter,pl,def,uter|pl|def,WEAK_DROP_E,5,usla,de usla bilarna,train,False
+usel,syncopating,add_t,neuter,sg,indef,neuter|sg|indef,NEUT_T,1,uselt,ett uselt hus,train,True
+usel,syncopating,add_t,neuter,sg,def,neuter|sg|def,WEAK_DROP_E,5,usla,det usla huset,train,False
+usel,syncopating,add_t,neuter,pl,indef,neuter|pl|indef,WEAK_DROP_E,5,usla,usla hus,train,False
+usel,syncopating,add_t,neuter,pl,def,neuter|pl|def,WEAK_DROP_E,5,usla,de usla husen,train,False
+mogen,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,mogen,en mogen bil,train,False
+mogen,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,mogna,den mogna bilen,train,False
+mogen,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,mogna,mogna bilar,train,False
+mogen,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,mogna,de mogna bilarna,train,False
+mogen,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,moget,ett moget hus,train,True
+mogen,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,mogna,det mogna huset,train,False
+mogen,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,mogna,mogna hus,train,False
+mogen,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,mogna,de mogna husen,train,False
+galen,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,galen,en galen bil,test,False
+galen,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,galna,den galna bilen,test,False
+galen,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,galna,galna bilar,test,False
+galen,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,galna,de galna bilarna,test,False
+galen,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,galet,ett galet hus,test,True
+galen,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,galna,det galna huset,test,False
+galen,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,galna,galna hus,test,False
+galen,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,galna,de galna husen,test,False
+vaken,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,vaken,en vaken bil,train,False
+vaken,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,vakna,den vakna bilen,train,False
+vaken,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,vakna,vakna bilar,train,False
+vaken,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,vakna,de vakna bilarna,train,False
+vaken,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,vaket,ett vaket hus,train,True
+vaken,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,vakna,det vakna huset,train,False
+vaken,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,vakna,vakna hus,train,False
+vaken,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,vakna,de vakna husen,train,False
+öppen,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,öppen,en öppen bil,dev_gate,False
+öppen,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,öppna,den öppna bilen,dev_gate,False
+öppen,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,öppna,öppna bilar,dev_gate,False
+öppen,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,öppna,de öppna bilarna,dev_gate,False
+öppen,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,öppet,ett öppet hus,dev_gate,True
+öppen,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,öppna,det öppna huset,dev_gate,False
+öppen,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,öppna,öppna hus,dev_gate,False
+öppen,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,öppna,de öppna husen,dev_gate,False
+egen,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,egen,en egen bil,train,False
+egen,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,egna,den egna bilen,train,False
+egen,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,egna,egna bilar,train,False
+egen,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,egna,de egna bilarna,train,False
+egen,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,eget,ett eget hus,train,True
+egen,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,egna,det egna huset,train,False
+egen,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,egna,egna hus,train,False
+egen,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,egna,de egna husen,train,False
+ledsen,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,ledsen,en ledsen bil,dev_diag,False
+ledsen,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,ledsna,den ledsna bilen,dev_diag,False
+ledsen,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,ledsna,ledsna bilar,dev_diag,False
+ledsen,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,ledsna,de ledsna bilarna,dev_diag,False
+ledsen,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,ledset,ett ledset hus,dev_diag,True
+ledsen,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,ledsna,det ledsna huset,dev_diag,False
+ledsen,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,ledsna,ledsna hus,dev_diag,False
+ledsen,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,ledsna,de ledsna husen,dev_diag,False
+sliten,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,sliten,en sliten bil,dev_diag,False
+sliten,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,slitna,den slitna bilen,dev_diag,False
+sliten,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,slitna,slitna bilar,dev_diag,False
+sliten,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,slitna,de slitna bilarna,dev_diag,False
+sliten,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,slitet,ett slitet hus,dev_diag,True
+sliten,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,slitna,det slitna huset,dev_diag,False
+sliten,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,slitna,slitna hus,dev_diag,False
+sliten,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,slitna,de slitna husen,dev_diag,False
+sprucken,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,sprucken,en sprucken bil,train,False
+sprucken,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,spruckna,den spruckna bilen,train,False
+sprucken,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,spruckna,spruckna bilar,train,False
+sprucken,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,spruckna,de spruckna bilarna,train,False
+sprucken,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,sprucket,ett sprucket hus,train,True
+sprucken,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,spruckna,det spruckna huset,train,False
+sprucken,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,spruckna,spruckna hus,train,False
+sprucken,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,spruckna,de spruckna husen,train,False
+bruten,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,bruten,en bruten bil,train,False
+bruten,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,brutna,den brutna bilen,train,False
+bruten,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,brutna,brutna bilar,train,False
+bruten,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,brutna,de brutna bilarna,train,False
+bruten,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,brutet,ett brutet hus,train,True
+bruten,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,brutna,det brutna huset,train,False
+bruten,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,brutna,brutna hus,train,False
+bruten,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,brutna,de brutna husen,train,False
+nyfiken,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,nyfiken,en nyfiken bil,test,False
+nyfiken,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,nyfikna,den nyfikna bilen,test,False
+nyfiken,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,nyfikna,nyfikna bilar,test,False
+nyfiken,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,nyfikna,de nyfikna bilarna,test,False
+nyfiken,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,nyfiket,ett nyfiket hus,test,True
+nyfiken,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,nyfikna,det nyfikna huset,test,False
+nyfiken,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,nyfikna,nyfikna hus,test,False
+nyfiken,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,nyfikna,de nyfikna husen,test,False
+vilsen,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,vilsen,en vilsen bil,train,False
+vilsen,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,vilsna,den vilsna bilen,train,False
+vilsen,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,vilsna,vilsna bilar,train,False
+vilsen,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,vilsna,de vilsna bilarna,train,False
+vilsen,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,vilset,ett vilset hus,train,True
+vilsen,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,vilsna,det vilsna huset,train,False
+vilsen,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,vilsna,vilsna hus,train,False
+vilsen,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,vilsna,de vilsna husen,train,False
+belåten,ends_en,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,belåten,en belåten bil,dev_gate,False
+belåten,ends_en,en_to_et,uter,sg,def,uter|sg|def,WEAK_NA,6,belåtna,den belåtna bilen,dev_gate,False
+belåten,ends_en,en_to_et,uter,pl,indef,uter|pl|indef,WEAK_NA,6,belåtna,belåtna bilar,dev_gate,False
+belåten,ends_en,en_to_et,uter,pl,def,uter|pl|def,WEAK_NA,6,belåtna,de belåtna bilarna,dev_gate,False
+belåten,ends_en,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,belåtet,ett belåtet hus,dev_gate,True
+belåten,ends_en,en_to_et,neuter,sg,def,neuter|sg|def,WEAK_NA,6,belåtna,det belåtna huset,dev_gate,False
+belåten,ends_en,en_to_et,neuter,pl,indef,neuter|pl|indef,WEAK_NA,6,belåtna,belåtna hus,dev_gate,False
+belåten,ends_en,en_to_et,neuter,pl,def,neuter|pl|def,WEAK_NA,6,belåtna,de belåtna husen,dev_gate,False
+bra,invariant,invariant,uter,sg,indef,uter|sg|indef,BASE,0,bra,en bra bil,dev_diag,False
+bra,invariant,invariant,uter,sg,def,uter|sg|def,BASE,0,bra,den bra bilen,dev_diag,False
+bra,invariant,invariant,uter,pl,indef,uter|pl|indef,BASE,0,bra,bra bilar,dev_diag,False
+bra,invariant,invariant,uter,pl,def,uter|pl|def,BASE,0,bra,de bra bilarna,dev_diag,False
+bra,invariant,invariant,neuter,sg,indef,neuter|sg|indef,BASE,0,bra,ett bra hus,dev_diag,False
+bra,invariant,invariant,neuter,sg,def,neuter|sg|def,BASE,0,bra,det bra huset,dev_diag,False
+bra,invariant,invariant,neuter,pl,indef,neuter|pl|indef,BASE,0,bra,bra hus,dev_diag,False
+bra,invariant,invariant,neuter,pl,def,neuter|pl|def,BASE,0,bra,de bra husen,dev_diag,False
+extra,invariant,invariant,uter,sg,indef,uter|sg|indef,BASE,0,extra,en extra bil,test,False
+extra,invariant,invariant,uter,sg,def,uter|sg|def,BASE,0,extra,den extra bilen,test,False
+extra,invariant,invariant,uter,pl,indef,uter|pl|indef,BASE,0,extra,extra bilar,test,False
+extra,invariant,invariant,uter,pl,def,uter|pl|def,BASE,0,extra,de extra bilarna,test,False
+extra,invariant,invariant,neuter,sg,indef,neuter|sg|indef,BASE,0,extra,ett extra hus,test,False
+extra,invariant,invariant,neuter,sg,def,neuter|sg|def,BASE,0,extra,det extra huset,test,False
+extra,invariant,invariant,neuter,pl,indef,neuter|pl|indef,BASE,0,extra,extra hus,test,False
+extra,invariant,invariant,neuter,pl,def,neuter|pl|def,BASE,0,extra,de extra husen,test,False
+kul,invariant,invariant,uter,sg,indef,uter|sg|indef,BASE,0,kul,en kul bil,train,False
+kul,invariant,invariant,uter,sg,def,uter|sg|def,BASE,0,kul,den kul bilen,train,False
+kul,invariant,invariant,uter,pl,indef,uter|pl|indef,BASE,0,kul,kul bilar,train,False
+kul,invariant,invariant,uter,pl,def,uter|pl|def,BASE,0,kul,de kul bilarna,train,False
+kul,invariant,invariant,neuter,sg,indef,neuter|sg|indef,BASE,0,kul,ett kul hus,train,False
+kul,invariant,invariant,neuter,sg,def,neuter|sg|def,BASE,0,kul,det kul huset,train,False
+kul,invariant,invariant,neuter,pl,indef,neuter|pl|indef,BASE,0,kul,kul hus,train,False
+kul,invariant,invariant,neuter,pl,def,neuter|pl|def,BASE,0,kul,de kul husen,train,False
+gyllene,invariant,invariant,uter,sg,indef,uter|sg|indef,BASE,0,gyllene,en gyllene bil,train,False
+gyllene,invariant,invariant,uter,sg,def,uter|sg|def,BASE,0,gyllene,den gyllene bilen,train,False
+gyllene,invariant,invariant,uter,pl,indef,uter|pl|indef,BASE,0,gyllene,gyllene bilar,train,False
+gyllene,invariant,invariant,uter,pl,def,uter|pl|def,BASE,0,gyllene,de gyllene bilarna,train,False
+gyllene,invariant,invariant,neuter,sg,indef,neuter|sg|indef,BASE,0,gyllene,ett gyllene hus,train,False
+gyllene,invariant,invariant,neuter,sg,def,neuter|sg|def,BASE,0,gyllene,det gyllene huset,train,False
+gyllene,invariant,invariant,neuter,pl,indef,neuter|pl|indef,BASE,0,gyllene,gyllene hus,train,False
+gyllene,invariant,invariant,neuter,pl,def,neuter|pl|def,BASE,0,gyllene,de gyllene husen,train,False
+äkta,invariant,invariant,uter,sg,indef,uter|sg|indef,BASE,0,äkta,en äkta bil,test,False
+äkta,invariant,invariant,uter,sg,def,uter|sg|def,BASE,0,äkta,den äkta bilen,test,False
+äkta,invariant,invariant,uter,pl,indef,uter|pl|indef,BASE,0,äkta,äkta bilar,test,False
+äkta,invariant,invariant,uter,pl,def,uter|pl|def,BASE,0,äkta,de äkta bilarna,test,False
+äkta,invariant,invariant,neuter,sg,indef,neuter|sg|indef,BASE,0,äkta,ett äkta hus,test,False
+äkta,invariant,invariant,neuter,sg,def,neuter|sg|def,BASE,0,äkta,det äkta huset,test,False
+äkta,invariant,invariant,neuter,pl,indef,neuter|pl|indef,BASE,0,äkta,äkta hus,test,False
+äkta,invariant,invariant,neuter,pl,def,neuter|pl|def,BASE,0,äkta,de äkta husen,test,False
+stilla,invariant,invariant,uter,sg,indef,uter|sg|indef,BASE,0,stilla,en stilla bil,train,False
+stilla,invariant,invariant,uter,sg,def,uter|sg|def,BASE,0,stilla,den stilla bilen,train,False
+stilla,invariant,invariant,uter,pl,indef,uter|pl|indef,BASE,0,stilla,stilla bilar,train,False
+stilla,invariant,invariant,uter,pl,def,uter|pl|def,BASE,0,stilla,de stilla bilarna,train,False
+stilla,invariant,invariant,neuter,sg,indef,neuter|sg|indef,BASE,0,stilla,ett stilla hus,train,False
+stilla,invariant,invariant,neuter,sg,def,neuter|sg|def,BASE,0,stilla,det stilla huset,train,False
+stilla,invariant,invariant,neuter,pl,indef,neuter|pl|indef,BASE,0,stilla,stilla hus,train,False
+stilla,invariant,invariant,neuter,pl,def,neuter|pl|def,BASE,0,stilla,de stilla husen,train,False
+orange,invariant,invariant,uter,sg,indef,uter|sg|indef,BASE,0,orange,en orange bil,dev_gate,False
+orange,invariant,invariant,uter,sg,def,uter|sg|def,BASE,0,orange,den orange bilen,dev_gate,False
+orange,invariant,invariant,uter,pl,indef,uter|pl|indef,BASE,0,orange,orange bilar,dev_gate,False
+orange,invariant,invariant,uter,pl,def,uter|pl|def,BASE,0,orange,de orange bilarna,dev_gate,False
+orange,invariant,invariant,neuter,sg,indef,neuter|sg|indef,BASE,0,orange,ett orange hus,dev_gate,False
+orange,invariant,invariant,neuter,sg,def,neuter|sg|def,BASE,0,orange,det orange huset,dev_gate,False
+orange,invariant,invariant,neuter,pl,indef,neuter|pl|indef,BASE,0,orange,orange hus,dev_gate,False
+orange,invariant,invariant,neuter,pl,def,neuter|pl|def,BASE,0,orange,de orange husen,dev_gate,False
+gratis,invariant,invariant,uter,sg,indef,uter|sg|indef,BASE,0,gratis,en gratis bil,train,False
+gratis,invariant,invariant,uter,sg,def,uter|sg|def,BASE,0,gratis,den gratis bilen,train,False
+gratis,invariant,invariant,uter,pl,indef,uter|pl|indef,BASE,0,gratis,gratis bilar,train,False
+gratis,invariant,invariant,uter,pl,def,uter|pl|def,BASE,0,gratis,de gratis bilarna,train,False
+gratis,invariant,invariant,neuter,sg,indef,neuter|sg|indef,BASE,0,gratis,ett gratis hus,train,False
+gratis,invariant,invariant,neuter,sg,def,neuter|sg|def,BASE,0,gratis,det gratis huset,train,False
+gratis,invariant,invariant,neuter,pl,indef,neuter|pl|indef,BASE,0,gratis,gratis hus,train,False
+gratis,invariant,invariant,neuter,pl,def,neuter|pl|def,BASE,0,gratis,de gratis husen,train,False
+udda,invariant,invariant,uter,sg,indef,uter|sg|indef,BASE,0,udda,en udda bil,dev_diag,False
+udda,invariant,invariant,uter,sg,def,uter|sg|def,BASE,0,udda,den udda bilen,dev_diag,False
+udda,invariant,invariant,uter,pl,indef,uter|pl|indef,BASE,0,udda,udda bilar,dev_diag,False
+udda,invariant,invariant,uter,pl,def,uter|pl|def,BASE,0,udda,de udda bilarna,dev_diag,False
+udda,invariant,invariant,neuter,sg,indef,neuter|sg|indef,BASE,0,udda,ett udda hus,dev_diag,False
+udda,invariant,invariant,neuter,sg,def,neuter|sg|def,BASE,0,udda,det udda huset,dev_diag,False
+udda,invariant,invariant,neuter,pl,indef,neuter|pl|indef,BASE,0,udda,udda hus,dev_diag,False
+udda,invariant,invariant,neuter,pl,def,neuter|pl|def,BASE,0,udda,de udda husen,dev_diag,False
+nuvarande,invariant,invariant,uter,sg,indef,uter|sg|indef,BASE,0,nuvarande,en nuvarande bil,dev_gate,False
+nuvarande,invariant,invariant,uter,sg,def,uter|sg|def,BASE,0,nuvarande,den nuvarande bilen,dev_gate,False
+nuvarande,invariant,invariant,uter,pl,indef,uter|pl|indef,BASE,0,nuvarande,nuvarande bilar,dev_gate,False
+nuvarande,invariant,invariant,uter,pl,def,uter|pl|def,BASE,0,nuvarande,de nuvarande bilarna,dev_gate,False
+nuvarande,invariant,invariant,neuter,sg,indef,neuter|sg|indef,BASE,0,nuvarande,ett nuvarande hus,dev_gate,False
+nuvarande,invariant,invariant,neuter,sg,def,neuter|sg|def,BASE,0,nuvarande,det nuvarande huset,dev_gate,False
+nuvarande,invariant,invariant,neuter,pl,indef,neuter|pl|indef,BASE,0,nuvarande,nuvarande hus,dev_gate,False
+nuvarande,invariant,invariant,neuter,pl,def,neuter|pl|def,BASE,0,nuvarande,de nuvarande husen,dev_gate,False
+liten,liten,en_to_et,uter,sg,indef,uter|sg|indef,BASE,0,liten,en liten bil,inlexicon,False
+liten,liten,en_to_et,uter,sg,def,uter|sg|def,LILLA,7,lilla,den lilla bilen,inlexicon,False
+liten,liten,en_to_et,uter,pl,indef,uter|pl|indef,SMA,8,små,små bilar,inlexicon,False
+liten,liten,en_to_et,uter,pl,def,uter|pl|def,SMA,8,små,de små bilarna,inlexicon,False
+liten,liten,en_to_et,neuter,sg,indef,neuter|sg|indef,NEUT_ET,3,litet,ett litet hus,inlexicon,True
+liten,liten,en_to_et,neuter,sg,def,neuter|sg|def,LILLA,7,lilla,det lilla huset,inlexicon,False
+liten,liten,en_to_et,neuter,pl,indef,neuter|pl|indef,SMA,8,små,små hus,inlexicon,False
+liten,liten,en_to_et,neuter,pl,def,neuter|pl|def,SMA,8,små,de små husen,inlexicon,False
